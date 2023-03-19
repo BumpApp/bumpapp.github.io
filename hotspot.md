@@ -35,9 +35,6 @@ permalink: /hotspot
 
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
-</head>
-
-<body class="bg-navy">
 
   <div class="relative bg-navy">
     <div class="relative mx-auto max-w-7xl py-8 px-4 sm:py-32 sm:px-6 lg:px-8 text-center">
@@ -47,7 +44,7 @@ permalink: /hotspot
     </div>
   </div>
 
-  <footer class="bg-navy">
+  <div class="bg-navy">
     <div class="mx-auto max-w-7xl overflow-hidden py-12 px-4 sm:px-6 lg:px-8">
       <div class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
         <div class="px-5 py-2">
@@ -98,8 +95,7 @@ permalink: /hotspot
       </div>
       <p class="mt-8 text-center text-base text-gray-400">&copy; 2022 Peep Networks, Inc. All rights reserved. Google Play and the Google Play logo are trademarks of Google LLC.</p>
     </div>
-  </footer>
-
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
 <script>
