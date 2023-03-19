@@ -49,7 +49,7 @@ permalink: /hotspot
 
   <footer class="bg-navy">
     <div class="mx-auto max-w-7xl overflow-hidden py-12 px-4 sm:px-6 lg:px-8">
-      <nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
+      <div class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
         <div class="px-5 py-2">
           <a href="/terms-of-service" class="text-base text-gray-200 hover:text-gray-100">Terms of Service</a>
         </div>
