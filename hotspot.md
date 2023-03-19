@@ -1,3 +1,7 @@
+layout: page
+title: "Bump Hotspot"
+permalink: /hotspot
+
 <!doctype html>
 
 <html lang="en">
