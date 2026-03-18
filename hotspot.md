@@ -10,13 +10,13 @@ permalink: /hotspot
       theme: {
         extend: {
           colors: {
-            navy: '#0E2D4E',
-            blue: '#81C1FF',
-            orange: '#FF5000',
-            slate: '#F6F9F8',
-            'blue-50': '#F0F8FE',
-            'navy-hover': '#124881',
-            'orange-hover': '#FEF6F1'
+            navy: '#0F172A',
+            blue: '#0EA5E9',
+            orange: '#10B981',
+            slate: '#F8FAFC',
+            'blue-50': '#ECFDF5',
+            'navy-hover': '#1E293B',
+            'orange-hover': '#ECFDF5'
           }
         }
       }
