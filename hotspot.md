@@ -10,13 +10,13 @@ permalink: /hotspot
       theme: {
         extend: {
           colors: {
-            navy: '#0E2D4E',
-            blue: '#81C1FF',
-            orange: '#FF5000',
-            slate: '#F6F9F8',
-            'blue-50': '#F0F8FE',
-            'navy-hover': '#124881',
-            'orange-hover': '#FEF6F1'
+            dark: '#0F172A',
+            accent: '#0EA5E9',
+            primary: '#10B981',
+            surface: '#F8FAFC',
+            'surface-hover': '#ECFDF5',
+            'dark-hover': '#1E293B',
+            'primary-hover': '#ECFDF5'
           }
         }
       }
@@ -36,7 +36,7 @@ permalink: /hotspot
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
 
-  <div class="relative bg-navy">
+  <div class="relative bg-dark">
     <div class="relative mx-auto max-w-7xl py-8 px-4 sm:py-32 sm:px-6 lg:px-8 text-center">
       <lottie-player src="success-bounce.lottie.json" background="transparent"  speed="1"  class="mx-auto" style="width: 300px; height: 300px;" autoplay></lottie-player>
       <h1 class="text-lg font-bold tracking-tight text-white border-none">Thanks for connecting with</h1>
@@ -47,15 +47,15 @@ permalink: /hotspot
     </div>
   </div>
 
-  <div class="bg-navy">
+  <div class="bg-dark">
     <div class="mx-auto max-w-7xl overflow-hidden py-12 px-4 sm:px-6 lg:px-8">
       <div class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
         <div class="px-5 py-2">
-          <a href="/terms-of-service" class="text-base text-gray-200 hover:text-gray-100">Terms of Service</a>
+          <a href="terms-of-service/index.html" class="text-base text-gray-200 hover:text-gray-100">Terms of Service</a>
         </div>
   
         <div class="px-5 py-2">
-          <a href="/privacy-policy" class="text-base text-gray-200 hover:text-gray-100">Privacy Policy</a>
+          <a href="privacy-policy/index.html" class="text-base text-gray-200 hover:text-gray-100">Privacy Policy</a>
         </div>
       <div class="mt-8 flex justify-center space-x-6">
   
@@ -95,7 +95,7 @@ permalink: /hotspot
           </svg>
         </a>-->
       </div>
-      <p class="mt-8 text-center text-base text-gray-400">&copy; 2022 Peep Networks, Inc. All rights reserved. Google Play and the Google Play logo are trademarks of Google LLC.</p>
+      <p class="mt-8 text-center text-base text-gray-400">&copy; 2022-2026 Bump Inc. All rights reserved. Google Play and the Google Play logo are trademarks of Google LLC.</p>
     </div>
 </div>
 
