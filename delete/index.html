@@ -8,18 +8,25 @@
   <title>Bump - Request Account Deletion</title>
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="../image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="../image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="../site.webmanifest">
   <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#10B981">
   <meta name="msapplication-TileColor" content="#047857">
   <meta name="theme-color" content="#10B981">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <script src="https://cdn.tailwindcss.com"></script>
 
   <script>
     tailwind.config = {
       theme: {
+        fontFamily: {
+          sans: ['Inter', 'system-ui', 'sans-serif'],
+        },
         extend: {
           colors: {
             dark: '#0F172A',
@@ -49,23 +56,7 @@
 
 <body class="bg-dark">
 
-  <div class="bg-accent">
-    <div class="mx-auto max-w-7xl py-3 px-4 sm:px-6 lg:px-8">
-      <div class="flex flex-wrap items-center justify-between">
-        <div class="flex w-full lg:w-auto flex-1 items-center">
-          <div class="font-medium text-white">
-            <span class="text-lg text-white font-medium">Download our Android app in the Play Store, exclusively in Brazil.</span><br />
-            <span class="text-base text-white">Follow us for updates and come visit us on Universidade Federal do Rio de Janeiro's campus</span>
-          </div>
-        </div>
-        <div class="order-3 mt-2 w-full flex-shrink-0 sm:order-2 sm:mt-0 sm:w-auto">
-          <a href="https://play.google.com/store/apps/details?id=xyz.bumpapp.prod"><img alt="Get it on Google Play" width="200px" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"/></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <nav class="bg-dark lg:bg-transparent">
+  <nav class="bg-dark">
     <div class="relative mx-auto max-w-7xl pt-6 pb-8 sm:py-4 px-4 sm:px-6 lg:px-8">
       <a href="../index.html" class="flex items-center">
         <img src="../bump-logo.svg" class="h-9" alt="bump Logo" />
@@ -73,104 +64,21 @@
     </div>
   </nav>
 
-  <div class="relative overflow-hidden bg-surface pt-16 md:pt-8">
-    <div class="relative">
-      <div class="md:mx-auto md:grid md:max-w-7xl md:grid-flow-col-dense md:grid-cols-2 md:gap-8 lg:gap-24 md:px-8">
-        <div class="mx-auto max-w-xl px-6 lg:mx-0 md:max-w-none md:pt-24 md:pb-40 md:px-0 md:col-span-9 lg:col-span-7">
-          <div class="">
-            <h2 class="text-5xl font-bold tracking-tight text-dark">Request Account Deletion</h2>
+  <div class="mx-auto max-w-4xl py-12 px-4 sm:px-6 lg:px-8">
+    <h1 class="text-3xl font-bold text-white mb-2">Request Account Deletion</h1>
+    <p class="text-sm text-gray-400 mb-8">Enter the email address associated with your Bump account and we will process your deletion request.</p>
 
-            <form action="https://formspree.io/f/meqbywkq" method="POST">
-              <br/>
-              <label class="mt-4 text-xl text-dark leading-relaxed">Email Address of Account: <br/>
-                <input type="email" name="email">
-              </label> <br/> <br/>
-              <!-- your other form fields go here -->
-              <button type="submit" class="inline-flex rounded-lg bg-white px-6 py-3 text-xl font-semibold leading-7 text-dark hover:bg-surface-hover hover:ring-dark">Send</button>
-            </form>
-          </div>
-        </div>
+    <form action="https://formspree.io/f/meqbywkq" method="POST" class="space-y-6">
+      <div>
+        <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Email Address of Account</label>
+        <input type="email" name="email" id="email" required
+          class="w-full max-w-md rounded-lg bg-dark-hover border border-gray-600 px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+          placeholder="you@example.com">
       </div>
-    </div>
-  </div>
+      <button type="submit" class="inline-flex rounded-lg bg-primary px-6 py-3 text-base font-semibold text-white hover:bg-emerald-600 transition-colors">Submit Request</button>
+    </form>
 
-  <div class="bg-dark py-12 md:py-24">
-  </div>
-
-  <div class="relative overflow-hidden bg-surface pt-16 md:pt-8">
-    <div class="relative">
-      <div class="md:mx-auto md:grid md:max-w-7xl md:grid-flow-col-dense md:grid-cols-2 md:gap-8 lg:gap-24 md:px-8">
-        <div class="mx-auto max-w-xl px-6 lg:mx-0 md:max-w-none md:pt-24 md:pb-40 md:px-0 md:col-span-9 lg:col-span-7">
-          <div class="">
-            <h2 class="text-5xl font-bold tracking-tight text-dark">Turn your phone into a hotspot.</h2>
-            <p class="mt-4 text-xl text-dark leading-relaxed">Broadcasting your connection makes it accessible to other bump users who may not have one.</p>
-            <div class="mt-6">
-              <!-- <a href="#mc_embed_signup" class="inline-flex rounded-lg bg-dark px-4 py-3 text-lg font-semibold leading-7 text-white hover:bg-dark-hover hover:ring-dark-hover">Get Notified When We Launch</a> -->
-            </div>
-          </div>
-        </div>
-        <div class="mt-12 sm:mt-16 lg:mt-0 md:col-span-3 lg:col-span-5">
-          <div class="-mr-24 pl-4 sm:pl-6 md:-mr-32 lg:relative lg:h-full lg:px-0">
-            <img class="w-full md:w-[460px] lg:w-[460px] lg:absolute lg:left-0 lg:max-w-none" src="../phone-NEW@2x.png" alt="Inbox user interface">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="bg-dark py-12 md:py-24">
-    <div class="mx-auto max-w-xl px-6 lg:max-w-7xl lg:px-8 text-center">
-      <dl class="grid grid-cols-1 gap-16 lg:grid lg:grid-cols-3">
-        <div>
-          <img class="w-[200px] mx-auto" src="phone-wifi@2x.png" alt="">
-          <p class="mt-6 text-xl font-bold leading-8 text-white uppercase">Share connection, build the network</p>
-          <dd class="mt-2 text-base leading-7 text-gray-200 leading-relaxed">Have a phone plan with excess data? Connected to local WiFi? Share the connection to build the network of Bump providers.</dd>
-        </div>
-
-        <div>
-          <img class="w-[200px] mx-auto" src="phone-broadcast@2x.png" alt="">
-          <p class="mt-6 text-xl font-bold leading-8 text-white uppercase">Get online instantly<br /> &nbsp;</p>
-          <dd class="mt-2 text-base leading-7 text-gray-200 leading-relaxed">Connect through nearby Bump network providers to access affordable Internet connectivity.</dd>
-        </div>
-
-        <div>
-          <img class="w-[200px] mx-auto" src="crypto@2x.png" alt="">
-          <p class="mt-6 text-xl font-bold leading-8 text-white uppercase">earn crypto for your contribution</p>
-          <dd class="mt-2 text-base leading-7 text-gray-200 leading-relaxed">As a hotspot provider, earn $BUMP rewards directly tied to the utility you create.</dd>
-        </div>
-      </dl>
-    </div>
-  </div>
-
-  <div class="relative overflow-hidden bg-surface pt-12">
-    <div class="relative">
-      <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
-        <div class="mx-auto max-w-xl px-6 lg:mx-0 lg:max-w-none lg:pt-8 lg:pb-24 lg:px-0 md:col-span-7">
-          <div class="">
-            <h2 class="text-7xl font-bold tracking-tight text-dark">Why Bump?</h2>
-            <p class="mt-8 text-xl text-dark leading-relaxed">Our phone connections are our lifeline to the world, yet they remain unreliable.</p>
-            <div class="mt-6">
-              <!-- <a href="#mc_embed_signup" class="inline-flex rounded-lg bg-dark px-4 py-3 text-lg font-semibold leading-7 text-white hover:bg-dark-hover hover:ring-dark-hover">Get Notified When We Launch</a> -->
-            </div>
-          </div>
-        </div>
-        <div class="mx-auto max-w-xl px-6 lg:mx-0 lg:max-w-none lg:pt-8 lg:pb-24 lg:px-0 md:col-span-5 text-left my-8">
-          <div class="relative">
-            <dl class="mt-4 md:mt-10 space-y-4 md:space-y-10 ">
-              <div class="relative">
-                <p class="ml-0 lg:ml-16 text-2xl md:text-3xl font-medium text-dark">> Coverage is unequal</p>
-              </div>
-              <div class="relative">
-                <p class="ml-0 lg:ml-16 text-2xl md:text-3xl font-medium text-dark">> Free WiFi is congested</p>
-              </div>
-              <div class="relative">
-                <p class="ml-0 lg:ml-16 text-2xl md:text-3xl font-medium text-dark">> Mobile data is expensive</p>
-              </div>
-            </dl>
-          </div>
-        </div>
-      </div>
-    </div>
+    <p class="mt-8 text-sm text-gray-400 leading-relaxed">Once submitted, your account and associated data will be deleted within 30 days. If you have any questions, please contact us at <a href="mailto:support@bumpapp.xyz" class="text-accent hover:text-blue-300">support@bumpapp.xyz</a>.</p>
   </div>
 
   <footer class="bg-dark">
@@ -183,7 +91,6 @@
         <div class="px-5 py-2">
           <a href="../privacy-policy/index.html" class="text-base text-gray-200 hover:text-gray-100">Privacy Policy</a>
         </div>
-
       </nav>
       <div class="mt-8 flex justify-center space-x-6">
 
@@ -204,7 +111,6 @@
       <p class="mt-8 text-center text-base text-gray-400">&copy; 2022-2026 Bump Inc. All rights reserved. Google Play and the Google Play logo are trademarks of Google LLC.</p>
     </div>
   </footer>
-
 
 <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
 <script>
