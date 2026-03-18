@@ -134,7 +134,7 @@
         <div>
           <img class="w-[200px] mx-auto" src="phone-hotspot@2x.png" alt="Sharing hotspot with no connections">
           <p class="mt-6 text-xl font-bold leading-8 text-white uppercase">Sharers</p>
-          <dd class="mt-2 text-base leading-7 text-gray-200 leading-relaxed">Share excess bandwidth with nearby users. Decide how much to share and earn rewards via credits, sweepstakes, and tokens.</dd>
+          <dd class="mt-2 text-base leading-7 text-gray-200 leading-relaxed">Share your mobile data or Wi-Fi with nearby users. Decide how much to share and earn rewards for every megabyte provided.</dd>
         </div>
 
         <div>
@@ -155,8 +155,45 @@
   <div class="bg-surface py-16 md:py-24">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="text-center max-w-3xl mx-auto">
-        <h2 class="text-5xl md:text-7xl font-bold tracking-tight text-dark">The Connectivity Chasm</h2>
-        <p class="mt-6 text-xl text-gray-600 leading-relaxed">Connectivity is most expensive where people can least afford it. Over 1 billion people own a mobile phone but have no or limited connectivity.</p>
+        <h2 class="text-5xl md:text-7xl font-bold tracking-tight text-dark">How It Works</h2>
+        <p class="mt-6 text-xl text-gray-600 leading-relaxed">Bump uses Bluetooth Low Energy to discover nearby devices, then establishes a direct Wi-Fi connection to share mobile data or an external Wi-Fi network. All traffic is routed through an encrypted VPN tunnel so both parties stay private and secure.</p>
+      </div>
+      <div class="mt-12 md:grid md:grid-cols-2 md:gap-12 lg:gap-20 items-center">
+        <div class="flex justify-center mb-10 md:mb-0">
+          <img class="w-[240px] lg:w-[280px]" src="phone-heatmap@2x.png" alt="Bump coverage heatmap showing nearby sharers">
+        </div>
+        <dl class="grid grid-cols-1 gap-6">
+          <div class="rounded-2xl bg-white p-6 shadow-sm flex items-start gap-4">
+            <span class="text-3xl">📡</span>
+            <div>
+              <dt class="text-lg font-bold text-dark">Discover</dt>
+              <dd class="mt-1 text-sm text-gray-600 leading-relaxed">Bluetooth LE scans for nearby sharers and shows them on the coverage heatmap with signal strength and pricing.</dd>
+            </div>
+          </div>
+          <div class="rounded-2xl bg-white p-6 shadow-sm flex items-start gap-4">
+            <span class="text-3xl">📶</span>
+            <div>
+              <dt class="text-lg font-bold text-dark">Connect</dt>
+              <dd class="mt-1 text-sm text-gray-600 leading-relaxed">A direct Wi-Fi connection is established phone-to-phone. The sharer's mobile data or external Wi-Fi is bridged to the user.</dd>
+            </div>
+          </div>
+          <div class="rounded-2xl bg-white p-6 shadow-sm flex items-start gap-4">
+            <span class="text-3xl">🔒</span>
+            <div>
+              <dt class="text-lg font-bold text-dark">Secured</dt>
+              <dd class="mt-1 text-sm text-gray-600 leading-relaxed">All traffic flows through an encrypted VPN tunnel. Neither party can see the other's data — privacy is guaranteed by design.</dd>
+            </div>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-dark py-16 md:py-24">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto">
+        <h2 class="text-5xl md:text-7xl font-bold tracking-tight text-white">The Connectivity Chasm</h2>
+        <p class="mt-6 text-xl text-gray-300 leading-relaxed">Connectivity is most expensive where people can least afford it. Over 1 billion people own a mobile phone but have no or limited connectivity.</p>
       </div>
       <dl class="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-3">
         <div class="rounded-2xl bg-dark p-8 text-center">
