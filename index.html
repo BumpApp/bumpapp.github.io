@@ -82,11 +82,19 @@
     </div>
   </div> -->
 
+  <script>
+    // Auto-redirect Portuguese speakers to /pt/ (unless they explicitly chose English)
+    if (localStorage.getItem('lang') !== 'en' && /^pt\b/i.test(navigator.language)) {
+      window.location.replace('/pt/');
+    }
+  </script>
+
   <nav class="bg-dark lg:bg-transparent">
-    <div class="relative mx-auto max-w-7xl pt-6 pb-8 sm:py-4 px-4 sm:px-6 lg:px-8">
+    <div class="relative mx-auto max-w-7xl pt-6 pb-8 sm:py-4 px-4 sm:px-6 lg:px-8 flex items-center justify-between">
       <a href="index.html" class="flex items-center">
         <img src="bump-logo.svg" class="h-9" alt="bump Logo" />
       </a>
+      <a href="/pt/" onclick="localStorage.setItem('lang','pt')" class="text-sm text-gray-400 hover:text-white transition-colors">Portugues</a>
     </div>
   </nav>
 
