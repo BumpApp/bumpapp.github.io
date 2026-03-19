@@ -24,13 +24,13 @@ permalink: /hotspot
   </script>
 
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7D2Z66R4RY"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D5S0MC1TH9"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-7D2Z66R4RY');
+  gtag('config', 'G-D5S0MC1TH9');
 </script>
 
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
