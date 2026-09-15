@@ -83,10 +83,9 @@
   </div> -->
 
   <script>
-    // Auto-redirect Portuguese speakers to /pt/ (unless they explicitly chose English)
-    if (localStorage.getItem('lang') !== 'en' && /^pt\b/i.test(navigator.language)) {
-      window.location.replace('/pt/');
-    }
+    // Send Portuguese/Spanish readers to their page: a language they chose wins, else the browser language
+    var lang = localStorage.getItem('lang') || (navigator.language || '').slice(0, 2).toLowerCase();
+    if (lang === 'pt' || lang === 'es') window.location.replace('/' + lang + '/');
   </script>
 
   <nav class="bg-dark lg:bg-transparent">
@@ -94,7 +93,7 @@
       <a href="index.html" class="flex items-center">
         <img src="bump-logo.svg" class="h-9" alt="bump Logo" />
       </a>
-      <a href="pt/index.html" onclick="localStorage.setItem('lang','pt')" class="text-sm text-gray-400 hover:text-white transition-colors">Portugues</a>
+      <div class="flex gap-4"><a href="pt/index.html" onclick="localStorage.setItem('lang','pt')" class="text-sm text-gray-400 hover:text-white transition-colors">Português</a><a href="es/index.html" onclick="localStorage.setItem('lang','es')" class="text-sm text-gray-400 hover:text-white transition-colors">Español</a></div>
     </div>
   </nav>
 
@@ -111,7 +110,7 @@
           <svg class="w-6 h-6 mr-2" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302a1 1 0 0 1 0 1.38l-2.302 2.302L15.293 12l2.405-2.492zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z"/></svg>
           Join the Public Beta
         </a>
-        <span class="text-sm text-gray-400">Now available on Android in Brazil</span>
+        <span class="text-sm text-gray-400">Now available on Android in Brazil and Colombia</span>
       </div>
     </div>
   </div>
