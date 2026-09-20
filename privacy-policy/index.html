@@ -240,14 +240,15 @@
           </tr>
         </thead>
         <tbody>
-          <tr><td class="border border-gray-600 px-3 py-2">Account profile, username, avatar, country, balances</td><td class="border border-gray-600 px-3 py-2">Life of the account; marked deleted afterwards (section 8)</td><td class="border border-gray-600 px-3 py-2">Contract</td></tr>
-          <tr><td class="border border-gray-600 px-3 py-2">Phone number and device identifier (raw)</td><td class="border border-gray-600 px-3 py-2">Life of the account</td><td class="border border-gray-600 px-3 py-2">Contract, fraud prevention</td></tr>
+          <tr><td class="border border-gray-600 px-3 py-2">Account profile, username, avatar, country, balances</td><td class="border border-gray-600 px-3 py-2">Life of the account; anonymised on deletion (section 8)</td><td class="border border-gray-600 px-3 py-2">Contract</td></tr>
+          <tr><td class="border border-gray-600 px-3 py-2">Phone number and device identifier (raw)</td><td class="border border-gray-600 px-3 py-2">Life of the account; deleted with it</td><td class="border border-gray-600 px-3 py-2">Contract, fraud prevention</td></tr>
+          <tr><td class="border border-gray-600 px-3 py-2">Identity of a deleted account (email, name, Google account ID, deletion date), sealed</td><td class="border border-gray-600 px-3 py-2">12 months after deletion, then purged automatically</td><td class="border border-gray-600 px-3 py-2">Answering court orders against connection records (Marco Civil Art. 13; section 8)</td></tr>
           <tr><td class="border border-gray-600 px-3 py-2">Sign-in access records (time, IP, device)</td><td class="border border-gray-600 px-3 py-2">12 months, then deleted automatically</td><td class="border border-gray-600 px-3 py-2">Marco Civil Art. 15 (minimum 6 months)</td></tr>
           <tr><td class="border border-gray-600 px-3 py-2">VPN connection records (device, server, exit IP, window)</td><td class="border border-gray-600 px-3 py-2">12 months, then deleted automatically</td><td class="border border-gray-600 px-3 py-2">Marco Civil Art. 13 (minimum 12 months)</td></tr>
           <tr><td class="border border-gray-600 px-3 py-2">Log of staff access to the records above</td><td class="border border-gray-600 px-3 py-2">Indefinite</td><td class="border border-gray-600 px-3 py-2">Decreto 8.771/2016 Art. 13 audit duty</td></tr>
           <tr><td class="border border-gray-600 px-3 py-2">Session totals (bytes, peer, duration), credits and reward-point ledger, payouts</td><td class="border border-gray-600 px-3 py-2">Indefinite</td><td class="border border-gray-600 px-3 py-2">Accounting, payout audit, tax</td></tr>
           <tr><td class="border border-gray-600 px-3 py-2">Live session state (who is connected right now)</td><td class="border border-gray-600 px-3 py-2">Deleted at disconnect</td><td class="border border-gray-600 px-3 py-2">Operation</td></tr>
-          <tr><td class="border border-gray-600 px-3 py-2">Hotspot and demand locations (per user)</td><td class="border border-gray-600 px-3 py-2">Life of the account</td><td class="border border-gray-600 px-3 py-2">Coverage rewards, history</td></tr>
+          <tr><td class="border border-gray-600 px-3 py-2">Hotspot and demand locations (per user), per-second session location samples</td><td class="border border-gray-600 px-3 py-2">Life of the account; deleted with it</td><td class="border border-gray-600 px-3 py-2">Coverage rewards, history</td></tr>
           <tr><td class="border border-gray-600 px-3 py-2">Aggregated coverage map (no user identifiers)</td><td class="border border-gray-600 px-3 py-2">24 hours per cell</td><td class="border border-gray-600 px-3 py-2">Operation</td></tr>
           <tr><td class="border border-gray-600 px-3 py-2">Chat messages in transit (encrypted) and delivery receipts</td><td class="border border-gray-600 px-3 py-2">7 days</td><td class="border border-gray-600 px-3 py-2">Delivery to offline devices</td></tr>
           <tr><td class="border border-gray-600 px-3 py-2">Chat device registrations after you sign out</td><td class="border border-gray-600 px-3 py-2">90 days</td><td class="border border-gray-600 px-3 py-2">Abuse tracing</td></tr>
@@ -263,16 +264,17 @@
     <!-- Section 8 -->
     <h2 id="afterdeletion" class="text-lg font-semibold text-white mt-8 mb-4">8. WHAT WE KEEP AFTER YOU DELETE YOUR ACCOUNT</h2>
 
-    <p class="text-sm text-gray-400 leading-relaxed mb-4">You can delete your account at any time from Settings. Deletion removes your Google sign-in from Bump and marks your profile as deleted, so it no longer appears in the app. The following are kept:</p>
+    <p class="text-sm text-gray-400 leading-relaxed mb-4">You can delete your account at any time from Settings. Deletion removes your Google sign-in from Bump, deletes your phone number and raw device identifier, deletes the per-second location samples from your sessions, and anonymises your profile: your email, name and Google account identifier are removed and your username is replaced with a placeholder, so nothing in the app identifies you any more. The following are kept:</p>
 
     <ul class="list-disc pl-6 text-sm text-gray-400 leading-relaxed mb-4 space-y-2">
       <li><strong>Hashed identifiers.</strong> One-way SHA-256 hashes (or keyed HMACs) of your phone number, Android device identifier, Google account identifier and tax ID, in the collections that enforce "one sign-up bonus, one referral bonus, and a limited number of cash-out accounts per person". The hash cannot be reversed to recover the original value; it can only be compared against a new sign-up. Without it, deleting and re-creating an account would earn the bonus again. Basis: legitimate interest in fraud prevention (LGPD Art. 7 IX and Art. 16 IV; Decreto 1377/2013 Art. 9).</li>
+      <li><strong>Your identity, sealed for 12 months.</strong> Your email, name and Google account identifier, with the deletion date, are moved to a restricted store that no user, and none of our normal systems, can read. They exist only so that a court order concerning a connection record from the last year can still be answered with the person behind it, as Marco Civil Art. 13 requires, and they are purged automatically 12 months after deletion — the same moment the last connection record from your account expires. Basis: legal obligation (LGPD Art. 7 II and Art. 16 I).</li>
       <li><strong>Access and connection records</strong> for the remainder of their 12-month period (legal obligation).</li>
       <li><strong>Session totals, ledger entries and payout records</strong>, which reference your account ID, for accounting and dispute purposes (LGPD Art. 16 I and III).</li>
-      <li><strong>The deleted profile record</strong>, which exists only so the records above have a stable account to refer to.</li>
+      <li><strong>The anonymised profile record</strong>, which exists only so the records above have a stable account to refer to.</li>
     </ul>
 
-    <p class="text-sm text-gray-400 leading-relaxed mb-4">Everything else about you is removed from active use. If you ask us to erase your data (section 10), our reply will list exactly which of the items above we are keeping and why.</p>
+    <p class="text-sm text-gray-400 leading-relaxed mb-4">Everything else about you is deleted. If you ask us to erase your data (section 10), our reply will list exactly which of the items above we are keeping and why.</p>
 
     <!-- Section 9 -->
     <h2 id="infosafe" class="text-lg font-semibold text-white mt-8 mb-4">9. HOW DO WE KEEP YOUR INFORMATION SAFE?</h2>
