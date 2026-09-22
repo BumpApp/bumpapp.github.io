@@ -1,0 +1,19 @@
+name: Check pages
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Validate HTML
+        run: npx -y html-validate@9 "**/*.html"
+      - name: Check internal links and assets
+        run: npx -y linkinator@6 . --recurse --skip "^https?://(?!localhost)" --skip "careers-old|brand|node_modules" --verbosity error
