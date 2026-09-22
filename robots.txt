@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /careers-old/
+
+Sitemap: https://www.bumpapp.xyz/sitemap.xml
