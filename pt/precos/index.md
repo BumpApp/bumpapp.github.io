@@ -74,6 +74,18 @@ A **franquia de dados** não tem a mesma proteção. Os gigabytes do pacote vale
 - **TIM:** as perguntas frequentes da TIM citam pacotes adicionais pré de 500 MB, 1 GB, 2 GB e 4 GB, mas o preço não aparece no site, só no app Meu TIM. A tabela traz a oferta semanal que a TIM publica.
 - **1 GB = 1.024 MB** em todas as contas. A TIM e a Claro contam parte do pacote como "exclusivo para redes sociais" ou "para YouTube"; incluímos esses GB no total, o que favorece a operadora.
 
+## Fontes e evidências
+
+Cada linha das tabelas vem de uma destas páginas. A captura de tela mostra o que a página exibia na data; clique para ver.
+
+<ol>
+{%- for src in d.sources %}
+<li>{{ src.carrier }}, {{ src.page }}: <a href="{{ src.url }}" rel="nofollow">{{ src.url | remove: "https://" | remove: "www." }}</a>. DDD {{ src.ddd }}, lida em {{ d.checked | date: "%d/%m/%Y" }}. <a href="/assets/precos-br/{{ src.shot }}">Captura</a>{% if src.partial %} (mostra só o topo da página; os preços vieram do texto da mesma página){% endif %}.</li>
+{%- endfor %}
+</ol>
+
+As capturas foram feitas de fora do Brasil, com o navegador traduzindo a página para inglês, então o texto visível está em inglês e os preços exibidos são os da região que o site da operadora escolheu (São Paulo para Vivo e Claro, Rio de Janeiro para TIM). Os dados brutos, com preço, franquia, validade e fonte de cada pacote, estão em [`_data/precos_br.yml`](https://github.com/BumpApp/bumpapp.github.io/blob/main/_data/precos_br.yml) no repositório público deste site.
+
 Achou um preço desatualizado? Escreva para [support@bumpapp.xyz](mailto:support@bumpapp.xyz) com o link da operadora e corrigimos.
 
 [Baixe o Bump na Google Play](https://play.google.com/store/apps/details?id=xyz.bumpapp.prod)

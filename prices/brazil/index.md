@@ -74,6 +74,18 @@ The **data allowance** has no such protection. The gigabytes in a pack last for 
 - **TIM:** TIM's FAQ mentions prepaid add-on packs of 500 MB, 1 GB, 2 GB and 4 GB, but the price isn't on the website, only in the Meu TIM app. The table shows the weekly offer TIM does publish.
 - **1 GB = 1,024 MB** throughout. TIM and Claro count part of the pack as "social networks only" or "YouTube only"; we include those GB in the total, which favours the carrier.
 
+## Sources and evidence
+
+Every row in the tables comes from one of these pages. The screenshot shows what the page displayed on the date; click to view.
+
+<ol>
+{%- for src in d.sources %}
+<li>{{ src.carrier }}, {{ src.page }}: <a href="{{ src.url }}" rel="nofollow">{{ src.url | remove: "https://" | remove: "www." }}</a>. DDD {{ src.ddd }}, read on {{ d.checked | date: "%Y-%m-%d" }}. <a href="/assets/precos-br/{{ src.shot }}">Screenshot</a>{% if src.partial %} (shows only the top of the page; the prices came from the same page's text){% endif %}.</li>
+{%- endfor %}
+</ol>
+
+The screenshots were taken from outside Brazil with the browser translating the page to English, so the visible text is English and the prices shown are for the region the carrier's site picked (São Paulo for Vivo and Claro, Rio de Janeiro for TIM). The raw data, with price, allowance, validity and source for every pack, is in [`_data/precos_br.yml`](https://github.com/BumpApp/bumpapp.github.io/blob/main/_data/precos_br.yml) in this site's public repository.
+
 Found an outdated price? Write to [support@bumpapp.xyz](mailto:support@bumpapp.xyz) with the carrier's link and we'll fix it.
 
 [Get Bump on Google Play](https://play.google.com/store/apps/details?id=xyz.bumpapp.prod)
