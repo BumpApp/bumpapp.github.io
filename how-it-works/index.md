@@ -3,6 +3,10 @@ layout: article
 lang: en
 title: "How Bump works: peer-to-peer Internet sharing between nearby phones"
 description: "The engineering behind Bump: Bluetooth discovery, a Wi-Fi Direct link from phone to phone, and an OpenVPN tunnel so the person sharing mobile data cannot see your traffic."
+translations:
+  en: /how-it-works/
+  pt: /pt/how-it-works/
+  es: /es/how-it-works/
 ---
 
 Bump is an Android app that lets one phone share its mobile data or Wi-Fi with a nearby phone, and pays the person sharing for the data that flows through. This page explains how the app does that, in enough detail for an engineer to check the claims. For the short answers, see the [FAQ](/faq/).
@@ -161,7 +165,7 @@ A phone that is connected through Bump can also share what it has with the next 
 <figcaption>The chain. Every phone in it forwards the same encrypted tunnel.</figcaption>
 </figure>
 
-Technically the relay phone runs both roles at once: it is a client of the phone upstream and a sharer to the phone downstream. Each packet from your phone carries a header naming its source, so the relay forwards it, still encrypted, into its own link upstream. The tunnel is the same one described above and still ends at the Bump server, so a relay can read no more of your traffic than a sharer can. Approval and credentials come from the phone at the top of the chain, the one with real Internet..
+Technically the relay phone runs both roles at once: it is a client of the phone upstream and a sharer to the phone downstream. Each packet from your phone carries a header naming its source, so the relay forwards it, still encrypted, into its own link upstream. The tunnel is the same one described above and still ends at the Bump server, so a relay can read no more of your traffic than a sharer can. Approval and credentials come from the phone at the top of the chain, the one with real Internet.
 
 Speed along the chain is set by the phone doing the relaying, not by how many hops there are. A relay is a Wi-Fi client of the phone upstream and the group owner of its own Wi-Fi Direct group for the phone downstream, both on the same radio, so it is the bottleneck, and a cheap one especially. In our measurements a low-end phone sharing a mobile connection gives around 50 Mbps, and a phone that is itself on Wi-Fi and sharing that Wi-Fi can drop to 5 to 10 Mbps. Adding hops beyond that does not noticeably cut throughput, but each hop adds latency. Expect video to work and calls and games to feel the delay first. There is no hop limit in the software, and we have run chains of ten hops in testing. The practical limit is how many phones are around, not the hop count. Each phone can serve about four or five directly connected phones, depending on the handset, so a chain spreads out as a tree rather than a single line.
 

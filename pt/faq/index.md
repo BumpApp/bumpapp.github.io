@@ -29,6 +29,8 @@ Se ainda não há ninguém compartilhando perto de você, o mapa vai estar vazio
 
 **Para usar:** abra o app e veja no mapa de cobertura quem está compartilhando perto, com força do sinal e preço. Escolha um, toque em Conectar e seu celular se liga diretamente ao dele. Você paga com créditos Bump apenas pelos dados que realmente usar.
 
+A engenharia por trás de tudo isso, inclusive o que quem compartilha vê e o que não vê, está na página [Como o Bump funciona](/pt/how-it-works/).
+
 ## O Bump é seguro? Quem compartilha vê o que eu acesso?
 
 Sim, o Bump é seguro. E não, quem compartilha não vê o que você acessa. Todo o seu tráfego passa por um túnel VPN criptografado do seu celular até a Internet. O celular de quem compartilha só repassa bytes embaralhados. Ele vê quantos dados você usou, não o que você fez com eles. Você também não vê o dele. A privacidade faz parte do projeto, não é uma opção.
