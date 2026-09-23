@@ -1,0 +1,129 @@
+# Carrier prepaid prices for /es/precios/ and /prices/colombia/. One row per pack. Same shape as precos_br.yml.
+# size: large = the pack you buy to cover the month; small = 1 to 7 day packs.
+# label: optional short text for the direct label on the scatter chart.
+# COP/GB is computed in the page (price * 1024 / mb). Evidence screenshots: assets/precios-co/.
+checked: 2026-09-23
+# One entry per carrier page read. `shot` is the screenshot in assets/precios-co/.
+sources:
+  - carrier: Claro
+    page: Paquetes Claro Prepago (Todo incluido WIN)
+    url: https://www.claro.com.co/personas/servicios/servicios-moviles/prepago/
+    shot: 2026-09-23-claro-prepago.jpg
+  - carrier: Claro
+    page: Planes y precios, filtro prepago (paquetes de 1 a 7 días)
+    url: https://www.claro.com.co/personas/servicios/servicios-moviles/planes-y-precios/?filterHead=38&filterType=79
+    shot: 2026-09-23-claro-planes-y-precios-prepago.jpg
+  - carrier: Tigo
+    page: Prepago Tigo (oferta del mes)
+    url: https://www.tigo.com.co/prepago
+    shot: 2026-09-23-tigo-prepago.jpg
+  - carrier: Tigo
+    page: Tienda Tigo, paquete prepago 2 GB 7 días
+    url: https://compras.tigo.com.co/paquete-prepago-2gb-7-dias/p
+  - carrier: Movistar
+    page: Paquetes Movistar Prepago
+    url: https://www.movistar.com.co/paquetes-prepago
+    shot: 2026-09-23-movistar-paquetes-prepago.jpg
+bump:
+  credits_per_cop: 0.1667
+  credits_per_mb: 1          # default and maximum a sharer can charge
+  credits_per_mb_wifi: 0.25  # when the sharer relays a Wi-Fi network
+  free_mb: 500               # sign-up bonus, expires 90 days after it is granted
+  min_purchase_cop: 10000
+packs:
+  - carrier: Claro
+    pack: Todo incluido WIN 7 días
+    price: 11000
+    mb: 2048
+    days: 7
+    size: large
+    source: https://www.claro.com.co/personas/servicios/servicios-moviles/prepago/
+  - carrier: Claro
+    pack: Todo incluido WIN 10 días
+    price: 15000
+    mb: 3584
+    days: 10
+    size: large
+    source: https://www.claro.com.co/personas/servicios/servicios-moviles/prepago/
+  - carrier: Claro
+    pack: Todo incluido WIN 15 días
+    label: Claro $25.000 / 20 GB
+    price: 25000
+    mb: 20480
+    days: 15
+    size: large
+    source: https://www.claro.com.co/personas/servicios/servicios-moviles/prepago/
+  - carrier: Claro
+    pack: Todo incluido WIN 30 días (12 GB)
+    price: 35000
+    mb: 12288
+    days: 30
+    size: large
+    source: https://www.claro.com.co/personas/servicios/servicios-moviles/prepago/
+  - carrier: Claro
+    pack: Todo incluido WIN 30 días (18 GB)
+    price: 45000
+    mb: 18432
+    days: 30
+    size: large
+    source: https://www.claro.com.co/personas/servicios/servicios-moviles/prepago/
+  - carrier: Tigo
+    pack: Oferta del mes, 2x1 en datos (10 GB + 10 GB)
+    price: 20000
+    mb: 20480
+    days: 20
+    size: large
+    source: https://www.tigo.com.co/prepago
+  - carrier: Movistar
+    pack: Paquete mes, 3x1 en datos (13 GB x 3)
+    price: 26000
+    mb: 39936
+    days: 30
+    size: large
+    source: https://www.movistar.com.co/paquetes-prepago
+
+  - carrier: Claro
+    pack: Todo incluido 1 día (150 MB)
+    price: 3000
+    mb: 150
+    days: 1
+    size: small
+    source: https://www.claro.com.co/personas/servicios/servicios-moviles/planes-y-precios/?filterHead=38&filterType=79
+  - carrier: Claro
+    pack: Todo incluido 1 día, Claro Pay (170 MB)
+    price: 3000
+    mb: 170
+    days: 1
+    size: small
+    source: https://www.claro.com.co/personas/servicios/servicios-moviles/planes-y-precios/?filterHead=38&filterType=79
+  - carrier: Claro
+    pack: Todo incluido 3 días (400 MB)
+    label: Claro 3 días, 400 MB
+    price: 5500
+    mb: 400
+    days: 3
+    size: small
+    source: https://www.claro.com.co/personas/servicios/servicios-moviles/planes-y-precios/?filterHead=38&filterType=79
+  - carrier: Claro
+    pack: Todo incluido 6 días (1,4 GB)
+    price: 9000
+    mb: 1434
+    days: 6
+    size: small
+    source: https://www.claro.com.co/personas/servicios/servicios-moviles/planes-y-precios/?filterHead=38&filterType=79
+  - carrier: Claro
+    pack: Todo incluido 7 días (2 GB)
+    label: Claro 7 días, 2 GB
+    price: 5000
+    mb: 2048
+    days: 7
+    size: small
+    source: https://www.claro.com.co/personas/servicios/servicios-moviles/planes-y-precios/?filterHead=38&filterType=79
+  - carrier: Tigo
+    pack: Paquete prepago 2 GB 7 días
+    label: Tigo 7 días, 2 GB
+    price: 8000
+    mb: 2048
+    days: 7
+    size: small
+    source: https://compras.tigo.com.co/paquete-prepago-2gb-7-dias/p
