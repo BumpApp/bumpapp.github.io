@@ -19,13 +19,13 @@ Referral rewards are a fixed, one-time grant of points when someone you invited 
 
 ## Does Bump actually work?
 
-Yes, when someone sharing is within range. Bump uses Bluetooth to find people sharing nearby and a direct Wi-Fi connection to link your phones, the same technology as an ordinary hotspot. The coverage map in the app shows who is sharing near you before you connect.
+Yes, when someone sharing is within range. Bump uses Bluetooth to find people sharing nearby and a Wi-Fi Direct connection to link your phones, the same technology as an ordinary hotspot. The coverage map in the app shows who is sharing near you before you connect.
 
 If nobody is sharing near you yet, the map will be empty. That is not a fault. The network grows as people join, and it works best in busy places: campuses, terminals, markets and dense neighbourhoods.
 
 ## How does Bump work?
 
-**To share:** open the app, tap Share and choose how much data you are willing to give. Bump advertises your phone over Bluetooth so people nearby can find you. Your phone bridges its mobile data or Wi-Fi to them over a direct Wi-Fi connection.
+**To share:** open the app, tap Share and choose how much data you are willing to give. Bump advertises your phone over Bluetooth so people nearby can find you. Your phone bridges its mobile data or Wi-Fi to them over a Wi-Fi Direct connection.
 
 **To use:** open the app and check the coverage map for sharers around you, with their signal strength and price. Pick one, tap Connect, and your phone links directly to theirs. You pay with Bump credits only for the data you actually use.
 
