@@ -9,6 +9,11 @@
         <div class="px-5 py-2">
           <a href="{{ t.faq_url }}" class="text-base text-gray-200 hover:text-gray-100">{{ t.faq }}</a>
         </div>
+        {%- if t.prices_url %}
+        <div class="px-5 py-2">
+          <a href="{{ t.prices_url }}" class="text-base text-gray-200 hover:text-gray-100">{{ t.prices }}</a>
+        </div>
+        {%- endif %}
         <div class="px-5 py-2">
           <a href="{{ t.tos_url }}" class="text-base text-gray-200 hover:text-gray-100">{{ t.tos }}</a>
         </div>

@@ -1,0 +1,58 @@
+{%- comment -%}
+Dot plot of R$/GB for every pack in _data/precos_br.yml, small and monthly packs as two groups,
+with Bump's ceiling and Wi-Fi rate as reference lines. Params: lang ("pt" or "en").
+Rows are sorted by R$/GB via zero-padded string keys, since Liquid can't sort on a computed value.
+The key string ends in a comma; Liquid's split (Ruby String#split) drops trailing empty elements, so no empty key results.
+{%- endcomment -%}
+{%- assign d = site.data.precos_br -%}
+{%- assign pt = false -%}{%- if include.lang == "pt" -%}{%- assign pt = true -%}{%- endif -%}
+{%- assign bump_gb = d.bump.credits_per_mb | times: 1024.0 | divided_by: d.bump.credits_per_brl -%}
+{%- assign wifi_gb = d.bump.credits_per_mb_wifi | times: 1024.0 | divided_by: d.bump.credits_per_brl -%}
+{%- assign small = "" -%}{%- assign large = "" -%}
+{%- for p in d.packs -%}
+  {%- assign k = p.price | times: 102400.0 | divided_by: p.mb | round | prepend: "000000" | slice: -6, 6 | append: "|" | append: forloop.index0 | append: "," -%}
+  {%- if p.size == "small" -%}{%- assign small = small | append: k -%}{%- else -%}{%- assign large = large | append: k -%}{%- endif -%}
+{%- endfor -%}
+{%- assign small = small | split: "," | sort | reverse -%}
+{%- assign large = large | split: "," | sort | reverse -%}
+{%- assign n = small.size | plus: large.size -%}
+{%- assign W = 840 -%}{%- assign L = 236 -%}{%- assign R = 60 -%}{%- assign rowH = 22 -%}{%- assign xmax = 28 -%}
+{%- assign plotW = W | minus: L | minus: R -%}
+{%- assign top = 30 -%}{%- assign gapG = 34 -%}
+{%- assign H = n | times: rowH | plus: top | plus: gapG | plus: gapG | plus: 30 -%}
+{%- assign plotTop = top | minus: 8 -%}{%- assign plotBot = H | minus: 26 -%}
+{%- assign xb = bump_gb | times: plotW | divided_by: xmax | plus: L -%}
+{%- assign xw = wifi_gb | times: plotW | divided_by: xmax | plus: L -%}
+{%- assign dec = "." -%}{%- if pt -%}{%- assign dec = "," -%}{%- endif -%}
+<figure>
+<svg viewBox="0 0 {{ W }} {{ H }}" role="img" aria-labelledby="fig-dot-title" style="width:100%;height:auto;font-family:Inter,system-ui,sans-serif;font-size:13px">
+  <title id="fig-dot-title">{% if pt %}Preço por GB de cada pacote, pequenos e mensais, com o teto do Bump e o preço em Wi-Fi como linhas de referência.{% else %}Price per GB of every pack, small and monthly, with Bump's ceiling and Wi-Fi rate as reference lines.{% endif %}</title>
+  {%- for v in (0..7) -%}{%- assign g = v | times: 4 -%}{%- assign gx = g | times: plotW | divided_by: xmax | plus: L %}
+  <line x1="{{ gx }}" x2="{{ gx }}" y1="{{ plotTop }}" y2="{{ plotBot }}" stroke="#E2E8F0"/>
+  <text x="{{ gx }}" y="{{ H | minus: 8 }}" text-anchor="middle" fill="#64748B" font-size="12">{% if g == 0 %}R$0{% else %}{{ g }}{% endif %}</text>
+  {%- endfor %}
+  <line x1="{{ xw }}" x2="{{ xw }}" y1="{{ plotTop }}" y2="{{ plotBot }}" stroke="#475569" stroke-width="2" stroke-dasharray="5 5"/>
+  <line x1="{{ xb }}" x2="{{ xb }}" y1="{{ plotTop }}" y2="{{ plotBot }}" stroke="#0F172A" stroke-width="2"/>
+  <text x="{{ xb | plus: 6 }}" y="{{ plotTop | plus: 4 }}" fill="#0F172A" font-weight="600">Bump {% if pt %}máx.{% else %}max{% endif %} R${% include brl.html v=bump_gb dec=dec %}</text>
+  <text x="{{ xw | minus: 6 }}" y="{{ plotTop | plus: 4 }}" text-anchor="end" fill="#475569" font-weight="600">Wi-Fi R${% include brl.html v=wifi_gb dec=dec %}</text>
+  {%- assign y = top | plus: 12 -%}
+  {%- for grp in (1..2) -%}
+    {%- if grp == 1 -%}{%- assign rows = small -%}{%- else -%}{%- assign rows = large -%}{%- endif %}
+  <text x="4" y="{{ y | plus: 4 }}" fill="#0F172A" font-weight="600">{% if grp == 1 %}{% if pt %}Pacotes pequenos{% else %}Small packs{% endif %}{% else %}{% if pt %}Pacotes mensais{% else %}Monthly packs{% endif %}{% endif %}</text>
+    {%- assign y = y | plus: gapG | minus: 8 -%}
+    {%- for key in rows -%}
+      {%- assign parts = key | split: "|" -%}{%- assign i = parts[1] | plus: 0 -%}{%- assign p = d.packs[i] -%}
+      {%- assign gb = p.price | times: 1024.0 | divided_by: p.mb -%}
+      {%- assign cx = gb | times: plotW | divided_by: xmax | plus: L | round: 1 -%}
+      {%- case p.carrier -%}{%- when "Vivo" -%}{%- assign c = "#2A78D6" -%}{%- when "Claro" -%}{%- assign c = "#EB6834" -%}{%- else -%}{%- assign c = "#1BAF7A" -%}{%- endcase %}
+  <text x="{{ L | minus: 12 }}" y="{{ y | plus: 4 }}" text-anchor="end" fill="#0F172A">{{ p.carrier }} <tspan fill="#64748B">{{ p.pack | truncate: 28 }}</tspan></text>
+  <line x1="{{ L }}" x2="{{ cx }}" y1="{{ y }}" y2="{{ y }}" stroke="#E2E8F0" stroke-width="2"/>
+  <circle cx="{{ cx }}" cy="{{ y }}" r="5" fill="{{ c }}" stroke="#fff" stroke-width="2"/>
+  <text x="{{ cx | plus: 10 }}" y="{{ y | plus: 4 }}" fill="#64748B" font-size="12" paint-order="stroke" stroke="#fff" stroke-width="4">{% include brl.html v=gb dec=dec %}</text>
+      {%- assign y = y | plus: rowH -%}
+    {%- endfor -%}
+    {%- assign y = y | plus: 8 -%}
+  {%- endfor %}
+</svg>
+<figcaption>{% if pt %}Cada ponto é um pacote pelo preço de tabela por GB. À direita da linha cheia, o pacote custa mais por GB do que o Bump no preço máximo; à direita da tracejada, mais do que o Bump em Wi-Fi compartilhado.{% else %}Each dot is one pack at its sticker price per GB. Right of the solid line, the pack costs more per GB than Bump at its maximum; right of the dashed line, more than Bump on shared Wi-Fi.{% endif %} <span style="color:#2A78D6">●</span> Vivo <span style="color:#EB6834">●</span> Claro <span style="color:#1BAF7A">●</span> TIM</figcaption>
+</figure>

@@ -1,0 +1,5 @@
+{%- comment -%}Two-decimal number: 20.0 -> 20,00 (or 20.00 with dec="."). Usage: {% include brl.html v=price %}{%- endcomment -%}
+{%- assign c = include.v | times: 100.0 | round -%}
+{%- assign w = c | divided_by: 100 -%}
+{%- assign f = c | modulo: 100 | prepend: "0" | slice: -2, 2 -%}
+{{ w }}{{ include.dec | default: "," }}{{ f }}
