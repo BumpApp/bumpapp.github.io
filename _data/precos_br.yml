@@ -1,5 +1,5 @@
 # Carrier prepaid prices for /pt/precos/. One row per pack.
-# size: large = the pack you buy to cover the month; small = add-on, daily or pay-per-use.
+# size: small = valid up to 7 days (add-on, daily, weekly); large = valid 8 days or more. Same rule as precios_co.yml.
 # label: optional short text for the direct label on the scatter chart (_includes/precos-scatter.html).
 # R$/GB is computed in the page (price * 1024 / mb). Prices vary by DDD; ddd says which one was checked.
 # Evidence screenshots: assets/precos-br/. Keep `checked` current when a price changes.

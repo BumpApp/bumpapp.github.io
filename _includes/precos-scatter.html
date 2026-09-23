@@ -1,45 +1,57 @@
 {%- comment -%}
 Scatter of pack price against pack size (packs up to 5 GB) with Bump's pay-as-you-go lines.
-Dots above the solid line cost more than buying the same amount on Bump. Params: lang ("pt" or "en").
+Dots above the solid line cost more than buying the same amount on Bump.
+Params: lang ("pt", "en" or "es"); data (data file name, default "precos_br"); cur ("brl" default, or "cop");
+ymax and ystep (price axis max and tick step, defaults 32 and 8).
 A pack with `label:` in the data file gets a direct label.
 {%- endcomment -%}
-{%- assign d = site.data.precos_br -%}
-{%- assign pt = false -%}{%- if include.lang == "pt" -%}{%- assign pt = true -%}{%- endif -%}
-{%- assign bump_gb = d.bump.credits_per_mb | times: 1024.0 | divided_by: d.bump.credits_per_brl -%}
-{%- assign wifi_gb = d.bump.credits_per_mb_wifi | times: 1024.0 | divided_by: d.bump.credits_per_brl -%}
-{%- assign W = 840 -%}{%- assign H = 360 -%}{%- assign L = 52 -%}{%- assign R = 24 -%}{%- assign T = 20 -%}{%- assign B = 40 -%}
-{%- assign xmax = 5120 -%}{%- assign ymax = 32 -%}
+{%- assign dname = include.data | default: "precos_br" -%}{%- assign d = site.data[dname] -%}
+{%- assign cur = include.cur | default: "brl" -%}
+{%- if cur == "cop" -%}{%- assign fmt = "cop.html" -%}{%- assign sym = "$" -%}{%- assign rate = d.bump.credits_per_cop -%}{%- else -%}{%- assign fmt = "brl.html" -%}{%- assign sym = "R$" -%}{%- assign rate = d.bump.credits_per_brl -%}{%- endif -%}
+{%- assign lang = include.lang | default: "en" -%}
+{%- case lang -%}
+{%- when "pt" -%}{%- assign t_max = "máx." -%}{%- assign t_above = "Acima da linha: o Bump é mais barato" -%}
+{%- when "es" -%}{%- assign t_max = "máx." -%}{%- assign t_above = "Arriba de la línea: Bump es más barato" -%}
+{%- else -%}{%- assign t_max = "max" -%}{%- assign t_above = "Above the line: Bump is cheaper" -%}
+{%- endcase -%}
+{%- assign bump_gb = d.bump.credits_per_mb | times: 1024.0 | divided_by: rate -%}
+{%- assign wifi_gb = d.bump.credits_per_mb_wifi | times: 1024.0 | divided_by: rate -%}
+{%- assign W = 840 -%}{%- assign H = 360 -%}{%- assign L = 60 -%}{%- assign R = 24 -%}{%- assign T = 20 -%}{%- assign B = 40 -%}
+{%- assign xmax = 5120 -%}{%- assign ymax = include.ymax | default: 32 -%}{%- assign ystep = include.ystep | default: 8 -%}
+{%- assign yticks = ymax | divided_by: ystep -%}
 {%- assign plotW = W | minus: L | minus: R -%}{%- assign plotH = H | minus: T | minus: B -%}
 {%- assign y0 = T | plus: plotH -%}
 {%- assign endB = ymax | divided_by: bump_gb | times: 1024 -%}
+{%- if endB > xmax -%}{%- assign endB = xmax -%}{%- endif -%}
 {%- assign xEndB = endB | times: plotW | divided_by: xmax | plus: L | round: 1 -%}
+{%- assign yEndB = endB | times: bump_gb | divided_by: 1024 | times: plotH | divided_by: ymax -%}{%- assign yEndB = y0 | minus: yEndB | round: 1 -%}
 {%- assign yEndW = xmax | times: wifi_gb | divided_by: 1024 | times: plotH | divided_by: ymax -%}{%- assign yEndW = y0 | minus: yEndW | round: 1 -%}
 <figure>
 <svg viewBox="0 0 {{ W }} {{ H }}" role="img" aria-labelledby="fig-sc-title" style="width:100%;height:auto;font-family:Inter,system-ui,sans-serif;font-size:13px">
-  <title id="fig-sc-title">{% if pt %}Preço de cada pacote de até 5 GB pelo seu tamanho, com as linhas do que o Bump cobra pela mesma quantidade.{% else %}Price of every pack up to 5 GB against its size, with the lines of what Bump charges for the same amount.{% endif %}</title>
-  {%- for v in (0..4) -%}{%- assign g = v | times: 8 -%}{%- assign gy = g | times: plotH | divided_by: ymax -%}{%- assign gy = y0 | minus: gy %}
+  <title id="fig-sc-title">{% case lang %}{% when "pt" %}Preço de cada pacote de até 5 GB pelo seu tamanho, com as linhas do que o Bump cobra pela mesma quantidade.{% when "es" %}Precio de cada paquete de hasta 5 GB según su tamaño, con las líneas de lo que Bump cobra por la misma cantidad.{% else %}Price of every pack up to 5 GB against its size, with the lines of what Bump charges for the same amount.{% endcase %}</title>
+  {%- for v in (0..yticks) -%}{%- assign g = v | times: ystep -%}{%- assign gy = g | times: plotH | divided_by: ymax -%}{%- assign gy = y0 | minus: gy %}
   <line x1="{{ L }}" x2="{{ W | minus: R }}" y1="{{ gy }}" y2="{{ gy }}" stroke="#E2E8F0"/>
-  <text x="{{ L | minus: 8 }}" y="{{ gy | plus: 4 }}" text-anchor="end" fill="#64748B" font-size="12">{% if g == 0 %}R$0{% else %}{{ g }}{% endif %}</text>
+  <text x="{{ L | minus: 8 }}" y="{{ gy | plus: 4 }}" text-anchor="end" fill="#64748B" font-size="12">{% if g == 0 %}{{ sym }}0{% else %}{% if cur == "cop" %}{% include cop.html v=g %}{% else %}{{ g }}{% endif %}{% endif %}</text>
   {%- endfor -%}
   {%- for g in (0..5) -%}{%- assign gx = g | times: 1024 | times: plotW | divided_by: xmax | plus: L %}
   <text x="{{ gx }}" y="{{ H | minus: 14 }}" text-anchor="middle" fill="#64748B" font-size="12">{% if g == 0 %}0{% else %}{{ g }} GB{% endif %}</text>
   {%- endfor %}
   <line x1="{{ L }}" x2="{{ W | minus: R }}" y1="{{ y0 }}" y2="{{ y0 }}" stroke="#CBD5E1"/>
-  <polygon points="{{ L }},{{ y0 }} {{ xEndB }},{{ T }} {{ L }},{{ T }}" fill="#10B981" fill-opacity="0.08"/>
-  <line x1="{{ L }}" y1="{{ y0 }}" x2="{{ xEndB }}" y2="{{ T }}" stroke="#0F172A" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="{{ L }},{{ y0 }} {{ xEndB }},{{ yEndB }} {{ xEndB }},{{ T }} {{ L }},{{ T }}" fill="#10B981" fill-opacity="0.08"/>
+  <line x1="{{ L }}" y1="{{ y0 }}" x2="{{ xEndB }}" y2="{{ yEndB }}" stroke="#0F172A" stroke-width="2" stroke-linecap="round"/>
   <line x1="{{ L }}" y1="{{ y0 }}" x2="{{ W | minus: R }}" y2="{{ yEndW }}" stroke="#475569" stroke-width="2" stroke-dasharray="5 5" stroke-linecap="round"/>
-  <text x="{{ xEndB | minus: 10 }}" y="{{ T | plus: 14 }}" text-anchor="end" fill="#0F172A" font-weight="600">Bump {% if pt %}máx.{% else %}max{% endif %}</text>
+  <text x="{{ xEndB | minus: 10 }}" y="{% if yEndB > T %}{{ yEndB | minus: 8 }}{% else %}{{ T | plus: 14 }}{% endif %}" text-anchor="end" fill="#0F172A" font-weight="600">Bump {{ t_max }}</text>
   <text x="{{ W | minus: R | minus: 4 }}" y="{{ yEndW | minus: 8 }}" text-anchor="end" fill="#475569" font-weight="600">Bump Wi-Fi</text>
-  <text x="{{ L | plus: 10 }}" y="{{ T | plus: 16 }}" fill="#047857" font-size="12">{% if pt %}Acima da linha: o Bump é mais barato{% else %}Above the line: Bump is cheaper{% endif %}</text>
+  <text x="{{ L | plus: 10 }}" y="{{ T | plus: 16 }}" fill="#047857" font-size="12">{{ t_above }}</text>
   {%- for p in d.packs -%}{%- if p.mb <= xmax -%}
     {%- assign cx = p.mb | times: plotW | divided_by: xmax | plus: L | round: 1 -%}
     {%- assign cy = p.price | times: plotH | divided_by: ymax -%}{%- assign cy = y0 | minus: cy | round: 1 -%}
-    {%- case p.carrier -%}{%- when "Vivo" -%}{%- assign c = "#2A78D6" -%}{%- when "Claro" -%}{%- assign c = "#EB6834" -%}{%- else -%}{%- assign c = "#1BAF7A" -%}{%- endcase %}
-  <circle cx="{{ cx }}" cy="{{ cy }}" r="6" fill="{{ c }}" stroke="#fff" stroke-width="2"><title>{{ p.carrier }} {{ p.pack }}: R${% include brl.html v=p.price dec="." %}, {{ p.mb }} MB, {{ p.days }}d</title></circle>
+    {%- case p.carrier -%}{%- when "Vivo" -%}{%- assign c = "#2A78D6" -%}{%- when "Claro" -%}{%- assign c = "#EB6834" -%}{%- when "Movistar" -%}{%- assign c = "#4A3AA7" -%}{%- when "WOM" -%}{%- assign c = "#2A78D6" -%}{%- when "Virgin Mobile" -%}{%- assign c = "#E87BA4" -%}{%- else -%}{%- assign c = "#1BAF7A" -%}{%- endcase %}
+  <circle cx="{{ cx }}" cy="{{ cy }}" r="6" fill="{{ c }}" stroke="#fff" stroke-width="2"><title>{{ p.carrier }} {{ p.pack }}: {{ sym }}{% include {{ fmt }} v=p.price dec="." %}, {{ p.mb }} MB, {{ p.days }}d</title></circle>
     {%- if p.label -%}{%- assign half = W | divided_by: 2 -%}
   <text x="{% if cx > half %}{{ cx | minus: 12 }}{% else %}{{ cx | plus: 4 }}{% endif %}" y="{% if cx > half %}{{ cy | plus: 4 }}{% else %}{{ cy | minus: 11 }}{% endif %}" text-anchor="{% if cx > half %}end{% else %}start{% endif %}" fill="#334155" font-size="12" paint-order="stroke" stroke="#fff" stroke-width="4">{{ p.label }}</text>
     {%- endif -%}
   {%- endif -%}{%- endfor %}
 </svg>
-<figcaption>{% if pt %}Cada ponto é um pacote de até 5 GB, pelo tamanho e pelo preço. A linha é o que o Bump cobra pela mesma quantidade. Onde a linha cruza o preço de um pacote está o uso a partir do qual o pacote compensa, se for consumido dentro da validade. Os pacotes acima de 5 GB ficam fora do gráfico e todos abaixo da linha.{% else %}Each dot is a pack up to 5 GB, placed by size and price. The line is what Bump charges for the same amount. Where the line crosses a pack's price is the usage from which the pack is the better deal, if used within its validity. Packs above 5 GB are off the chart and all below the line.{% endif %}</figcaption>
+<figcaption>{% case lang %}{% when "pt" %}Cada ponto é um pacote de até 5 GB, pelo tamanho e pelo preço. A linha é o que o Bump cobra pela mesma quantidade. Onde a linha cruza o preço de um pacote está o uso a partir do qual o pacote compensa, se for consumido dentro da validade. Os pacotes acima de 5 GB ficam fora do gráfico e todos abaixo da linha.{% when "es" %}Cada punto es un paquete de hasta 5 GB, según su tamaño y su precio. La línea es lo que Bump cobra por la misma cantidad. Donde la línea cruza el precio de un paquete está el uso a partir del cual el paquete conviene, si se consume dentro de la vigencia. Los paquetes de más de 5 GB quedan fuera del gráfico y todos por debajo de la línea.{% else %}Each dot is a pack up to 5 GB, placed by size and price. The line is what Bump charges for the same amount. Where the line crosses a pack's price is the usage from which the pack is the better deal, if used within its validity. Packs above 5 GB are off the chart and all below the line.{% endcase %}</figcaption>
 </figure>
