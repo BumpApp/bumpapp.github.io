@@ -26,7 +26,7 @@ En Bump pagas solo por lo que usas, con saldo que compras por PSE o tarjeta desd
 
 Compáralo con los dos tipos de paquete que venden los operadores. Son dos situaciones distintas, así que son dos tablas.
 
-## Paquetes pequeños: cuando se acabó el plan y necesitas poco
+## Paquetes de hasta 7 días: cuando se acabó el plan y necesitas poco
 
 Aquí es donde el prepago se pone caro. Cuando los datos se acaban a mitad de mes, el operador vende paquetes de 150 MB a 6 GB que duran de uno a siete días, y en los más pequeños el precio por GB se dispara.
 
@@ -41,13 +41,13 @@ Aquí es donde el prepago se pone caro. Cuando los datos se acaban a mitad de me
 </tbody>
 </table>
 
-Los paquetes de uno y tres días de Claro cuestan entre $14.000 y $20.500 por GB, de cinco a siete veces el precio máximo de Bump; el de 500 MB de Virgin, $9.200; los de uno a seis días de WOM, $5.000 a $5.300. Solo los paquetes de siete días de 2 GB o más ($1.500 a $2.500 por GB) quedan por debajo del tope de Bump. Y todos vencen en uno, tres o siete días.
+Los paquetes de uno y tres días de Claro cuestan entre $14.000 y $20.500 por GB, de cinco a siete veces el precio máximo de Bump; el de 500 MB de Virgin, $9.200; los de uno a seis días de WOM, $5.000 a $5.300; el WIN de 7 días de Claro, con Win Sports incluido, $5.500. Solo los paquetes de siete días de 2 GB o más sin extras ($1.500 a $2.500 por GB) quedan por debajo del tope de Bump. Y todos vencen en una semana o menos.
 
 † Precio tomado del comparador Selectra el 20/07/2026, pendiente de verificar en la página del operador.
 
-## Paquetes mensuales: cuando compras el mes entero
+## Paquetes de 8 días o más: cuando compras la quincena o el mes
 
-Comprando 2 GB o más de una vez para la semana o el mes, el precio por GB del operador suele ser menor que el de Bump. No lo escondemos.
+En los paquetes de 8 días o más, el precio por GB del operador casi siempre queda por debajo del de Bump. No lo escondemos. Las excepciones son el WIN de 10 días de Claro y el Antiplan de 1,5 GB de Virgin.
 
 <table>
 <thead><tr><th>Operador</th><th>Paquete</th><th>Precio</th><th>Vigencia</th><th>$/GB</th><th>Fuente</th></tr></thead>
@@ -60,7 +60,7 @@ Comprando 2 GB o más de una vez para la semana o el mes, el precio por GB del o
 </tbody>
 </table>
 
-La cuenta cambia cuando miras lo que realmente usas. El paquete cuesta lo mismo si lo usas todo o casi nada, y lo que sobra desaparece al vencer. En el Todo incluido WIN de $11.000 (2 GB por 7 días), quien usa 500 MB pagó $22.000 por GB; en Bump, esos 500 MB cuestan ${% assign half = bump_gb | times: 500 | divided_by: 1024 %}{% include cop.html v=half %}. El punto de equilibrio es cerca de 3,6 GB en 7 días contra ese paquete y 11 GB en 30 días contra el WIN de $35.000. Por debajo, Bump sale más barato; por encima, gana el paquete.
+La cuenta cambia cuando miras lo que realmente usas. El paquete cuesta lo mismo si lo usas todo o casi nada, y lo que sobra desaparece al vencer. En el Todo incluido WIN de $15.000 (3,5 GB por 10 días), quien usa 500 MB pagó $30.000 por GB; en Bump, esos 500 MB cuestan ${% assign half = bump_gb | times: 500 | divided_by: 1024 %}{% include cop.html v=half %}. El punto de equilibrio es cerca de 4,9 GB en 10 días contra ese paquete y 11 GB en 30 días contra el WIN de $35.000. Por debajo, Bump sale más barato; por encima, gana el paquete.
 
 † Precio tomado del comparador Selectra el 20/07/2026, pendiente de verificar en la página del operador.
 

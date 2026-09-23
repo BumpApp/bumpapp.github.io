@@ -26,7 +26,7 @@ On Bump you pay only for what you use, from a balance bought by PSE or card, fro
 
 Compare that with the two kinds of pack the carriers sell. They are different situations, so they get different tables.
 
-## Small packs: when your plan ran out and you need a little
+## Packs up to 7 days: when your plan ran out and you need a little
 
 This is where prepaid gets expensive. When the data runs out mid-month, the carrier sells 150 MB to 6 GB packs that last one to seven days, and on the smallest ones the price per GB jumps.
 
@@ -41,13 +41,13 @@ This is where prepaid gets expensive. When the data runs out mid-month, the carr
 </tbody>
 </table>
 
-Claro's one- and three-day packs cost $14,000 to $20,500 per GB, five to seven times Bump's maximum; Virgin's 500 MB pack $9,200; WOM's one- to six-day packs $5,000 to $5,300. Only the seven-day packs of 2 GB or more ($1,500 to $2,500 per GB) sit below Bump's ceiling. And all of them expire in one, three or seven days.
+Claro's one- and three-day packs cost $14,000 to $20,500 per GB, five to seven times Bump's maximum; Virgin's 500 MB pack $9,200; WOM's one- to six-day packs $5,000 to $5,300; Claro's 7-day WIN pack, with Win Sports bundled, $5,500. Only the plain seven-day packs of 2 GB or more ($1,500 to $2,500 per GB) sit below Bump's ceiling. And all of them expire within a week.
 
 † Price taken from the Selectra comparison site on 2026-07-20, pending verification on the carrier's page.
 
-## Monthly packs: when you buy the whole month
+## Packs of 8 days or more: when you buy the fortnight or the month
 
-Buying 2 GB or more at once for the week or the month, the carrier's price per GB is usually lower than Bump's. We don't hide that.
+On packs of 8 days or more, the carrier's price per GB is almost always below Bump's. We don't hide that. The exceptions are Claro's 10-day WIN pack and Virgin's 1.5 GB Antiplan.
 
 <table>
 <thead><tr><th>Carrier</th><th>Pack</th><th>Price</th><th>Valid for</th><th>$/GB</th><th>Source</th></tr></thead>
@@ -60,7 +60,7 @@ Buying 2 GB or more at once for the week or the month, the carrier's price per G
 </tbody>
 </table>
 
-The math changes when you look at what you actually use. The pack costs the same whether you use all of it or almost none, and whatever is left disappears when the days are up. On the $11,000 Todo incluido WIN (2 GB for 7 days), someone who uses 500 MB paid $22,000 per GB; on Bump those 500 MB cost ${% assign half = bump_gb | times: 500 | divided_by: 1024 %}{% include cop.html v=half %}. The break-even is about 3.6 GB in 7 days against that pack and 11 GB in 30 days against the $35,000 WIN. Below that, Bump is cheaper; above it, the pack wins.
+The math changes when you look at what you actually use. The pack costs the same whether you use all of it or almost none, and whatever is left disappears when the days are up. On the $15,000 Todo incluido WIN (3.5 GB for 10 days), someone who uses 500 MB paid $30,000 per GB; on Bump those 500 MB cost ${% assign half = bump_gb | times: 500 | divided_by: 1024 %}{% include cop.html v=half %}. The break-even is about 4.9 GB in 10 days against that pack and 11 GB in 30 days against the $35,000 WIN. Below that, Bump is cheaper; above it, the pack wins.
 
 † Price taken from the Selectra comparison site on 2026-07-20, pending verification on the carrier's page.
 

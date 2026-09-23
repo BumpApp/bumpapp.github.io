@@ -1,5 +1,5 @@
 # Carrier prepaid prices for /es/precios/ and /prices/colombia/. One row per pack. Same shape as precos_br.yml.
-# size: large = the pack you buy to cover the month; small = 1 to 7 day packs.
+# size: small = valid up to 7 days; large = valid 8 days or more. Same rule as precos_br.yml.
 # pending: true = price from a comparison site (Selectra, July 2026), not yet verified on the carrier's page; rendered with a dagger.
 # label: optional short text for the direct label on the scatter chart.
 # COP/GB is computed in the page (price * 1024 / mb). Evidence screenshots: assets/precios-co/.
@@ -64,7 +64,7 @@ packs:
     price: 11000
     mb: 2048
     days: 7
-    size: large
+    size: small
     source: https://www.claro.com.co/personas/servicios/servicios-moviles/prepago/
   - carrier: Claro
     pack: Todo incluido WIN 10 días

@@ -11,9 +11,9 @@ The key string ends in a comma; Liquid's split (Ruby String#split) drops trailin
 {%- if cur == "cop" -%}{%- assign fmt = "cop.html" -%}{%- assign sym = "$" -%}{%- assign rate = d.bump.credits_per_cop -%}{%- else -%}{%- assign fmt = "brl.html" -%}{%- assign sym = "R$" -%}{%- assign rate = d.bump.credits_per_brl -%}{%- endif -%}
 {%- assign lang = include.lang | default: "en" -%}
 {%- case lang -%}
-{%- when "pt" -%}{%- assign dec = "," -%}{%- assign t_small = "Pacotes pequenos" -%}{%- assign t_large = "Pacotes mensais" -%}{%- assign t_max = "máx." -%}
-{%- when "es" -%}{%- assign dec = "," -%}{%- assign t_small = "Paquetes pequeños" -%}{%- assign t_large = "Paquetes mensuales" -%}{%- assign t_max = "máx." -%}
-{%- else -%}{%- assign dec = "." -%}{%- assign t_small = "Small packs" -%}{%- assign t_large = "Monthly packs" -%}{%- assign t_max = "max" -%}
+{%- when "pt" -%}{%- assign dec = "," -%}{%- assign t_small = "Pacotes de até 7 dias" -%}{%- assign t_large = "Pacotes de 8 dias ou mais" -%}{%- assign t_max = "máx." -%}
+{%- when "es" -%}{%- assign dec = "," -%}{%- assign t_small = "Paquetes de hasta 7 días" -%}{%- assign t_large = "Paquetes de 8 días o más" -%}{%- assign t_max = "máx." -%}
+{%- else -%}{%- assign dec = "." -%}{%- assign t_small = "Packs up to 7 days" -%}{%- assign t_large = "Packs of 8 days or more" -%}{%- assign t_max = "max" -%}
 {%- endcase -%}
 {%- assign bump_gb = d.bump.credits_per_mb | times: 1024.0 | divided_by: rate -%}
 {%- assign wifi_gb = d.bump.credits_per_mb_wifi | times: 1024.0 | divided_by: rate -%}
