@@ -15,7 +15,7 @@ Bump is an Android app that lets one phone share its mobile data or Wi-Fi with a
 4. The sharer approves you and sets a data limit. You pay per megabyte with Bump credits. They earn reward points for the same megabytes.
 
 <figure>
-<svg viewBox="0 0 800 230" role="img" aria-labelledby="fig1-title" style="width:100%;height:auto;font-family:Inter,system-ui,sans-serif;font-size:14px">
+<svg viewBox="0 0 800 230" role="img" aria-labelledby="fig1-title" style="width:100%;height:auto;font-family:Inter,system-ui,sans-serif;font-size:17px">
   <title id="fig1-title">Single hop: your phone connects to a sharer's phone over Wi-Fi Direct, and an encrypted tunnel runs from your phone through the sharer to a Bump VPN server and on to the Internet.</title>
   <defs>
     <marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker>
@@ -103,7 +103,7 @@ Both phones report their byte counts to Bump's backend during the session. The b
 A phone that is connected through Bump can also share what it has with the next phone. We call this passing it on, or the chain. It reaches places the first sharer's Wi-Fi does not: the back of a market, a basement lecture hall, the far end of a bus.
 
 <figure>
-<svg viewBox="0 0 800 250" role="img" aria-labelledby="fig2-title" style="width:100%;height:auto;font-family:Inter,system-ui,sans-serif;font-size:14px">
+<svg viewBox="0 0 800 250" role="img" aria-labelledby="fig2-title" style="width:100%;height:auto;font-family:Inter,system-ui,sans-serif;font-size:17px">
   <title id="fig2-title">The chain: your phone connects to a relay phone, which connects to a sharer with Internet. The encrypted tunnel runs from your phone through both of them to the Bump VPN server.</title>
   <defs>
     <marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker>
@@ -112,10 +112,10 @@ A phone that is connected through Bump can also share what it has with the next 
   <text x="75" y="105" text-anchor="middle" fill="#fff" font-weight="600">Your phone</text>
   <rect x="210" y="70" width="150" height="60" rx="8" fill="#0F172A"/>
   <text x="285" y="97" text-anchor="middle" fill="#fff" font-weight="600">Relay phone</text>
-  <text x="285" y="117" text-anchor="middle" fill="#94A3B8" font-size="12">no Internet of its own</text>
+  <text x="285" y="117" text-anchor="middle" fill="#94A3B8" font-size="14">no Internet of its own</text>
   <rect x="430" y="70" width="150" height="60" rx="8" fill="#0F172A"/>
   <text x="505" y="97" text-anchor="middle" fill="#fff" font-weight="600">Sharer's phone</text>
-  <text x="505" y="117" text-anchor="middle" fill="#94A3B8" font-size="12">has Internet</text>
+  <text x="505" y="117" text-anchor="middle" fill="#94A3B8" font-size="14">has Internet</text>
   <rect x="650" y="70" width="140" height="60" rx="8" fill="#0F172A"/>
   <text x="720" y="105" text-anchor="middle" fill="#fff" font-weight="600">Bump VPN server</text>
   <line x1="140" y1="100" x2="210" y2="100" stroke="#475569" stroke-width="2" marker-start="url(#a2)" marker-end="url(#a2)"/>
@@ -126,7 +126,7 @@ A phone that is connected through Bump can also share what it has with the next 
   <text x="615" y="58" text-anchor="middle" fill="#475569">Sharer's data</text>
   <line x1="75" y1="185" x2="720" y2="185" stroke="#10B981" stroke-width="6" stroke-linecap="round"/>
   <text x="400" y="215" text-anchor="middle" fill="#047857" font-weight="600">One encrypted tunnel, end to end</text>
-  <text x="400" y="237" text-anchor="middle" fill="#475569" font-size="13">The relay and the sharer forward packets they cannot read</text>
+  <text x="400" y="237" text-anchor="middle" fill="#475569" font-size="15">The relay and the sharer forward packets they cannot read</text>
 </svg>
 <figcaption>The chain. Every phone in it forwards the same encrypted tunnel.</figcaption>
 </figure>
