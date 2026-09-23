@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ page.lang | default: site.lang }}">
 <head>
   <meta charset="utf-8">
-  <title>{{ page.title }}</title>
+  <title>{{ page.title | escape }}</title>
   <meta name="robots" content="noindex">
-  <link rel="canonical" href="{{ page.to }}">
-  <meta http-equiv="refresh" content="0; url={{ page.to }}">
-  <script>location.replace("{{ page.to }}")</script>
+  <link rel="canonical" href="{{ page.to | escape }}">
+  <meta http-equiv="refresh" content="0; url={{ page.to | escape }}">
+  <script>location.replace({{ page.to | jsonify }})</script>
 </head>
 <body>
-  <a href="{{ page.to }}">{{ page.title }}</a>
+  <a href="{{ page.to | escape }}">{{ page.title | escape }}</a>
 </body>
 </html>
