@@ -61,17 +61,9 @@ Bump está disponible en Android en Colombia, con pagos por Bre-B, y en Brasil, 
 
 Compartir en Bump es el mismo anclaje (hotspot) de siempre. Revisa cuántos datos permite tu plan para compartir: algunos planes vendidos como "ilimitados" tienen un tope aparte para el hotspot. Preferimos decirlo antes y no después de tu factura.
 
-## ¿Pasar la conexión a otra persona gasta mis datos?
-
-No. Cuando tu celular pasa el Internet a la siguiente persona, los bytes vienen de la persona anterior en la cadena, no de tu plan. Donde los pagos están activos, te pagan por lo que pasas y pagas por lo que usas, a las tarifas normales.
-
-## ¿Qué tan rápido es más adelante en la cadena?
-
-Cada salto comparte la misma conexión de origen, así que la velocidad baja a medida que la cadena crece. Cerca del origen alcanza para video. Tres celulares más adelante, cuenta con mensajería y navegación.
-
 ## ¿Bump gasta mucha batería?
 
-Compartir, o pasar la conexión, mantiene un hotspot encendido, así que gasta más batería que un celular en reposo. Hazlo cuando estés cargando o quieto un rato. Usar Bump para conectarte gasta más o menos lo mismo que cualquier Wi-Fi.
+Compartir mantiene un hotspot encendido, así que gasta más batería que un celular en reposo. Hazlo cuando estés cargando o quieto un rato. Usar Bump para conectarte gasta más o menos lo mismo que cualquier Wi-Fi.
 
 ## ¿Bump es legal?
 

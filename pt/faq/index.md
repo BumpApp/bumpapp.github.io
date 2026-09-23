@@ -61,17 +61,9 @@ O Bump está disponível no Android no Brasil, com pagamento via Pix, e na Colô
 
 Compartilhar no Bump é o mesmo roteamento (hotspot) de sempre. Confira quanto o seu plano permite compartilhar: alguns planos vendidos como "ilimitados" têm um limite separado para o roteador. Preferimos avisar antes, e não depois da sua fatura.
 
-## Passar a conexão adiante gasta os meus dados?
-
-Não. Quando seu celular passa a Internet para a próxima pessoa, os bytes vêm da pessoa anterior na corrente, não do seu plano. Onde os pagamentos estão ativos, você recebe pelo que repassa e paga pelo que usa, nas tarifas normais.
-
-## Qual é a velocidade mais adiante na corrente?
-
-Cada salto divide a mesma conexão de origem, então a velocidade cai conforme a corrente cresce. Perto da origem dá para ver vídeo. Três celulares adiante, conte com mensagens e navegação.
-
 ## O Bump gasta muita bateria?
 
-Compartilhar, ou passar a conexão adiante, mantém um roteador ligado, então gasta mais bateria do que um celular parado. Faça isso quando estiver carregando ou parado por um tempo. Usar o Bump para se conectar gasta mais ou menos o mesmo que qualquer Wi-Fi.
+Compartilhar mantém um roteador ligado, então gasta mais bateria do que um celular parado. Faça isso quando estiver carregando ou parado por um tempo. Usar o Bump para se conectar gasta mais ou menos o mesmo que qualquer Wi-Fi.
 
 ## O Bump é legal?
 

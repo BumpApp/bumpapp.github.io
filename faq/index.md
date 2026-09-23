@@ -61,17 +61,9 @@ Bump is live on Android in Brazil, with payouts through Pix, and in Colombia, wi
 
 Sharing on Bump is ordinary phone tethering. Check your plan's hotspot allowance: some plans sold as "unlimited" cap tethering separately. We say this up front rather than after your bill.
 
-## Does passing it on use my data?
-
-No. When your phone passes Internet on to the next person, the bytes come from the person upstream of you, not from your plan. Where earning is live, you are paid for what you pass on and charged for what you use, at the normal rates.
-
-## How fast is it further along the chain?
-
-Each hop shares the one upstream connection, so speed drops as the chain grows. Near the source it is fine for video. Three phones along, plan on messaging and browsing.
-
 ## Does Bump drain my battery?
 
-Sharing, or passing Internet on, runs a hotspot, so it uses more battery than an idle phone. Do it when you are plugged in or sitting for a while. Using Bump to get online costs about the same as any Wi-Fi connection.
+Sharing runs a hotspot, so it uses more battery than an idle phone. Do it when you are plugged in or sitting for a while. Using Bump to get online costs about the same as any Wi-Fi connection.
 
 ## Is Bump legal?
 
