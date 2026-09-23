@@ -46,7 +46,31 @@ A phone that is sharing advertises over BLE. Everything the other phone needs to
 
 Phones looking for Internet advertise too, with a flag that says "I need data". That is how a sharer's phone can tell that people nearby want a connection before anyone taps anything.
 
-Your phone scans continuously while the app is open and drops any sharer it has not heard from for five seconds, so the list you see is live. Bluetooth range is line of sight and short: the same room, building, plaza or bus. Bump is not city-wide Wi-Fi, yet. We aim to get there by growing coverage rather than range. The coverage map tells us where people are looking for a connection and nobody is sharing. Our bounty program offers extra rewards to sharers who show up in a specific cell of a city for a set time window, verified by the same location reports that feed the map, so that high-demand areas get as close to blanket coverage as we can manage.
+Your phone scans continuously while the app is open and drops any sharer it has not heard from for five seconds, so the list you see is live. Bluetooth range is line of sight and short: the same room, building, plaza or bus. Two phones can find each other only when each is inside the other's range.
+
+<figure>
+<svg viewBox="0 0 840 310" role="img" aria-labelledby="fig-range-title" style="width:100%;height:auto;font-family:Inter,system-ui,sans-serif;font-size:17px">
+  <title id="fig-range-title">Four phones with their Bluetooth range drawn as circles. On the left a sharing phone and a looking phone have overlapping circles, so they are in range. On the right the two circles do not touch, so those phones cannot find each other.</title>
+  <circle cx="150" cy="150" r="90" fill="#10B981" fill-opacity="0.18" stroke="#10B981" stroke-width="2"/>
+  <circle cx="270" cy="150" r="90" fill="#0EA5E9" fill-opacity="0.18" stroke="#0EA5E9" stroke-width="2"/>
+  <rect x="139" y="130" width="22" height="40" rx="4" fill="#0F172A"/>
+  <rect x="259" y="130" width="22" height="40" rx="4" fill="#0F172A"/>
+  <text x="150" y="42" text-anchor="middle" fill="#047857" font-weight="600">Sharing</text>
+  <text x="270" y="42" text-anchor="middle" fill="#0369A1" font-weight="600">Looking</text>
+  <text x="210" y="275" text-anchor="middle" fill="#0F172A" font-weight="600">In range</text>
+  <text x="210" y="298" text-anchor="middle" fill="#475569" font-size="15">The circles overlap, so the phones see each other</text>
+  <circle cx="520" cy="150" r="90" fill="#10B981" fill-opacity="0.18" stroke="#10B981" stroke-width="2"/>
+  <circle cx="740" cy="150" r="90" fill="#0EA5E9" fill-opacity="0.18" stroke="#0EA5E9" stroke-width="2"/>
+  <rect x="509" y="130" width="22" height="40" rx="4" fill="#0F172A"/>
+  <rect x="729" y="130" width="22" height="40" rx="4" fill="#0F172A"/>
+  <text x="520" y="42" text-anchor="middle" fill="#047857" font-weight="600">Sharing</text>
+  <text x="740" y="42" text-anchor="middle" fill="#0369A1" font-weight="600">Looking</text>
+  <text x="630" y="275" text-anchor="middle" fill="#0F172A" font-weight="600">Out of range</text>
+  <text x="630" y="298" text-anchor="middle" fill="#475569" font-size="15">No overlap, so neither phone knows the other is there</text>
+</svg>
+<figcaption>Range. Each phone's Bluetooth reach is a circle around it. Where the circles overlap, the phones can find each other.</figcaption>
+</figure>
+ Bump is not city-wide Wi-Fi, yet. We aim to get there by growing coverage rather than range. The coverage map tells us where people are looking for a connection and nobody is sharing. Our bounty program offers extra rewards to sharers who show up in a specific cell of a city for a set time window, verified by the same location reports that feed the map, so that high-demand areas get as close to blanket coverage as we can manage.
 
 <figure>
 <img src="/how-it-works/bounties.png" width="913" height="520" alt="A street map of a neighbourhood divided into hexagonal cells. Several cells are outlined in orange with the number 1, one in red, and a cluster of grey and blue cells sits to the right." loading="lazy">
