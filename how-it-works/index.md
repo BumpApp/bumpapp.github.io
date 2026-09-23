@@ -78,7 +78,7 @@ Bump is not city-wide Wi-Fi, yet. We aim to get there by growing coverage rather
 <figcaption>Bounties on the map in our admin tools. Each hexagon is a cell. Orange cells are where people looked for a connection and found nobody sharing, and the number is how many of them asked for a hotspot there. Blue cells have a bounty scheduled, grey ones have expired and the red one was cancelled. Map data: Google.</figcaption>
 </figure>
 
-The coverage map is built from location reports that phones attach, if location is enabled, to their session and scanning records. A Cloud Function aggregates them into one entry per device. The app asks for devices seen in the last 30 minutes within about a kilometre and draws each as a small circle, blue for supply and red for demand, refreshing every ten seconds. Entries older than 24 hours are deleted.
+The coverage map is built from location reports that phones attach, if location is enabled, to their session and scanning records. Our backend aggregates them into one entry per device. The app asks for devices seen in the last 30 minutes within about a kilometre and draws each as a small circle, blue for supply and red for demand, refreshing every ten seconds. Entries older than 24 hours are deleted.
 
 ## Connecting phone to phone: Wi-Fi Direct
 
