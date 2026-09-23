@@ -29,7 +29,7 @@ Bump es una app de Android que permite a un celular compartir sus datos móviles
   <rect x="220" y="70" width="170" height="60" rx="8" fill="#0F172A"/>
   <text x="305" y="105" text-anchor="middle" fill="#fff" font-weight="600">Quien comparte</text>
   <rect x="470" y="70" width="170" height="60" rx="8" fill="#0F172A"/>
-  <text x="555" y="105" text-anchor="middle" fill="#fff" font-weight="600">Servidor VPN Bump</text>
+  <text x="555" y="105" text-anchor="middle" fill="#fff" font-weight="600" font-size="15">Servidor VPN Bump</text>
   <rect x="720" y="70" width="110" height="60" rx="8" fill="#0F172A"/>
   <text x="775" y="105" text-anchor="middle" fill="#fff" font-weight="600">Internet</text>
   <line x1="140" y1="100" x2="220" y2="100" stroke="#475569" stroke-width="2" marker-start="url(#a1)" marker-end="url(#a1)"/>
@@ -151,7 +151,7 @@ Un celular conectado a través de Bump también puede compartir lo que tiene con
   <text x="505" y="97" text-anchor="middle" fill="#fff" font-weight="600">Quien comparte</text>
   <text x="505" y="117" text-anchor="middle" fill="#94A3B8" font-size="14">tiene Internet</text>
   <rect x="650" y="70" width="170" height="60" rx="8" fill="#0F172A"/>
-  <text x="735" y="105" text-anchor="middle" fill="#fff" font-weight="600">Servidor VPN Bump</text>
+  <text x="735" y="105" text-anchor="middle" fill="#fff" font-weight="600" font-size="15">Servidor VPN Bump</text>
   <line x1="140" y1="100" x2="200" y2="100" stroke="#475569" stroke-width="2" marker-start="url(#a2)" marker-end="url(#a2)"/>
   <text x="170" y="58" text-anchor="middle" fill="#475569">Wi-Fi Direct</text>
   <line x1="360" y1="100" x2="420" y2="100" stroke="#475569" stroke-width="2" marker-start="url(#a2)" marker-end="url(#a2)"/>
