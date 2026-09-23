@@ -36,7 +36,7 @@ Compare com os dois tipos de pacote que as operadoras vendem. São dois cenário
 <tr><td><strong>Bump</strong></td><td>preço máximo</td><td>pelo uso</td><td>nunca vence</td><td><strong>{% include brl.html v=bump_gb %}</strong></td><td>todos</td><td>esta página</td></tr>
 {%- for p in d.packs -%}{%- if p.size == "small" %}
 {%- assign gb = p.price | times: 1024.0 | divided_by: p.mb | round: 2 %}
-<tr><td>{{ p.carrier }}</td><td>{{ p.pack }}</td><td>R$ {% include brl.html v=p.price %}</td><td>{{ p.days }} dia{% if p.days > 1 %}s{% endif %}</td><td>{% include brl.html v=gb %}</td><td>{{ p.ddd }}</td><td><a href="{{ p.source }}" rel="nofollow">página</a></td></tr>
+<tr><td>{{ p.carrier }}</td><td>{{ p.pack }}</td><td>R$ {% include brl.html v=p.price %}</td><td>{{ p.days }} dia{% if p.days > 1 %}s{% endif %}</td><td>{% include brl.html v=gb %}</td><td>{{ p.ddd }}</td><td><a href="{{ p.source }}" rel="nofollow">{{ p.source | remove: "https://" | remove: "www." | split: "/" | first }}</a></td></tr>
 {%- endif -%}{%- endfor %}
 </tbody>
 </table>
@@ -53,7 +53,7 @@ Comprando 5 GB ou mais de uma vez, o preço por GB da operadora é menor que o d
 <tr><td><strong>Bump</strong></td><td>preço máximo</td><td>pelo uso</td><td>nunca vence</td><td><strong>{% include brl.html v=bump_gb %}</strong></td><td>todos</td><td>esta página</td></tr>
 {%- for p in d.packs -%}{%- if p.size == "large" %}
 {%- assign gb = p.price | times: 1024.0 | divided_by: p.mb | round: 2 %}
-<tr><td>{{ p.carrier }}</td><td>{{ p.pack }}</td><td>R$ {% include brl.html v=p.price %}</td><td>{{ p.days }} dias</td><td>{% include brl.html v=gb %}</td><td>{{ p.ddd }}</td><td><a href="{{ p.source }}" rel="nofollow">página</a></td></tr>
+<tr><td>{{ p.carrier }}</td><td>{{ p.pack }}</td><td>R$ {% include brl.html v=p.price %}</td><td>{{ p.days }} dias</td><td>{% include brl.html v=gb %}</td><td>{{ p.ddd }}</td><td><a href="{{ p.source }}" rel="nofollow">{{ p.source | remove: "https://" | remove: "www." | split: "/" | first }}</a></td></tr>
 {%- endif -%}{%- endfor %}
 </tbody>
 </table>

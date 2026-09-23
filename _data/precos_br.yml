@@ -74,6 +74,15 @@ packs:
     size: large
     ddd: 11
     source: https://vivo.com.br/para-voce/produtos-e-servicos/para-o-celular/pre-pago/vivo-pre
+  - carrier: Vivo
+    pack: Vivo Pré 4 GB sem serviço digital
+    label: Vivo R$14 / 4 GB
+    price: 14.0
+    mb: 4096
+    days: 10
+    size: large
+    ddd: 11
+    source: https://vivo.com.br/para-voce/produtos-e-servicos/para-o-celular/pre-pago/vivo-pre/pre-outras-ofertas
   - carrier: Claro
     pack: Prezão R$15
     label: Claro R$15 / 5 GB
@@ -157,15 +166,6 @@ packs:
     size: small
     ddd: 11
     source: https://vivo.com.br/para-voce/produtos-e-servicos/para-o-celular/pre-pago/pacotes-pre
-  - carrier: Vivo
-    pack: Vivo Pré 4 GB sem serviço digital
-    label: Vivo R$14 / 4 GB
-    price: 14.0
-    mb: 4096
-    days: 10
-    size: large
-    ddd: 11
-    source: https://vivo.com.br/para-voce/produtos-e-servicos/para-o-celular/pre-pago/vivo-pre/pre-outras-ofertas
   - carrier: Claro
     pack: Tarifa diária com saldo abaixo de R$15 (250 MB)
     price: 2.19

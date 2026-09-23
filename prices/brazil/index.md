@@ -36,7 +36,7 @@ This is where prepaid gets expensive. When the allowance runs out mid-month, the
 <tr><td><strong>Bump</strong></td><td>maximum price</td><td>by use</td><td>never expires</td><td><strong>{% include brl.html v=bump_gb dec="." %}</strong></td><td>all</td><td>this page</td></tr>
 {%- for p in d.packs -%}{%- if p.size == "small" %}
 {%- assign gb = p.price | times: 1024.0 | divided_by: p.mb | round: 2 %}
-<tr><td>{{ p.carrier }}</td><td>{{ p.pack }}</td><td>R${% include brl.html v=p.price dec="." %}</td><td>{{ p.days }} day{% if p.days > 1 %}s{% endif %}</td><td>{% include brl.html v=gb dec="." %}</td><td>{{ p.ddd }}</td><td><a href="{{ p.source }}" rel="nofollow">page</a></td></tr>
+<tr><td>{{ p.carrier }}</td><td>{{ p.pack }}</td><td>R${% include brl.html v=p.price dec="." %}</td><td>{{ p.days }} day{% if p.days > 1 %}s{% endif %}</td><td>{% include brl.html v=gb dec="." %}</td><td>{{ p.ddd }}</td><td><a href="{{ p.source }}" rel="nofollow">{{ p.source | remove: "https://" | remove: "www." | split: "/" | first }}</a></td></tr>
 {%- endif -%}{%- endfor %}
 </tbody>
 </table>
@@ -53,7 +53,7 @@ Buying 5 GB or more at once, the carrier's price per GB is lower than Bump's. We
 <tr><td><strong>Bump</strong></td><td>maximum price</td><td>by use</td><td>never expires</td><td><strong>{% include brl.html v=bump_gb dec="." %}</strong></td><td>all</td><td>this page</td></tr>
 {%- for p in d.packs -%}{%- if p.size == "large" %}
 {%- assign gb = p.price | times: 1024.0 | divided_by: p.mb | round: 2 %}
-<tr><td>{{ p.carrier }}</td><td>{{ p.pack }}</td><td>R${% include brl.html v=p.price dec="." %}</td><td>{{ p.days }} days</td><td>{% include brl.html v=gb dec="." %}</td><td>{{ p.ddd }}</td><td><a href="{{ p.source }}" rel="nofollow">page</a></td></tr>
+<tr><td>{{ p.carrier }}</td><td>{{ p.pack }}</td><td>R${% include brl.html v=p.price dec="." %}</td><td>{{ p.days }} days</td><td>{% include brl.html v=gb dec="." %}</td><td>{{ p.ddd }}</td><td><a href="{{ p.source }}" rel="nofollow">{{ p.source | remove: "https://" | remove: "www." | split: "/" | first }}</a></td></tr>
 {%- endif -%}{%- endfor %}
 </tbody>
 </table>
