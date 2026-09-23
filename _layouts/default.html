@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %}
+  {%- include hreflang.html %}
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#10B981">
+  <meta name="msapplication-TileColor" content="#047857">
+  <meta name="theme-color" content="#10B981">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+        extend: {
+          colors: {
+            dark: '#0F172A',
+            accent: '#0EA5E9',
+            primary: '#10B981',
+            surface: '#F8FAFC',
+            'surface-hover': '#ECFDF5',
+            'dark-hover': '#1E293B',
+            'primary-hover': '#ECFDF5'
+          }
+        }
+      }
+    }
+  </script>
+  <style>#faq summary::-webkit-details-marker { display: none; }</style>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D5S0MC1TH9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-D5S0MC1TH9');
+  </script>
+  {%- if page.url == "/" %}
+  <script>
+    // Send Portuguese/Spanish readers to their page: a language they chose wins, else the browser language
+    var lang = localStorage.getItem('lang') || (navigator.language || '').slice(0, 2).toLowerCase();
+    if (lang === 'pt' || lang === 'es') window.location.replace('/' + lang + '/');
+  </script>
+  {%- endif %}
+</head>
+<body class="bg-dark">
+{% include nav.html %}
+{{ content }}
+{% include footer.html %}
+</body>
+</html>

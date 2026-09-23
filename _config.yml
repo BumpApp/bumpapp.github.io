@@ -1,0 +1,47 @@
+title: Bump
+tagline: Peer-to-peer mobile Internet sharing
+url: https://www.bumpapp.xyz
+lang: en
+theme: null
+logo: /android-chrome-256x256.png
+twitter:
+  username: bump_xyz
+  card: summary_large_image
+social:
+  name: Bump
+  links:
+    - https://www.instagram.com/bumpapp.xyz/
+    - https://www.instagram.com/bumpapp.brasil/
+    - https://www.twitter.com/bump_xyz/
+    - https://play.google.com/store/apps/details?id=xyz.bumpapp.prod
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+collections:
+  articles:
+    output: true
+    permalink: /:path/
+
+defaults:
+  - scope: { path: "" }
+    values:
+      layout: default
+      image: { path: /og-image.png, width: 1200, height: 630 }
+  - scope: { path: "", type: articles }
+    values: { layout: article }
+
+exclude:
+  - brand
+  - careers-old
+  - hotspot.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules
+  - README.md
+  - firebase-debug.log
+  - x-banner-debug.png
+  - .htmlvalidate.json
+  - .htmlvalidateignore

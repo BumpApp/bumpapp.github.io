@@ -1,0 +1,6 @@
+{%- if page.translations -%}
+{%- for t in page.translations %}
+  <link rel="alternate" hreflang="{{ t[0] }}" href="{{ t[1] | absolute_url }}">
+{%- endfor %}
+  <link rel="alternate" hreflang="x-default" href="{{ page.translations.en | default: page.translations.first[1] | absolute_url }}">
+{%- endif -%}
