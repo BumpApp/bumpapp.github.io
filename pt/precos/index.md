@@ -5,6 +5,7 @@ title: "Quanto custa 1 GB de internet no Brasil em 2026: Vivo, Claro, TIM vs Bum
 description: "Preço por GB dos pacotes pré-pagos da Vivo, Claro e TIM, com data de verificação e link para a página de cada operadora, comparado com o que você paga no Bump."
 date: 2026-09-23
 translations:
+  en: /prices/brazil/
   pt: /pt/precos/
 ---
 

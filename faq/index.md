@@ -45,7 +45,7 @@ Bluetooth and Wi-Fi Direct range: the same room, building, plaza or bus. Bump is
 
 ## How much does Internet cost on Bump?
 
-You pay per megabyte with Bump credits, at the price the sharer set, only for what you use. Credits can be bought with a credit card, with Pix in Brazil or with PSE in Colombia, starting from R$4 in Brazil and 10,000 COP in Colombia. Unlike most prepaid data packs, which expire within a month or less, the credits you buy never expire.
+You pay per megabyte with Bump credits, at the price the sharer set, only for what you use. Credits can be bought with a credit card, with Pix in Brazil or with PSE in Colombia, starting from R$4 in Brazil and 10,000 COP in Colombia. Unlike most prepaid data packs, which expire within a month or less, the credits you buy never expire. See [what 1 GB costs on Vivo, Claro and TIM](/prices/brazil/) compared with Bump.
 
 ## How do I earn money with Bump?
 
