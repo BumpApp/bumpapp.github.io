@@ -46,72 +46,49 @@ translations:
     </div>
   </div>
 
-  <div class="bg-dark py-12 md:py-24">
-    <div class="mx-auto max-w-xl px-6 lg:max-w-7xl lg:px-8 text-center">
-      <dl class="grid grid-cols-1 gap-16 lg:grid lg:grid-cols-3">
-        <div>
-          <img class="w-[200px] mx-auto" src="/assets/screens/en/hotspot@2x.png" width="388" height="768" alt="Sharing a hotspot with one phone connected">
-          <p class="mt-6 text-xl font-bold leading-8 text-white uppercase">Sharers</p>
-          <dd class="mt-2 text-base leading-7 text-gray-200 leading-relaxed">Share your mobile data or Wi-Fi with nearby users. Decide how much to share and earn rewards for every megabyte provided.</dd>
-        </div>
-
-        <div>
-          <img class="w-[200px] mx-auto" src="/assets/screens/en/nearby@2x.png" width="388" height="768" alt="Scanning for nearby hotspots">
-          <p class="mt-6 text-xl font-bold leading-8 text-white uppercase">Users</p>
-          <dd class="mt-2 text-base leading-7 text-gray-200 leading-relaxed">Find sharers via the network map, connect, and pay with low-cost Bump credits. Get online instantly through nearby providers.</dd>
-        </div>
-
-        <div>
-          <img class="w-[200px] mx-auto" src="/assets/screens/en/connected@2x.png" width="388" height="768" alt="Hotspot with active connection">
-          <p class="mt-6 text-xl font-bold leading-8 text-white uppercase">Connected</p>
-          <dd class="mt-2 text-base leading-7 text-gray-200 leading-relaxed">All connections are secured via VPN tunnels and encryption. Your data stays private through every hop in the network.</dd>
-        </div>
-      </dl>
-    </div>
-  </div>
-
-  <div class="bg-surface py-16 md:py-24">
+  <div id="how-it-works" class="bg-surface py-16 md:py-24">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="text-center max-w-3xl mx-auto">
         <h2 class="text-5xl md:text-7xl font-bold tracking-tight text-dark">How It Works</h2>
-        <p class="mt-6 text-xl text-gray-600 leading-relaxed">Bluetooth and Wi-Fi Direct power a peer-to-peer network that lets users share Internet connectivity with each other.</p>
+        <p class="mt-6 text-xl text-gray-600 leading-relaxed">Five things the app does, in the order you'll meet them.</p>
       </div>
-      <div class="mt-12 md:grid md:grid-cols-2 md:gap-12 lg:gap-20 items-center">
-        <div class="flex justify-center mb-10 md:mb-0">
-          <img class="w-[240px] lg:w-[280px]" src="/assets/screens/en/heatmap@2x.png" width="388" height="768" alt="Bump coverage heatmap showing nearby sharers">
-        </div>
-        <div class="grid grid-cols-1 gap-6">
-          <div class="rounded-2xl bg-white p-6 shadow-sm flex items-start gap-4">
-            <span class="material-icons-outlined text-primary" style="font-size: 36px;" aria-hidden="true">map</span>
-            <div>
-              <h3 class="text-lg font-bold text-dark">Discover</h3>
-              <p class="mt-1 text-sm text-gray-600 leading-relaxed">Bluetooth LE scans for nearby sharers and shows them on the coverage heatmap with signal strength and pricing.</p>
-            </div>
-          </div>
-          <div class="rounded-2xl bg-white p-6 shadow-sm flex items-start gap-4">
-            <span class="material-icons-outlined text-primary" style="font-size: 36px;" aria-hidden="true">speed</span>
-            <div>
-              <h3 class="text-lg font-bold text-dark">Connect</h3>
-              <p class="mt-1 text-sm text-gray-600 leading-relaxed">A Wi-Fi Direct connection is established phone-to-phone. The sharer's mobile data or external Wi-Fi is bridged to the user.</p>
-            </div>
-          </div>
-          <div class="rounded-2xl bg-white p-6 shadow-sm flex items-start gap-4">
-            <span class="material-icons-outlined text-primary" style="font-size: 36px;" aria-hidden="true">vpn_lock</span>
-            <div>
-              <h3 class="text-lg font-bold text-dark">Secured</h3>
-              <p class="mt-1 text-sm text-gray-600 leading-relaxed">All traffic flows through an encrypted VPN tunnel. Neither party can see the other's data — privacy is guaranteed by design.</p>
-            </div>
-          </div>
-          <div class="rounded-2xl bg-white p-6 shadow-sm flex items-start gap-4">
-            <span class="material-icons-outlined text-primary" style="font-size: 36px;" aria-hidden="true">forum</span>
-            <div>
-              <h3 class="text-lg font-bold text-dark">Message, even with no Internet</h3>
-              <p class="mt-1 text-sm text-gray-600 leading-relaxed">Messages travel phone to phone over Bluetooth. If the other person is out of range, the message waits on your phone and keeps moving through other Bump phones until it arrives, encrypted the whole way.</p>
-              <a href="/how-it-works/#chat-with-no-internet-at-all" class="mt-2 inline-block text-sm font-semibold text-primary hover:text-emerald-600">How chat works →</a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <ol class="mt-12 flex gap-6 overflow-x-auto snap-x snap-mandatory pb-4 -mx-6 px-6 lg:mx-0 lg:px-0 lg:grid lg:grid-cols-5 lg:overflow-visible">
+        <li class="snap-center shrink-0 w-[272px] lg:w-auto rounded-2xl bg-white p-6 shadow-sm flex flex-col items-center text-center">
+          <div class="flex h-[356px] items-end"><img class="w-[180px]" src="/assets/screens/en/hotspot@2x.png" width="388" height="768" alt="Share screen with the hotspot running and one phone connected" loading="lazy"></div>
+          <span class="mt-5 text-xs font-semibold uppercase tracking-wide text-primary">Step 1</span>
+          <h3 class="mt-1 text-lg font-bold text-dark">Share</h3>
+          <p class="mt-2 text-sm text-gray-600 leading-relaxed">Turn on sharing and choose how much data to give. Your phone becomes a hotspot for people nearby, and you approve each one.</p>
+          <a href="/how-it-works/#who-approves-and-data-limits" class="mt-auto pt-3 text-sm font-semibold text-primary hover:text-emerald-600">How sharing works →</a>
+        </li>
+        <li class="snap-center shrink-0 w-[272px] lg:w-auto rounded-2xl bg-white p-6 shadow-sm flex flex-col items-center text-center">
+          <div class="relative h-[356px] w-[180px]"><img class="absolute right-0 top-0 w-[140px]" src="/assets/screens/en/heatmap@2x.png" width="388" height="768" alt="Coverage map" loading="lazy"><img class="absolute left-0 bottom-0 w-[140px] rounded-[18px] shadow-lg" src="/assets/screens/en/nearby@2x.png" width="388" height="768" alt="Nearby list with a sharer and a Connect button" loading="lazy"></div>
+          <span class="mt-5 text-xs font-semibold uppercase tracking-wide text-primary">Step 2</span>
+          <h3 class="mt-1 text-lg font-bold text-dark">Discover</h3>
+          <p class="mt-2 text-sm text-gray-600 leading-relaxed">See who's sharing around you, with signal and price, in the list and on the coverage map.</p>
+          <a href="/how-it-works/#finding-a-sharer-bluetooth-and-the-coverage-map" class="mt-auto pt-3 text-sm font-semibold text-primary hover:text-emerald-600">How finding works →</a>
+        </li>
+        <li class="snap-center shrink-0 w-[272px] lg:w-auto rounded-2xl bg-white p-6 shadow-sm flex flex-col items-center text-center">
+          <div class="flex h-[356px] items-end"><img class="w-[180px]" src="/assets/screens/en/connected@2x.png" width="388" height="768" alt="Connected session showing speed and usage" loading="lazy"></div>
+          <span class="mt-5 text-xs font-semibold uppercase tracking-wide text-primary">Step 3</span>
+          <h3 class="mt-1 text-lg font-bold text-dark">Connect</h3>
+          <p class="mt-2 text-sm text-gray-600 leading-relaxed">One tap and your phone joins theirs directly. You pay by the megabyte, only for what you use, through an encrypted tunnel the sharer can't read.</p>
+          <a href="/how-it-works/#the-tunnel-what-the-sharer-can-and-cannot-see" class="mt-auto pt-3 text-sm font-semibold text-primary hover:text-emerald-600">How the tunnel works →</a>
+        </li>
+        <li class="snap-center shrink-0 w-[272px] lg:w-auto rounded-2xl bg-white p-6 shadow-sm flex flex-col items-center text-center">
+          <div class="flex h-[356px] items-end"><img class="w-[180px]" src="/assets/screens/en/chat-thread@2x.png" width="388" height="768" alt="A chat conversation" loading="lazy"></div>
+          <span class="mt-5 text-xs font-semibold uppercase tracking-wide text-primary">Step 4</span>
+          <h3 class="mt-1 text-lg font-bold text-dark">Chat with no Internet</h3>
+          <p class="mt-2 text-sm text-gray-600 leading-relaxed">Messages travel phone to phone over Bluetooth. If the other person is out of range, the message waits on your phone and keeps moving through other Bump phones until it arrives, encrypted the whole way.</p>
+          <a href="/how-it-works/#chat-with-no-internet-at-all" class="mt-auto pt-3 text-sm font-semibold text-primary hover:text-emerald-600">How chat works →</a>
+        </li>
+        <li class="snap-center shrink-0 w-[272px] lg:w-auto rounded-2xl bg-white p-6 shadow-sm flex flex-col items-center text-center">
+          <div class="flex h-[356px] items-end"><img class="w-[180px]" src="/assets/screens/en/challenges@2x.png" width="388" height="768" alt="Challenges page with daily goals" loading="lazy"></div>
+          <span class="mt-5 text-xs font-semibold uppercase tracking-wide text-primary">Step 5</span>
+          <h3 class="mt-1 text-lg font-bold text-dark">Earn</h3>
+          <p class="mt-2 text-sm text-gray-600 leading-relaxed">Points for every megabyte you carry, plus challenges and bounties for covering places that need it. Cash out with Pix or Bre-B.</p>
+          <a href="/how-it-works/#credits-and-reward-points" class="mt-auto pt-3 text-sm font-semibold text-primary hover:text-emerald-600">How rewards work →</a>
+        </li>
+      </ol>
     </div>
   </div>
 

@@ -18,16 +18,17 @@ mkdir -p "$out"
 : "${HEATMAP_RE:=Open Heatmap|Abrir Mapa de Calor|Abrir mapa de calor}"
 : "${CHALLENGES_RE:=^(Challenges|Desafios|Desafíos)$}"
 : "${CHAT_ROW_RE:=FastWeasel6771|DeliriousPuffin2853}"
+: "${SPEEDTEST_RE:=^(Speed Test|Teste de Velocidade|Teste de velocidade|Prueba de velocidad|Test de velocidad)$}"
 
 A() { adb -s "$1" "${@:2}"; }
 demo() { A "$1" shell am broadcast -a com.android.systemui.demo -e command "${@:2}" >/dev/null; }
-prep() { # <serial>: set the app locale, relaunch, put the status bar in demo mode
+prep() { # <serial> <mobile:show|hide> <wifi:show|hide>: set the app locale, relaunch, put the status bar in demo mode
   A "$1" shell settings put global sysui_demo_allowed 1; A "$1" shell settings put global sysui_tuner_demo_on 1
   A "$1" shell cmd locale set-app-locales $pkg --user 0 --locales "$lang"
   A "$1" shell am force-stop $pkg
   A "$1" shell monkey -p $pkg -c android.intent.category.LAUNCHER 1 >/dev/null 2>&1; sleep 7
   demo "$1" enter; demo "$1" clock -e hhmm 0941; demo "$1" battery -e level 100 -e plugged false
-  demo "$1" network -e wifi show -e level 4 -e fully true; demo "$1" network -e mobile show -e datatype lte -e level 4
+  demo "$1" network -e wifi "$3" -e level 4 -e fully true; demo "$1" network -e mobile "$2" -e datatype lte -e level 4
   demo "$1" notifications -e visible false; demo "$1" status -e volume hide -e bluetooth hide -e mute hide
   $UI "$1" tap "^OK$" >/dev/null 2>&1 && sleep 1 || true
 }
@@ -42,7 +43,7 @@ tab() { # <serial> <index 0-3> [sleep]
 shot() { A "$1" exec-out screencap -p > "$out/$2.png"; echo "  $2 (from $1)"; }
 need() { $UI "$1" tap "$2" >/dev/null || { echo "'$2' not found on $1; texts:" >&2; $UI "$1" texts | tr '\n' ' ' >&2; echo >&2; exit 1; }; }
 
-echo "== $lang: prep"; prep "$sh"; prep "$cl"
+echo "== $lang: prep"; prep "$sh" show show; prep "$cl" hide hide   # the client has no LTE: that is why it uses Bump
 
 echo "== sharer: start hotspot"
 tab "$sh" 1 3
@@ -51,12 +52,10 @@ need "$sh" "$START_RE"; sleep 12
 demo "$sh" network -e wifi show -e level 4 -e fully true; demo "$sh" network -e mobile show -e datatype lte -e level 4
 demo "$sh" battery -e level 100 -e plugged false; demo "$sh" status -e volume hide -e bluetooth hide -e mute hide
 
-echo "== client: nearby + heatmap"
+echo "== client: nearby"
 tab "$cl" 0 3
 $UI "$cl" tap "^(Scan for Network|Procurar Rede|Buscar red)" >/dev/null 2>&1 && sleep 8 || true
 shot "$cl" nearby
-need "$cl" "$HEATMAP_RE"; sleep 10; shot "$cl" heatmap
-A "$cl" shell input keyevent BACK; sleep 2; tab "$cl" 0 3
 
 echo "== client: connect"
 # The client must not be joined to any real Wi-Fi network (the app refuses to connect while it is), but
@@ -76,11 +75,29 @@ for i in $(seq 1 24); do
   sleep 5
 done
 $UI "$cl" texts | grep -qE "^\"(Connected to|Conectado a|Conectado com|Conectado à)" && echo "  session up after ~$((i*5))s" || echo "  warning: still connecting after 120s" >&2
-sleep 5
-shot "$cl" connected
+demo "$cl" network -e wifi show -e level 4 -e fully true   # now on the sharer's Wi-Fi Direct group
+sleep 3
+
+echo "== client: speed test + connected"
+# The meter only moves while the speed test runs (a few seconds), so capture a burst and keep the highest reading.
+A "$cl" shell input swipe 540 1900 540 700 400; sleep 1
+need "$cl" "$SPEEDTEST_RE"
+A "$cl" shell input swipe 540 700 540 1900 400
+best=0; bestf=""
+for k in 1 2 3 4 5 6; do
+  A "$cl" exec-out screencap -p > "$out/.st$k.png"
+  v=$($UI "$cl" texts | grep -m1 -E '^"[0-9]+([.,][0-9])?"$' | tr -d '"' | tr ',' '.')
+  if awk -v a="${v:-0}" -v b="$best" 'BEGIN{exit !(a>b)}'; then best=$v; bestf="$out/.st$k.png"; fi
+done
+[ -n "$bestf" ] && mv "$bestf" "$out/connected.png" || cp "$out/.st1.png" "$out/connected.png"
+rm -f "$out"/.st*.png; echo "  connected (from $cl, meter $best Mbps)"
 shot "$sh" hotspot
-$UI "$cl" tap "$DISCONNECT_RE" >/dev/null 2>&1 || A "$cl" shell input keyevent BACK; sleep 3
-$UI "$sh" tap "$STOP_RE" >/dev/null 2>&1 && echo "  hotspot stopped" || echo "  warning: stop label not found on sharer" >&2
+
+echo "== client: heatmap (needs Internet, which the session provides)"
+$UI "$cl" tap "^(Back|Voltar|Atrás|Volver)$" >/dev/null 2>&1 || A "$cl" shell input keyevent BACK   # session screen -> Nearby list
+sleep 3
+need "$cl" "$HEATMAP_RE"; sleep 12; shot "$cl" heatmap
+A "$cl" shell input keyevent BACK; sleep 2
 
 echo "== client: chat"
 tab "$cl" 2 3; shot "$cl" chat-list
@@ -92,6 +109,9 @@ tab "$cl" 3 3
 A "$cl" shell input swipe 540 1800 540 600 400; sleep 2
 need "$cl" "$CHALLENGES_RE"; sleep 4; shot "$cl" challenges
 A "$cl" shell input keyevent BACK; sleep 1
+
+echo "== stop"
 tab "$cl" 0 1
+$UI "$sh" tap "$STOP_RE" >/dev/null 2>&1 && echo "  hotspot stopped" || echo "  warning: stop label not found on sharer" >&2
 demo "$sh" exit; demo "$cl" exit
 echo "== $lang done: $out"

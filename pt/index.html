@@ -43,72 +43,49 @@ translations:
     </div>
   </div>
 
-  <div class="bg-dark py-12 md:py-24">
-    <div class="mx-auto max-w-xl px-6 lg:max-w-7xl lg:px-8 text-center">
-      <dl class="grid grid-cols-1 gap-16 lg:grid lg:grid-cols-3">
-        <div>
-          <img class="w-[200px] mx-auto" src="/assets/screens/pt/hotspot@2x.png" width="388" height="768" alt="Compartilhando hotspot com um celular conectado">
-          <p class="mt-6 text-xl font-bold leading-8 text-white uppercase">Compartilhadores</p>
-          <dd class="mt-2 text-base leading-7 text-gray-200 leading-relaxed">Compartilhe seus dados móveis ou Wi-Fi com usuários próximos. Decida quanto compartilhar e ganhe recompensas por cada megabyte fornecido.</dd>
-        </div>
-
-        <div>
-          <img class="w-[200px] mx-auto" src="/assets/screens/pt/nearby@2x.png" width="388" height="768" alt="Buscando hotspots próximos">
-          <p class="mt-6 text-xl font-bold leading-8 text-white uppercase">Usuários</p>
-          <dd class="mt-2 text-base leading-7 text-gray-200 leading-relaxed">Encontre compartilhadores pelo mapa da rede, conecte-se e pague com creditos Bump de baixo custo. Fique online instantaneamente.</dd>
-        </div>
-
-        <div>
-          <img class="w-[200px] mx-auto" src="/assets/screens/pt/connected@2x.png" width="388" height="768" alt="Conexao ativa">
-          <p class="mt-6 text-xl font-bold leading-8 text-white uppercase">Conectado</p>
-          <dd class="mt-2 text-base leading-7 text-gray-200 leading-relaxed">Todas as conexões são protegidas por túneis VPN e criptografia. Seus dados permanecem privados em cada etapa da rede.</dd>
-        </div>
-      </dl>
-    </div>
-  </div>
-
-  <div class="bg-surface py-16 md:py-24">
+  <div id="how-it-works" class="bg-surface py-16 md:py-24">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="text-center max-w-3xl mx-auto">
         <h2 class="text-5xl md:text-7xl font-bold tracking-tight text-dark">Como Funciona</h2>
-        <p class="mt-6 text-xl text-gray-600 leading-relaxed">Bluetooth e Wi-Fi Direct criam uma rede ponto a ponto que permite aos usuários compartilhar conectividade entre si.</p>
+        <p class="mt-6 text-xl text-gray-600 leading-relaxed">Cinco coisas que o app faz, na ordem em que você vai encontrá-las.</p>
       </div>
-      <div class="mt-12 md:grid md:grid-cols-2 md:gap-12 lg:gap-20 items-center">
-        <div class="flex justify-center mb-10 md:mb-0">
-          <img class="w-[240px] lg:w-[280px]" src="/assets/screens/pt/heatmap@2x.png" width="388" height="768" alt="Mapa de cobertura do Bump">
-        </div>
-        <div class="grid grid-cols-1 gap-6">
-          <div class="rounded-2xl bg-white p-6 shadow-sm flex items-start gap-4">
-            <span class="material-icons-outlined text-primary" style="font-size: 36px;" aria-hidden="true">map</span>
-            <div>
-              <h3 class="text-lg font-bold text-dark">Descobrir</h3>
-              <p class="mt-1 text-sm text-gray-600 leading-relaxed">O Bluetooth LE busca compartilhadores próximos e os exibe no mapa de cobertura com intensidade de sinal e preços.</p>
-            </div>
-          </div>
-          <div class="rounded-2xl bg-white p-6 shadow-sm flex items-start gap-4">
-            <span class="material-icons-outlined text-primary" style="font-size: 36px;" aria-hidden="true">speed</span>
-            <div>
-              <h3 class="text-lg font-bold text-dark">Conectar</h3>
-              <p class="mt-1 text-sm text-gray-600 leading-relaxed">Uma conexão Wi-Fi Direct é estabelecida entre os celulares. Os dados móveis ou Wi-Fi externo do compartilhador são transmitidos ao usuário.</p>
-            </div>
-          </div>
-          <div class="rounded-2xl bg-white p-6 shadow-sm flex items-start gap-4">
-            <span class="material-icons-outlined text-primary" style="font-size: 36px;" aria-hidden="true">vpn_lock</span>
-            <div>
-              <h3 class="text-lg font-bold text-dark">Seguro</h3>
-              <p class="mt-1 text-sm text-gray-600 leading-relaxed">Todo o trafego passa por um tunel VPN criptografado. Nenhuma das partes pode ver os dados da outra — privacidade garantida por design.</p>
-            </div>
-          </div>
-          <div class="rounded-2xl bg-white p-6 shadow-sm flex items-start gap-4">
-            <span class="material-icons-outlined text-primary" style="font-size: 36px;" aria-hidden="true">forum</span>
-            <div>
-              <h3 class="text-lg font-bold text-dark">Mensagens, mesmo sem Internet</h3>
-              <p class="mt-1 text-sm text-gray-600 leading-relaxed">As mensagens vão de celular a celular por Bluetooth. Se a outra pessoa está fora do alcance, a mensagem espera no seu celular e segue passando por outros celulares com Bump até chegar, criptografada o caminho todo.</p>
-              <a href="/pt/how-it-works/#chat-sem-nenhuma-internet" class="mt-2 inline-block text-sm font-semibold text-primary hover:text-emerald-600">Como o chat funciona →</a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <ol class="mt-12 flex gap-6 overflow-x-auto snap-x snap-mandatory pb-4 -mx-6 px-6 lg:mx-0 lg:px-0 lg:grid lg:grid-cols-5 lg:overflow-visible">
+        <li class="snap-center shrink-0 w-[272px] lg:w-auto rounded-2xl bg-white p-6 shadow-sm flex flex-col items-center text-center">
+          <div class="flex h-[356px] items-end"><img class="w-[180px]" src="/assets/screens/pt/hotspot@2x.png" width="388" height="768" alt="Tela de compartilhamento com o hotspot ligado e um celular conectado" loading="lazy"></div>
+          <span class="mt-5 text-xs font-semibold uppercase tracking-wide text-primary">Passo 1</span>
+          <h3 class="mt-1 text-lg font-bold text-dark">Compartilhe</h3>
+          <p class="mt-2 text-sm text-gray-600 leading-relaxed">Ative o compartilhamento e escolha quantos dados quer oferecer. Seu celular vira um hotspot para quem está perto, e você aprova cada pessoa.</p>
+          <a href="/pt/how-it-works/#quem-aprova-e-os-limites-de-dados" class="mt-auto pt-3 text-sm font-semibold text-primary hover:text-emerald-600">Como funciona o compartilhamento →</a>
+        </li>
+        <li class="snap-center shrink-0 w-[272px] lg:w-auto rounded-2xl bg-white p-6 shadow-sm flex flex-col items-center text-center">
+          <div class="relative h-[356px] w-[180px]"><img class="absolute right-0 top-0 w-[140px]" src="/assets/screens/pt/heatmap@2x.png" width="388" height="768" alt="Mapa de cobertura" loading="lazy"><img class="absolute left-0 bottom-0 w-[140px] rounded-[18px] shadow-lg" src="/assets/screens/pt/nearby@2x.png" width="388" height="768" alt="Lista de usuários próximos com um botão Conectar" loading="lazy"></div>
+          <span class="mt-5 text-xs font-semibold uppercase tracking-wide text-primary">Passo 2</span>
+          <h3 class="mt-1 text-lg font-bold text-dark">Encontre</h3>
+          <p class="mt-2 text-sm text-gray-600 leading-relaxed">Veja quem está compartilhando ao seu redor, com sinal e preço, na lista e no mapa de cobertura.</p>
+          <a href="/pt/how-it-works/#encontrando-quem-compartilha-bluetooth-e-o-mapa-de-cobertura" class="mt-auto pt-3 text-sm font-semibold text-primary hover:text-emerald-600">Como funciona a busca →</a>
+        </li>
+        <li class="snap-center shrink-0 w-[272px] lg:w-auto rounded-2xl bg-white p-6 shadow-sm flex flex-col items-center text-center">
+          <div class="flex h-[356px] items-end"><img class="w-[180px]" src="/assets/screens/pt/connected@2x.png" width="388" height="768" alt="Sessão conectada mostrando velocidade e uso" loading="lazy"></div>
+          <span class="mt-5 text-xs font-semibold uppercase tracking-wide text-primary">Passo 3</span>
+          <h3 class="mt-1 text-lg font-bold text-dark">Conecte</h3>
+          <p class="mt-2 text-sm text-gray-600 leading-relaxed">Um toque e seu celular se liga direto ao dele. Você paga por megabyte, só pelo que usar, por um túnel criptografado que quem compartilha não consegue ler.</p>
+          <a href="/pt/how-it-works/#o-túnel-o-que-quem-compartilha-vê-e-o-que-não-vê" class="mt-auto pt-3 text-sm font-semibold text-primary hover:text-emerald-600">Como funciona o túnel →</a>
+        </li>
+        <li class="snap-center shrink-0 w-[272px] lg:w-auto rounded-2xl bg-white p-6 shadow-sm flex flex-col items-center text-center">
+          <div class="flex h-[356px] items-end"><img class="w-[180px]" src="/assets/screens/pt/chat-thread@2x.png" width="388" height="768" alt="Uma conversa no chat" loading="lazy"></div>
+          <span class="mt-5 text-xs font-semibold uppercase tracking-wide text-primary">Passo 4</span>
+          <h3 class="mt-1 text-lg font-bold text-dark">Converse sem Internet</h3>
+          <p class="mt-2 text-sm text-gray-600 leading-relaxed">As mensagens vão de celular a celular por Bluetooth. Se a outra pessoa está fora do alcance, a mensagem espera no seu celular e segue passando por outros celulares com Bump até chegar, criptografada o caminho todo.</p>
+          <a href="/pt/how-it-works/#chat-sem-nenhuma-internet" class="mt-auto pt-3 text-sm font-semibold text-primary hover:text-emerald-600">Como o chat funciona →</a>
+        </li>
+        <li class="snap-center shrink-0 w-[272px] lg:w-auto rounded-2xl bg-white p-6 shadow-sm flex flex-col items-center text-center">
+          <div class="flex h-[356px] items-end"><img class="w-[180px]" src="/assets/screens/pt/challenges@2x.png" width="388" height="768" alt="Página de desafios com metas do dia" loading="lazy"></div>
+          <span class="mt-5 text-xs font-semibold uppercase tracking-wide text-primary">Passo 5</span>
+          <h3 class="mt-1 text-lg font-bold text-dark">Ganhe</h3>
+          <p class="mt-2 text-sm text-gray-600 leading-relaxed">Pontos por cada megabyte que passa pelo seu celular, mais desafios e recompensas por cobrir lugares que precisam. Saque via Pix.</p>
+          <a href="/pt/how-it-works/#créditos-e-pontos-de-recompensa" class="mt-auto pt-3 text-sm font-semibold text-primary hover:text-emerald-600">Como funcionam as recompensas →</a>
+        </li>
+      </ol>
     </div>
   </div>
 

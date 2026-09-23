@@ -29,15 +29,18 @@ permissions granted. Then, per language:
 ```
 
 `web.sh` reuses `../play-screenshots/ui.sh`. It switches the app locale per phone
-(`cmd locale set-app-locales`), starts the sharer's hotspot, and on the client: captures the Find tab
-and the heatmap, requests a connection, waits for the Wi-Fi Direct stage (tapping the app's
-"Hurry Up" button when Wi-Fi scanning is throttled), captures both phones, disconnects, then
-captures chat and challenges. Button labels are regexes at the top of the script; add to them when
-a language fails, and the script prints the screen's texts when it can't find one.
+(`cmd locale set-app-locales`), puts both status bars in demo mode (the client with no LTE and no
+Wi-Fi icon: it has no connection of its own, which is why it uses Bump), starts the sharer's
+hotspot, and on the client: captures the Find tab, requests a connection, waits for the Wi-Fi Direct
+stage (tapping the app's "Hurry Up" button when Wi-Fi scanning is throttled), runs the app's Speed
+Test and keeps the frame with the highest meter reading, captures the sharer's screen, then, still
+connected so the phone has Internet, captures the heatmap, chat and challenges. Button labels are
+regexes at the top of the script; add to them when a language fails, and the script prints the
+screen's texts when it can't find one.
 
 Two things to know:
 
 - **The client must not be joined to any Wi-Fi network**, or the app refuses to connect. `web.sh`
   forgets every saved network on the client and does not restore them. The sharer keeps its Wi-Fi.
 - **The Pixel 7a ignores demo mode** for its signal and battery icons (the clock does apply), so
-  `make.sh` pastes the client's status-bar strip onto the hotspot shot.
+  `make.sh` pastes `bar.png`, a demo-mode status bar captured once on the client, onto the hotspot shot.

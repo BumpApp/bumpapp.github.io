@@ -43,72 +43,49 @@ translations:
     </div>
   </div>
 
-  <div class="bg-dark py-12 md:py-24">
-    <div class="mx-auto max-w-xl px-6 lg:max-w-7xl lg:px-8 text-center">
-      <dl class="grid grid-cols-1 gap-16 lg:grid lg:grid-cols-3">
-        <div>
-          <img class="w-[200px] mx-auto" src="/assets/screens/es/hotspot@2x.png" width="388" height="768" alt="Compartiendo hotspot con un celular conectado">
-          <p class="mt-6 text-xl font-bold leading-8 text-white uppercase">Quienes comparten</p>
-          <dd class="mt-2 text-base leading-7 text-gray-200 leading-relaxed">Comparte tus datos móviles o Wi-Fi con usuarios cercanos. Decide cuánto compartir y gana recompensas por cada megabyte que ofreces.</dd>
-        </div>
-
-        <div>
-          <img class="w-[200px] mx-auto" src="/assets/screens/es/nearby@2x.png" width="388" height="768" alt="Buscando hotspots cercanos">
-          <p class="mt-6 text-xl font-bold leading-8 text-white uppercase">Usuarios</p>
-          <dd class="mt-2 text-base leading-7 text-gray-200 leading-relaxed">Encuentra a quienes comparten en el mapa de la red, conéctate y paga con créditos Bump de bajo costo. Conéctate al instante.</dd>
-        </div>
-
-        <div>
-          <img class="w-[200px] mx-auto" src="/assets/screens/es/connected@2x.png" width="388" height="768" alt="Conexión activa">
-          <p class="mt-6 text-xl font-bold leading-8 text-white uppercase">Conectado</p>
-          <dd class="mt-2 text-base leading-7 text-gray-200 leading-relaxed">Todas las conexiones están protegidas por túneles VPN y cifrado. Tus datos permanecen privados en cada salto de la red.</dd>
-        </div>
-      </dl>
-    </div>
-  </div>
-
-  <div class="bg-surface py-16 md:py-24">
+  <div id="how-it-works" class="bg-surface py-16 md:py-24">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="text-center max-w-3xl mx-auto">
         <h2 class="text-5xl md:text-7xl font-bold tracking-tight text-dark">Cómo Funciona</h2>
-        <p class="mt-6 text-xl text-gray-600 leading-relaxed">Bluetooth y Wi-Fi Direct crean una red entre pares que permite a los usuarios compartir conectividad entre sí.</p>
+        <p class="mt-6 text-xl text-gray-600 leading-relaxed">Cinco cosas que hace la app, en el orden en que te las vas a encontrar.</p>
       </div>
-      <div class="mt-12 md:grid md:grid-cols-2 md:gap-12 lg:gap-20 items-center">
-        <div class="flex justify-center mb-10 md:mb-0">
-          <img class="w-[240px] lg:w-[280px]" src="/assets/screens/es/heatmap@2x.png" width="388" height="768" alt="Mapa de cobertura de Bump">
-        </div>
-        <div class="grid grid-cols-1 gap-6">
-          <div class="rounded-2xl bg-white p-6 shadow-sm flex items-start gap-4">
-            <span class="material-icons-outlined text-primary" style="font-size: 36px;" aria-hidden="true">map</span>
-            <div>
-              <h3 class="text-lg font-bold text-dark">Descubrir</h3>
-              <p class="mt-1 text-sm text-gray-600 leading-relaxed">Bluetooth LE busca a quienes comparten cerca y los muestra en el mapa de cobertura con intensidad de señal y precios.</p>
-            </div>
-          </div>
-          <div class="rounded-2xl bg-white p-6 shadow-sm flex items-start gap-4">
-            <span class="material-icons-outlined text-primary" style="font-size: 36px;" aria-hidden="true">speed</span>
-            <div>
-              <h3 class="text-lg font-bold text-dark">Conectar</h3>
-              <p class="mt-1 text-sm text-gray-600 leading-relaxed">Se establece una conexión Wi-Fi Direct entre los celulares. Los datos móviles o el Wi-Fi externo de quien comparte se transmiten al usuario.</p>
-            </div>
-          </div>
-          <div class="rounded-2xl bg-white p-6 shadow-sm flex items-start gap-4">
-            <span class="material-icons-outlined text-primary" style="font-size: 36px;" aria-hidden="true">vpn_lock</span>
-            <div>
-              <h3 class="text-lg font-bold text-dark">Seguro</h3>
-              <p class="mt-1 text-sm text-gray-600 leading-relaxed">Todo el tráfico pasa por un túnel VPN cifrado. Ninguna de las partes puede ver los datos de la otra: privacidad garantizada por diseño.</p>
-            </div>
-          </div>
-          <div class="rounded-2xl bg-white p-6 shadow-sm flex items-start gap-4">
-            <span class="material-icons-outlined text-primary" style="font-size: 36px;" aria-hidden="true">forum</span>
-            <div>
-              <h3 class="text-lg font-bold text-dark">Mensajes, incluso sin Internet</h3>
-              <p class="mt-1 text-sm text-gray-600 leading-relaxed">Los mensajes van de celular a celular por Bluetooth. Si la otra persona está fuera de alcance, el mensaje espera en tu celular y sigue pasando por otros celulares con Bump hasta llegar, cifrado todo el camino.</p>
-              <a href="/es/how-it-works/#chat-sin-nada-de-internet" class="mt-2 inline-block text-sm font-semibold text-primary hover:text-emerald-600">Cómo funciona el chat →</a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <ol class="mt-12 flex gap-6 overflow-x-auto snap-x snap-mandatory pb-4 -mx-6 px-6 lg:mx-0 lg:px-0 lg:grid lg:grid-cols-5 lg:overflow-visible">
+        <li class="snap-center shrink-0 w-[272px] lg:w-auto rounded-2xl bg-white p-6 shadow-sm flex flex-col items-center text-center">
+          <div class="flex h-[356px] items-end"><img class="w-[180px]" src="/assets/screens/es/hotspot@2x.png" width="388" height="768" alt="Pantalla de compartir con el hotspot encendido y un celular conectado" loading="lazy"></div>
+          <span class="mt-5 text-xs font-semibold uppercase tracking-wide text-primary">Paso 1</span>
+          <h3 class="mt-1 text-lg font-bold text-dark">Comparte</h3>
+          <p class="mt-2 text-sm text-gray-600 leading-relaxed">Activa el compartir y elige cuántos datos quieres dar. Tu celular se vuelve un hotspot para quienes están cerca, y tú apruebas a cada persona.</p>
+          <a href="/es/how-it-works/#quién-aprueba-y-los-límites-de-datos" class="mt-auto pt-3 text-sm font-semibold text-primary hover:text-emerald-600">Cómo funciona compartir →</a>
+        </li>
+        <li class="snap-center shrink-0 w-[272px] lg:w-auto rounded-2xl bg-white p-6 shadow-sm flex flex-col items-center text-center">
+          <div class="relative h-[356px] w-[180px]"><img class="absolute right-0 top-0 w-[140px]" src="/assets/screens/es/heatmap@2x.png" width="388" height="768" alt="Mapa de cobertura" loading="lazy"><img class="absolute left-0 bottom-0 w-[140px] rounded-[18px] shadow-lg" src="/assets/screens/es/nearby@2x.png" width="388" height="768" alt="Lista de usuarios cercanos con un botón Conectar" loading="lazy"></div>
+          <span class="mt-5 text-xs font-semibold uppercase tracking-wide text-primary">Paso 2</span>
+          <h3 class="mt-1 text-lg font-bold text-dark">Encuentra</h3>
+          <p class="mt-2 text-sm text-gray-600 leading-relaxed">Mira quién está compartiendo a tu alrededor, con señal y precio, en la lista y en el mapa de cobertura.</p>
+          <a href="/es/how-it-works/#encontrar-a-quien-comparte-bluetooth-y-el-mapa-de-cobertura" class="mt-auto pt-3 text-sm font-semibold text-primary hover:text-emerald-600">Cómo funciona la búsqueda →</a>
+        </li>
+        <li class="snap-center shrink-0 w-[272px] lg:w-auto rounded-2xl bg-white p-6 shadow-sm flex flex-col items-center text-center">
+          <div class="flex h-[356px] items-end"><img class="w-[180px]" src="/assets/screens/es/connected@2x.png" width="388" height="768" alt="Sesión conectada mostrando velocidad y uso" loading="lazy"></div>
+          <span class="mt-5 text-xs font-semibold uppercase tracking-wide text-primary">Paso 3</span>
+          <h3 class="mt-1 text-lg font-bold text-dark">Conecta</h3>
+          <p class="mt-2 text-sm text-gray-600 leading-relaxed">Un toque y tu celular se une directo al suyo. Pagas por megabyte, solo lo que usas, por un túnel cifrado que quien comparte no puede leer.</p>
+          <a href="/es/how-it-works/#el-túnel-qué-puede-ver-quien-comparte-y-qué-no" class="mt-auto pt-3 text-sm font-semibold text-primary hover:text-emerald-600">Cómo funciona el túnel →</a>
+        </li>
+        <li class="snap-center shrink-0 w-[272px] lg:w-auto rounded-2xl bg-white p-6 shadow-sm flex flex-col items-center text-center">
+          <div class="flex h-[356px] items-end"><img class="w-[180px]" src="/assets/screens/es/chat-thread@2x.png" width="388" height="768" alt="Una conversación en el chat" loading="lazy"></div>
+          <span class="mt-5 text-xs font-semibold uppercase tracking-wide text-primary">Paso 4</span>
+          <h3 class="mt-1 text-lg font-bold text-dark">Chatea sin Internet</h3>
+          <p class="mt-2 text-sm text-gray-600 leading-relaxed">Los mensajes van de celular a celular por Bluetooth. Si la otra persona está fuera de alcance, el mensaje espera en tu celular y sigue pasando por otros celulares con Bump hasta llegar, cifrado todo el camino.</p>
+          <a href="/es/how-it-works/#chat-sin-nada-de-internet" class="mt-auto pt-3 text-sm font-semibold text-primary hover:text-emerald-600">Cómo funciona el chat →</a>
+        </li>
+        <li class="snap-center shrink-0 w-[272px] lg:w-auto rounded-2xl bg-white p-6 shadow-sm flex flex-col items-center text-center">
+          <div class="flex h-[356px] items-end"><img class="w-[180px]" src="/assets/screens/es/challenges@2x.png" width="388" height="768" alt="Página de desafíos con metas del día" loading="lazy"></div>
+          <span class="mt-5 text-xs font-semibold uppercase tracking-wide text-primary">Paso 5</span>
+          <h3 class="mt-1 text-lg font-bold text-dark">Gana</h3>
+          <p class="mt-2 text-sm text-gray-600 leading-relaxed">Puntos por cada megabyte que pasa por tu celular, más desafíos y recompensas por cubrir lugares que lo necesitan. Retira por Bre-B.</p>
+          <a href="/es/how-it-works/#créditos-y-puntos-de-recompensa" class="mt-auto pt-3 text-sm font-semibold text-primary hover:text-emerald-600">Cómo funcionan las recompensas →</a>
+        </li>
+      </ol>
     </div>
   </div>
 
