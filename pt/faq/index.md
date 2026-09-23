@@ -31,7 +31,7 @@ Se ainda não há ninguém compartilhando perto de você, o mapa vai estar vazio
 
 ## O Bump é seguro? Quem compartilha vê o que eu acesso?
 
-Não. Todo o seu tráfego passa por um túnel VPN criptografado do seu celular até a Internet. O celular de quem compartilha só repassa bytes embaralhados. Ele vê quantos dados você usou, não o que você fez com eles. Você também não vê o dele. A privacidade faz parte do projeto, não é uma opção.
+Sim, o Bump é seguro. E não, quem compartilha não vê o que você acessa. Todo o seu tráfego passa por um túnel VPN criptografado do seu celular até a Internet. O celular de quem compartilha só repassa bytes embaralhados. Ele vê quantos dados você usou, não o que você fez com eles. Você também não vê o dele. A privacidade faz parte do projeto, não é uma opção.
 
 ## Não vão acabar com o meu plano de dados se eu compartilhar?
 

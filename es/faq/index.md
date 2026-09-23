@@ -31,7 +31,7 @@ Si todavía nadie comparte cerca de ti, el mapa estará vacío. No es una falla.
 
 ## ¿Bump es seguro? ¿Quien comparte puede ver lo que hago en Internet?
 
-No. Todo tu tráfico va dentro de un túnel VPN cifrado desde tu celular hasta Internet. El celular de quien comparte solo retransmite bytes cifrados. Puede ver cuántos datos usaste, no qué hiciste con ellos. Tú tampoco puedes ver lo suyo. La privacidad es parte del diseño, no una opción.
+Sí, Bump es seguro. Y no, quien comparte no puede ver lo que haces en Internet. Todo tu tráfico va dentro de un túnel VPN cifrado desde tu celular hasta Internet. El celular de quien comparte solo retransmite bytes cifrados. Puede ver cuántos datos usaste, no qué hiciste con ellos. Tú tampoco puedes ver lo suyo. La privacidad es parte del diseño, no una opción.
 
 ## ¿No me van a acabar el plan de datos si comparto?
 

@@ -31,7 +31,7 @@ If nobody is sharing near you yet, the map will be empty. That is not a fault. T
 
 ## Is Bump safe? Can the person sharing see what I do online?
 
-No. All of your traffic runs inside an encrypted VPN tunnel from your phone to the Internet. The sharer's phone only relays scrambled bytes. They can see how much data you used, not what it was. You cannot see theirs either. Privacy is part of the design, not an option.
+Yes, Bump is safe. And no, the person sharing cannot see what you do online. All of your traffic runs inside an encrypted VPN tunnel from your phone to the Internet. The sharer's phone only relays scrambled bytes. They can see how much data you used, not what it was. You cannot see theirs either. Privacy is part of the design, not an option.
 
 ## Won't people drain my data plan if I share?
 
