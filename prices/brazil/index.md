@@ -66,6 +66,14 @@ The math changes when you look at what you actually use. The pack costs the same
 
 {% include precos-scatter.html lang="en" %}
 
+## Why Bump's price sits where it does
+
+The two charts show a gap between the carriers' own prices: someone buying 25 GB pays R$1.20 per GB; someone buying 200 MB pays R$25. Bump is designed to fit in that gap.
+
+A person with a big plan they don't use up can share the surplus through the app. Every megabyte that passes through their phone earns points, which convert to cash via Pix. Their GB cost them R$1.20 or less, so sharing it for up to R${% include brl.html v=bump_gb dec="." %} is income from data that would otherwise have expired unused.
+
+A person who just needs a little data right now gets that same GB for at most R${% include brl.html v=bump_gb dec="." %} instead of the R$20 to R$26 of an add-on pack, and whatever they don't use today is still theirs tomorrow. Sharers set the price, so competition between them can push it below the ceiling, and a sharer relaying a Wi-Fi network already charges a quarter of it.
+
 ## Why prepaid data expires
 
 Anatel's consumer rules (the General Consumer Rights Regulation, [Resolução 765/2023](https://informacoes.anatel.gov.br/legislacao/resolucoes/2023/1900-resolucao-765), fully in force since September 2025) protect the **money balance** of a top-up: it is valid for at least 30 days, and any expired, unused balance must be revalidated and added back when you top up again. If you cancel the line, the remaining balance must be refunded.

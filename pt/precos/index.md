@@ -66,6 +66,14 @@ A conta muda quando você olha o que realmente usa. O pacote custa o mesmo se vo
 
 {% include precos-scatter.html lang="pt" %}
 
+## Por que o preço do Bump fica onde fica
+
+Os dois gráficos mostram um espaço entre os preços das operadoras: quem compra 25 GB paga R$1,20 por GB; quem compra 200 MB paga R$25. O Bump foi desenhado para caber nesse espaço.
+
+Quem tem um plano grande e não usa tudo pode compartilhar a sobra pelo app. Cada megabyte que passa pelo celular dele rende pontos, que viram dinheiro via Pix. Para essa pessoa, o GB custou R$1,20 ou menos, então compartilhá-lo por até R${% include brl.html v=bump_gb %} é renda de algo que ia vencer sem uso.
+
+Para quem só precisa de um pouco de internet agora, o mesmo GB sai por no máximo R${% include brl.html v=bump_gb %} em vez dos R$20 a R$26 de um pacote adicional, e o que não usar hoje continua valendo amanhã. Quem compartilha define o preço, então a concorrência entre compartilhadores pode levá-lo abaixo do teto, e quem repassa uma rede Wi-Fi já cobra um quarto disso.
+
 ## Por que a internet pré-paga vence
 
 As regras da Anatel para o consumidor (Regulamento Geral de Direitos do Consumidor, [Resolução 765/2023](https://informacoes.anatel.gov.br/legislacao/resolucoes/2023/1900-resolucao-765), em vigor desde setembro de 2025) protegem o **saldo em dinheiro** da recarga: ele tem validade mínima de 30 dias, e o saldo vencido e não usado tem de ser revalidado e somado quando você faz uma nova recarga. Se cancelar a linha, o saldo restante deve ser devolvido.
