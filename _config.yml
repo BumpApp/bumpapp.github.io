@@ -40,6 +40,8 @@ exclude:
   - Gemfile.lock
   - vendor
   - node_modules
+  - package.json
+  - package-lock.json
   - README.md
   - firebase-debug.log
   - x-banner-debug.png

@@ -10,6 +10,7 @@ Static marketing site for Bump, built by GitHub Pages with Jekyll.
 - `index.html`, `es/`, `pt/` – landing pages. `privacy-policy/`, `terms-of-service/`, `delete/` – legal pages, each in three languages.
 - `_articles/` – Markdown articles, published at `/<path>/` (e.g. `_articles/pt/precos.md` → `/pt/precos/`).
 - `brand/` – social images and their sources; not published.
+- `_tailwind/` – Tailwind config and input CSS. `npm run build` compiles them to `assets/tailwind.css`, which is committed; CI fails if it is stale.
 
 ## Front matter
 

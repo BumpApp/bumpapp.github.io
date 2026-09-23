@@ -10,15 +10,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - name: Check compiled Tailwind is current
+        run: npm ci && npm run build && git diff --exit-code assets/tailwind.css
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.3"
           bundler-cache: true
       - name: Build site
         run: bundle exec jekyll build --strict_front_matter
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
       - name: Validate HTML
         run: npx -y html-validate@9 -c .htmlvalidate.json "_site/**/*.html"
       - name: Check internal links and assets
