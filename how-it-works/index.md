@@ -86,7 +86,7 @@ When you choose a sharer, two links are opened at once.
 
 **The first is a BLE L2CAP channel.** It is up within a second or two and carries a few hundred kilobits per second. It is enough to complete the handshake, fetch the VPN credentials and start the tunnel while the faster link is still coming up.
 
-**The second is Wi-Fi Direct.** The sharer's phone is the group owner of a Wi-Fi Direct group on 2.4 GHz. Your phone joins it as an ordinary Wi-Fi station using the network name and passphrase it read from the BLE advertisement, through Android's network suggestion API. It then finds the sharer's address with a UDP multicast on the link. This takes five to ten seconds and carries tens of megabits per second. Once it is up, the tunnel is restarted over it and the session continues.
+**The second is Wi-Fi Direct.** The sharer's phone is the group owner of a Wi-Fi Direct group. Your phone joins it as an ordinary Wi-Fi station using the network name and passphrase it read from the BLE advertisement, through Android's network suggestion API. It then finds the sharer's address with a UDP multicast on the link. This takes five to ten seconds and carries tens of megabits per second. Once it is up, the tunnel is restarted over it and the session continues.
 
 Bump does not use the phone's ordinary hotspot. Android's hotspot APIs either need hardware that can be a station and an access point at once or do not let an app manage the connection, so Bump runs its own Wi-Fi Direct group instead. That is also why the sharer's phone stays connected to its own Wi-Fi or mobile data while sharing.
 
