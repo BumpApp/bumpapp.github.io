@@ -2,6 +2,7 @@
 Dot plot of R$/GB for every pack in _data/precos_br.yml, small and monthly packs as two groups,
 with Bump's ceiling and Wi-Fi rate as reference lines. Params: lang ("pt" or "en").
 Rows are sorted by R$/GB via zero-padded string keys, since Liquid can't sort on a computed value.
+The key string ends in a comma; Liquid's split (Ruby String#split) drops trailing empty elements, so no empty key results.
 {%- endcomment -%}
 {%- assign d = site.data.precos_br -%}
 {%- assign pt = false -%}{%- if include.lang == "pt" -%}{%- assign pt = true -%}{%- endif -%}
