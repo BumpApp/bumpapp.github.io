@@ -53,7 +53,7 @@ sources:
     pending: true
     checked: 2026-07-20
 bump:
-  credits_per_cop: 0.1667
+  credits_per_cop: 0.3333    # 3 COP per credit, halved from 0.1667 (6 COP) on 2026-09-23 to match Brazil's position vs small packs
   credits_per_mb: 1          # default and maximum a sharer can charge
   credits_per_mb_wifi: 0.25  # when the sharer relays a Wi-Fi network
   free_mb: 500               # sign-up bonus, expires 90 days after it is granted

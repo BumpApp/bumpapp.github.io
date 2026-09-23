@@ -41,13 +41,13 @@ This is where prepaid gets expensive. When the data runs out mid-month, the carr
 </tbody>
 </table>
 
-Claro's one- and three-day packs cost $14,000 to $20,500 per GB, two to three times Bump's maximum, and Virgin's 500 MB pack $9,200. But not every small pack is expensive: WOM's ($3,300 to $5,300 per GB), Movistar's three-day pack and Tigo's seven-day pack already sit below Bump's ceiling. Bump wins against the smallest portions, up to about 500 MB; from 1 GB it depends on the carrier. And all of them expire in one, three or seven days.
+Claro's one- and three-day packs cost $14,000 to $20,500 per GB, five to seven times Bump's maximum; Virgin's 500 MB pack $9,200; WOM's one- to six-day packs $5,000 to $5,300. Only the seven-day packs of 2 GB or more ($1,500 to $2,500 per GB) sit below Bump's ceiling. And all of them expire in one, three or seven days.
 
 † Price taken from the Selectra comparison site on 2026-07-20, pending verification on the carrier's page.
 
 ## Monthly packs: when you buy the whole month
 
-Buying 10 GB or more at once, the carrier's price per GB is lower than Bump's. We don't hide that.
+Buying 2 GB or more at once for the week or the month, the carrier's price per GB is usually lower than Bump's. We don't hide that.
 
 <table>
 <thead><tr><th>Carrier</th><th>Pack</th><th>Price</th><th>Valid for</th><th>$/GB</th><th>Source</th></tr></thead>
@@ -60,7 +60,7 @@ Buying 10 GB or more at once, the carrier's price per GB is lower than Bump's. W
 </tbody>
 </table>
 
-The math changes when you look at what you actually use. The pack costs the same whether you use all of it or almost none, and whatever is left disappears when the days are up. On the $11,000 Todo incluido WIN (2 GB for 7 days), someone who uses 500 MB paid $22,000 per GB; on Bump those 500 MB cost ${% assign half = bump_gb | times: 500 | divided_by: 1024 %}{% include cop.html v=half %}. The break-even is about 1.8 GB in 7 days against that pack and 5.7 GB in 30 days against the $35,000 WIN. Below that, Bump is cheaper; above it, the pack wins.
+The math changes when you look at what you actually use. The pack costs the same whether you use all of it or almost none, and whatever is left disappears when the days are up. On the $11,000 Todo incluido WIN (2 GB for 7 days), someone who uses 500 MB paid $22,000 per GB; on Bump those 500 MB cost ${% assign half = bump_gb | times: 500 | divided_by: 1024 %}{% include cop.html v=half %}. The break-even is about 3.6 GB in 7 days against that pack and 11 GB in 30 days against the $35,000 WIN. Below that, Bump is cheaper; above it, the pack wins.
 
 † Price taken from the Selectra comparison site on 2026-07-20, pending verification on the carrier's page.
 
@@ -68,13 +68,13 @@ The math changes when you look at what you actually use. The pack costs the same
 
 {% include precos-dotplot.html lang="en" data="precios_co" cur="cop" xmax=24000 step=4000 %}
 
-{% include precos-scatter.html lang="en" data="precios_co" cur="cop" ymax=32000 ystep=8000 %}
+{% include precos-scatter.html lang="en" data="precios_co" cur="cop" ymax=16000 ystep=4000 %}
 
 ## Why Bump's price sits where it does
 
 The two charts show a gap between the carriers' own prices: someone buying 39 GB pays $667 per GB; someone buying 150 MB pays $20,480. Bump is designed to fit in that gap.
 
-A person with a big plan they don't use up can share the surplus through the app. Every megabyte that passes through their phone earns points, which convert to cash via Bre-B. Their GB cost them $1,250 or less, so sharing it for up to ${% include cop.html v=bump_gb %} is income from data that would otherwise have expired unused.
+A person with a big plan they don't use up can share the surplus through the app. Every megabyte that passes through their phone earns points, which convert to cash via Bre-B. Their GB cost them $700 to $1,250, so sharing it for up to ${% include cop.html v=bump_gb %} is income from data that would otherwise have expired unused.
 
 A person who just needs a little data right now gets that same GB for at most ${% include cop.html v=bump_gb %} instead of the $14,000 to $20,500 of a one- or three-day Claro pack, and whatever they don't use today is still theirs tomorrow. Sharers set the price, so competition between them can push it below the ceiling, and a sharer relaying a Wi-Fi network already charges a quarter of it.
 

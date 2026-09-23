@@ -41,13 +41,13 @@ Aquí es donde el prepago se pone caro. Cuando los datos se acaban a mitad de me
 </tbody>
 </table>
 
-Los paquetes de uno y tres días de Claro cuestan entre $14.000 y $20.500 por GB, de dos a tres veces el precio máximo de Bump, y el de 500 MB de Virgin, $9.200. Pero no todo paquete pequeño es caro: los de WOM ($3.300 a $5.300 por GB), el de tres días de Movistar y el de siete días de Tigo ya quedan por debajo del tope de Bump. Bump gana frente a las porciones más pequeñas, de hasta unos 500 MB; a partir de 1 GB depende del operador. Y todos vencen en uno, tres o siete días.
+Los paquetes de uno y tres días de Claro cuestan entre $14.000 y $20.500 por GB, de cinco a siete veces el precio máximo de Bump; el de 500 MB de Virgin, $9.200; los de uno a seis días de WOM, $5.000 a $5.300. Solo los paquetes de siete días de 2 GB o más ($1.500 a $2.500 por GB) quedan por debajo del tope de Bump. Y todos vencen en uno, tres o siete días.
 
 † Precio tomado del comparador Selectra el 20/07/2026, pendiente de verificar en la página del operador.
 
 ## Paquetes mensuales: cuando compras el mes entero
 
-Comprando 10 GB o más de una vez, el precio por GB del operador es menor que el de Bump. No lo escondemos.
+Comprando 2 GB o más de una vez para la semana o el mes, el precio por GB del operador suele ser menor que el de Bump. No lo escondemos.
 
 <table>
 <thead><tr><th>Operador</th><th>Paquete</th><th>Precio</th><th>Vigencia</th><th>$/GB</th><th>Fuente</th></tr></thead>
@@ -60,7 +60,7 @@ Comprando 10 GB o más de una vez, el precio por GB del operador es menor que el
 </tbody>
 </table>
 
-La cuenta cambia cuando miras lo que realmente usas. El paquete cuesta lo mismo si lo usas todo o casi nada, y lo que sobra desaparece al vencer. En el Todo incluido WIN de $11.000 (2 GB por 7 días), quien usa 500 MB pagó $22.000 por GB; en Bump, esos 500 MB cuestan ${% assign half = bump_gb | times: 500 | divided_by: 1024 %}{% include cop.html v=half %}. El punto de equilibrio es cerca de 1,8 GB en 7 días contra ese paquete y 5,7 GB en 30 días contra el WIN de $35.000. Por debajo, Bump sale más barato; por encima, gana el paquete.
+La cuenta cambia cuando miras lo que realmente usas. El paquete cuesta lo mismo si lo usas todo o casi nada, y lo que sobra desaparece al vencer. En el Todo incluido WIN de $11.000 (2 GB por 7 días), quien usa 500 MB pagó $22.000 por GB; en Bump, esos 500 MB cuestan ${% assign half = bump_gb | times: 500 | divided_by: 1024 %}{% include cop.html v=half %}. El punto de equilibrio es cerca de 3,6 GB en 7 días contra ese paquete y 11 GB en 30 días contra el WIN de $35.000. Por debajo, Bump sale más barato; por encima, gana el paquete.
 
 † Precio tomado del comparador Selectra el 20/07/2026, pendiente de verificar en la página del operador.
 
@@ -68,13 +68,13 @@ La cuenta cambia cuando miras lo que realmente usas. El paquete cuesta lo mismo 
 
 {% include precos-dotplot.html lang="es" data="precios_co" cur="cop" xmax=24000 step=4000 %}
 
-{% include precos-scatter.html lang="es" data="precios_co" cur="cop" ymax=32000 ystep=8000 %}
+{% include precos-scatter.html lang="es" data="precios_co" cur="cop" ymax=16000 ystep=4000 %}
 
 ## Por qué el precio de Bump queda donde queda
 
 Los dos gráficos muestran un espacio entre los precios de los propios operadores: quien compra 39 GB paga $667 por GB; quien compra 150 MB paga $20.480. Bump está diseñado para caber en ese espacio.
 
-Quien tiene un plan grande y no lo gasta puede compartir el sobrante por la app. Cada megabyte que pasa por su celular le da puntos, que se convierten en dinero por Bre-B. Su GB le costó $1.250 o menos, así que compartirlo por hasta ${% include cop.html v=bump_gb %} es ingreso por datos que de otro modo habrían vencido sin usarse.
+Quien tiene un plan grande y no lo gasta puede compartir el sobrante por la app. Cada megabyte que pasa por su celular le da puntos, que se convierten en dinero por Bre-B. Su GB le costó entre $700 y $1.250, así que compartirlo por hasta ${% include cop.html v=bump_gb %} es ingreso por datos que de otro modo habrían vencido sin usarse.
 
 Quien solo necesita un poco de datos ahora mismo consigue ese mismo GB por máximo ${% include cop.html v=bump_gb %} en vez de los $14.000 a $20.500 de un paquete de uno o tres días de Claro, y lo que no use hoy sigue siendo suyo mañana. Quienes comparten fijan el precio, así que la competencia entre ellos puede bajarlo del tope, y quien pasa una red Wi-Fi ya cobra la cuarta parte.
 

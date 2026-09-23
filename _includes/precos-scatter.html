@@ -22,7 +22,9 @@ A pack with `label:` in the data file gets a direct label.
 {%- assign plotW = W | minus: L | minus: R -%}{%- assign plotH = H | minus: T | minus: B -%}
 {%- assign y0 = T | plus: plotH -%}
 {%- assign endB = ymax | divided_by: bump_gb | times: 1024 -%}
+{%- if endB > xmax -%}{%- assign endB = xmax -%}{%- endif -%}
 {%- assign xEndB = endB | times: plotW | divided_by: xmax | plus: L | round: 1 -%}
+{%- assign yEndB = endB | times: bump_gb | divided_by: 1024 | times: plotH | divided_by: ymax -%}{%- assign yEndB = y0 | minus: yEndB | round: 1 -%}
 {%- assign yEndW = xmax | times: wifi_gb | divided_by: 1024 | times: plotH | divided_by: ymax -%}{%- assign yEndW = y0 | minus: yEndW | round: 1 -%}
 <figure>
 <svg viewBox="0 0 {{ W }} {{ H }}" role="img" aria-labelledby="fig-sc-title" style="width:100%;height:auto;font-family:Inter,system-ui,sans-serif;font-size:13px">
@@ -35,10 +37,10 @@ A pack with `label:` in the data file gets a direct label.
   <text x="{{ gx }}" y="{{ H | minus: 14 }}" text-anchor="middle" fill="#64748B" font-size="12">{% if g == 0 %}0{% else %}{{ g }} GB{% endif %}</text>
   {%- endfor %}
   <line x1="{{ L }}" x2="{{ W | minus: R }}" y1="{{ y0 }}" y2="{{ y0 }}" stroke="#CBD5E1"/>
-  <polygon points="{{ L }},{{ y0 }} {{ xEndB }},{{ T }} {{ L }},{{ T }}" fill="#10B981" fill-opacity="0.08"/>
-  <line x1="{{ L }}" y1="{{ y0 }}" x2="{{ xEndB }}" y2="{{ T }}" stroke="#0F172A" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="{{ L }},{{ y0 }} {{ xEndB }},{{ yEndB }} {{ xEndB }},{{ T }} {{ L }},{{ T }}" fill="#10B981" fill-opacity="0.08"/>
+  <line x1="{{ L }}" y1="{{ y0 }}" x2="{{ xEndB }}" y2="{{ yEndB }}" stroke="#0F172A" stroke-width="2" stroke-linecap="round"/>
   <line x1="{{ L }}" y1="{{ y0 }}" x2="{{ W | minus: R }}" y2="{{ yEndW }}" stroke="#475569" stroke-width="2" stroke-dasharray="5 5" stroke-linecap="round"/>
-  <text x="{{ xEndB | minus: 10 }}" y="{{ T | plus: 14 }}" text-anchor="end" fill="#0F172A" font-weight="600">Bump {{ t_max }}</text>
+  <text x="{{ xEndB | minus: 10 }}" y="{% if yEndB > T %}{{ yEndB | minus: 8 }}{% else %}{{ T | plus: 14 }}{% endif %}" text-anchor="end" fill="#0F172A" font-weight="600">Bump {{ t_max }}</text>
   <text x="{{ W | minus: R | minus: 4 }}" y="{{ yEndW | minus: 8 }}" text-anchor="end" fill="#475569" font-weight="600">Bump Wi-Fi</text>
   <text x="{{ L | plus: 10 }}" y="{{ T | plus: 16 }}" fill="#047857" font-size="12">{{ t_above }}</text>
   {%- for p in d.packs -%}{%- if p.mb <= xmax -%}
