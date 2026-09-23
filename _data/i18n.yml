@@ -3,6 +3,7 @@ en:
   home: /
   logo_alt: bump Logo
   faq: FAQ
+  faq_url: /faq/
   tos: Terms of Service
   tos_url: /terms-of-service/
   privacy: Privacy Policy
@@ -16,6 +17,7 @@ es:
   home: /es/
   logo_alt: Logo Bump
   faq: Preguntas Frecuentes
+  faq_url: /es/faq/
   tos: Términos de Servicio
   tos_url: /es/terms-of-service/
   privacy: Política de Privacidad
@@ -29,6 +31,7 @@ pt:
   home: /pt/
   logo_alt: Logo Bump
   faq: Perguntas Frequentes
+  faq_url: /pt/faq/
   tos: Termos de Serviço
   tos_url: /pt/terms-of-service/
   privacy: Política de Privacidade
