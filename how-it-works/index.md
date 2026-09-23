@@ -48,6 +48,11 @@ Phones looking for Internet advertise too, with a flag that says "I need data". 
 
 Your phone scans continuously while the app is open and drops any sharer it has not heard from for five seconds, so the list you see is live. Bluetooth range is line of sight and short: the same room, building, plaza or bus. Bump is not city-wide Wi-Fi, yet. We aim to get there by growing coverage rather than range. The coverage map tells us where people are looking for a connection and nobody is sharing. Our bounty program offers extra rewards to sharers who show up in a specific cell of a city for a set time window, verified by the same location reports that feed the map, so that high-demand areas get as close to blanket coverage as we can manage.
 
+<figure>
+<img src="/how-it-works/bounties.png" width="913" height="520" alt="A street map of a neighbourhood divided into hexagonal cells. Several cells are outlined in orange with the number 1, one in red, and a cluster of grey and blue cells sits to the right." loading="lazy">
+<figcaption>Bounties on the map in our admin tools. Each hexagon is a cell. Orange cells are where people looked for a connection and found nobody sharing, and the number is how many of them asked for a hotspot there. Blue cells have a bounty scheduled, grey ones have expired and the red one was cancelled. Map data: Google.</figcaption>
+</figure>
+
 The coverage map is built from location reports that phones attach, if location is enabled, to their session and scanning records. A Cloud Function aggregates them into one entry per device. The app asks for devices seen in the last 30 minutes within about a kilometre and draws each as a small circle, blue for supply and red for demand, refreshing every ten seconds. Entries older than 24 hours are deleted.
 
 ## Connecting phone to phone: Wi-Fi Direct
