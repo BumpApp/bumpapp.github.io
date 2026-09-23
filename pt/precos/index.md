@@ -17,12 +17,12 @@ Esta página responde a uma pergunta simples: quanto custa 1 GB de internet móv
 
 ## Quanto custa no Bump
 
-No Bump você paga por megabyte, só pelo que usar, com créditos que compra por Pix ou cartão. A taxa é de **{{ d.bump.credits_per_brl }} créditos por R$1**.
+No Bump você paga só pelo que usar, com saldo que compra por Pix ou cartão. O preço é por GB e quem compartilha define o dele, dentro de um teto.
 
-- **Preço máximo: {{ d.bump.credits_per_mb }} crédito por MB**, ou **R$ {% include brl.html v=bump_gb %} por GB**. É o teto que quem compartilha pode cobrar.
-- **Quando quem compartilha está repassando uma rede Wi-Fi**, o preço cai para {{ d.bump.credits_per_mb_wifi | replace: ".", "," }} crédito por MB, ou **R$ {% include brl.html v=bump_wifi_gb %} por GB**.
-- **{{ d.bump.free_mb }} MB grátis** ao criar a conta. Esses créditos de bônus valem por 90 dias.
-- **Créditos comprados nunca vencem.** Compre R$4 hoje e use daqui a um ano.
+- **Preço máximo: R$ {% include brl.html v=bump_gb %} por GB.** É o teto que quem compartilha pode cobrar.
+- **Quando quem compartilha está repassando uma rede Wi-Fi**, o preço cai para **R$ {% include brl.html v=bump_wifi_gb %} por GB**.
+- **{{ d.bump.free_mb }} MB grátis** ao criar a conta. Esse bônus vale por 90 dias.
+- **O saldo que você compra nunca vence.** Compre R$4 hoje e use daqui a um ano.
 
 Compare com os dois tipos de pacote que as operadoras vendem. São dois cenários diferentes, então são duas tabelas.
 
@@ -33,7 +33,7 @@ Compare com os dois tipos de pacote que as operadoras vendem. São dois cenário
 <table>
 <thead><tr><th>Operadora</th><th>Pacote</th><th>Preço</th><th>Validade</th><th>R$/GB</th><th>DDD</th><th>Fonte</th></tr></thead>
 <tbody>
-<tr><td><strong>Bump</strong></td><td>preço máximo</td><td>por MB</td><td>nunca vence</td><td><strong>{% include brl.html v=bump_gb %}</strong></td><td>todos</td><td>esta página</td></tr>
+<tr><td><strong>Bump</strong></td><td>preço máximo</td><td>pelo uso</td><td>nunca vence</td><td><strong>{% include brl.html v=bump_gb %}</strong></td><td>todos</td><td>esta página</td></tr>
 {%- for p in d.packs -%}{%- if p.size == "small" %}
 {%- assign gb = p.price | times: 1024.0 | divided_by: p.mb | round: 2 %}
 <tr><td>{{ p.carrier }}</td><td>{{ p.pack }}</td><td>R$ {% include brl.html v=p.price %}</td><td>{{ p.days }} dia{% if p.days > 1 %}s{% endif %}</td><td>{% include brl.html v=gb %}</td><td>{{ p.ddd }}</td><td><a href="{{ p.source }}" rel="nofollow">página</a></td></tr>
@@ -50,7 +50,7 @@ Comprando 5 GB ou mais de uma vez, o preço por GB da operadora é menor que o d
 <table>
 <thead><tr><th>Operadora</th><th>Pacote</th><th>Preço</th><th>Validade</th><th>R$/GB</th><th>DDD</th><th>Fonte</th></tr></thead>
 <tbody>
-<tr><td><strong>Bump</strong></td><td>preço máximo</td><td>por MB</td><td>nunca vence</td><td><strong>{% include brl.html v=bump_gb %}</strong></td><td>todos</td><td>esta página</td></tr>
+<tr><td><strong>Bump</strong></td><td>preço máximo</td><td>pelo uso</td><td>nunca vence</td><td><strong>{% include brl.html v=bump_gb %}</strong></td><td>todos</td><td>esta página</td></tr>
 {%- for p in d.packs -%}{%- if p.size == "large" %}
 {%- assign gb = p.price | times: 1024.0 | divided_by: p.mb | round: 2 %}
 <tr><td>{{ p.carrier }}</td><td>{{ p.pack }}</td><td>R$ {% include brl.html v=p.price %}</td><td>{{ p.days }} dias</td><td>{% include brl.html v=gb %}</td><td>{{ p.ddd }}</td><td><a href="{{ p.source }}" rel="nofollow">página</a></td></tr>

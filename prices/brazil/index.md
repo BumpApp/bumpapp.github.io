@@ -17,12 +17,12 @@ This page answers one question: what 1 GB of prepaid mobile data costs in Brazil
 
 ## What it costs on Bump
 
-On Bump you pay per megabyte, only for what you use, with credits bought by Pix or card. The rate is **{{ d.bump.credits_per_brl }} credits per R$1**.
+On Bump you pay only for what you use, from a balance bought by Pix or card. The price is per GB, and each sharer sets their own under a ceiling.
 
-- **Maximum price: {{ d.bump.credits_per_mb }} credit per MB**, or **R${% include brl.html v=bump_gb dec="." %} per GB**. That is the ceiling a sharer can charge.
-- **When the sharer is relaying a Wi-Fi network**, the price drops to {{ d.bump.credits_per_mb_wifi }} credit per MB, or **R${% include brl.html v=bump_wifi_gb dec="." %} per GB**.
-- **{{ d.bump.free_mb }} MB free** when you create an account. Those bonus credits last 90 days.
-- **Purchased credits never expire.** Buy R$4 today and use it a year from now.
+- **Maximum price: R${% include brl.html v=bump_gb dec="." %} per GB.** That is the ceiling a sharer can charge.
+- **When the sharer is relaying a Wi-Fi network**, the price drops to **R${% include brl.html v=bump_wifi_gb dec="." %} per GB**.
+- **{{ d.bump.free_mb }} MB free** when you create an account. That bonus lasts 90 days.
+- **The balance you buy never expires.** Buy R$4 today and use it a year from now.
 
 Compare that with the two kinds of pack the carriers sell. They are different situations, so they get different tables.
 
@@ -33,7 +33,7 @@ This is where prepaid gets expensive. When the allowance runs out mid-month, the
 <table>
 <thead><tr><th>Carrier</th><th>Pack</th><th>Price</th><th>Valid for</th><th>R$/GB</th><th>DDD</th><th>Source</th></tr></thead>
 <tbody>
-<tr><td><strong>Bump</strong></td><td>maximum price</td><td>per MB</td><td>never expires</td><td><strong>{% include brl.html v=bump_gb dec="." %}</strong></td><td>all</td><td>this page</td></tr>
+<tr><td><strong>Bump</strong></td><td>maximum price</td><td>by use</td><td>never expires</td><td><strong>{% include brl.html v=bump_gb dec="." %}</strong></td><td>all</td><td>this page</td></tr>
 {%- for p in d.packs -%}{%- if p.size == "small" %}
 {%- assign gb = p.price | times: 1024.0 | divided_by: p.mb | round: 2 %}
 <tr><td>{{ p.carrier }}</td><td>{{ p.pack }}</td><td>R${% include brl.html v=p.price dec="." %}</td><td>{{ p.days }} day{% if p.days > 1 %}s{% endif %}</td><td>{% include brl.html v=gb dec="." %}</td><td>{{ p.ddd }}</td><td><a href="{{ p.source }}" rel="nofollow">page</a></td></tr>
@@ -50,7 +50,7 @@ Buying 5 GB or more at once, the carrier's price per GB is lower than Bump's. We
 <table>
 <thead><tr><th>Carrier</th><th>Pack</th><th>Price</th><th>Valid for</th><th>R$/GB</th><th>DDD</th><th>Source</th></tr></thead>
 <tbody>
-<tr><td><strong>Bump</strong></td><td>maximum price</td><td>per MB</td><td>never expires</td><td><strong>{% include brl.html v=bump_gb dec="." %}</strong></td><td>all</td><td>this page</td></tr>
+<tr><td><strong>Bump</strong></td><td>maximum price</td><td>by use</td><td>never expires</td><td><strong>{% include brl.html v=bump_gb dec="." %}</strong></td><td>all</td><td>this page</td></tr>
 {%- for p in d.packs -%}{%- if p.size == "large" %}
 {%- assign gb = p.price | times: 1024.0 | divided_by: p.mb | round: 2 %}
 <tr><td>{{ p.carrier }}</td><td>{{ p.pack }}</td><td>R${% include brl.html v=p.price dec="." %}</td><td>{{ p.days }} days</td><td>{% include brl.html v=gb dec="." %}</td><td>{{ p.ddd }}</td><td><a href="{{ p.source }}" rel="nofollow">page</a></td></tr>
