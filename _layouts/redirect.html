@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="{{ page.to }}">
+  <meta http-equiv="refresh" content="0; url={{ page.to }}">
+  <script>location.replace("{{ page.to }}")</script>
+</head>
+<body>
+  <a href="{{ page.to }}">{{ page.title }}</a>
+</body>
+</html>
