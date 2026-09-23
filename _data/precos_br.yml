@@ -1,0 +1,156 @@
+# Carrier prepaid prices for /pt/precos/. One row per pack.
+# size: large = the pack you buy to cover the month; small = add-on, daily or pay-per-use.
+# R$/GB is computed in the page (price * 1024 / mb). Prices vary by DDD; ddd says which one was checked.
+# Evidence screenshots: brand/precos-br/. Keep `checked` current when a price changes.
+checked: 2026-09-23
+bump:
+  credits_per_brl: 125
+  credits_per_mb: 1          # default and maximum a sharer can charge
+  credits_per_mb_wifi: 0.25  # when the sharer relays a Wi-Fi network
+  free_mb: 500               # sign-up bonus, expires 90 days after it is granted
+packs:
+  - carrier: Vivo
+    pack: Vivo Pré R$20
+    price: 20.0
+    mb: 5120
+    days: 17
+    size: large
+    ddd: 11
+    source: https://vivo.com.br/para-voce/produtos-e-servicos/para-o-celular/pre-pago/vivo-pre
+  - carrier: Vivo
+    pack: Vivo Pré R$25
+    price: 25.0
+    mb: 15360
+    days: 25
+    size: large
+    ddd: 11
+    source: https://vivo.com.br/para-voce/produtos-e-servicos/para-o-celular/pre-pago/vivo-pre
+  - carrier: Vivo
+    pack: Vivo Pré R$30 (20 GB + 5 GB de bônus)
+    price: 30.0
+    mb: 25600
+    days: 30
+    size: large
+    ddd: 11
+    source: https://vivo.com.br/para-voce/produtos-e-servicos/para-o-celular/pre-pago/vivo-pre
+  - carrier: Claro
+    pack: Prezão R$15
+    price: 15.0
+    mb: 5120
+    days: 15
+    size: large
+    ddd: 11
+    source: https://www.claro.com.br/celular/planos-pre/prezao
+  - carrier: Claro
+    pack: Prezão R$20 (8 GB + 2 GB YouTube)
+    price: 20.0
+    mb: 10240
+    days: 20
+    size: large
+    ddd: 11
+    source: https://www.claro.com.br/celular/planos-pre/prezao
+  - carrier: Claro
+    pack: Prezão R$25 (10 GB + 2 GB YouTube)
+    price: 25.0
+    mb: 12288
+    days: 25
+    size: large
+    ddd: 11
+    source: https://www.claro.com.br/celular/planos-pre/prezao
+  - carrier: Claro
+    pack: Prezão R$30 (17 GB + 3 GB YouTube)
+    price: 30.0
+    mb: 20480
+    days: 30
+    size: large
+    ddd: 11
+    source: https://www.claro.com.br/celular/planos-pre/prezao
+  - carrier: TIM
+    pack: TIM Pré XIP Plus R$20
+    price: 20.0
+    mb: 6144
+    days: 17
+    size: large
+    ddd: 21
+    source: https://www.tim.com.br/rj/para-voce/planos/pre-pago
+  - carrier: TIM
+    pack: TIM Pré XIP Plus R$25
+    price: 25.0
+    mb: 8192
+    days: 22
+    size: large
+    ddd: 21
+    source: https://www.tim.com.br/rj/para-voce/planos/pre-pago
+  - carrier: TIM
+    pack: TIM Pré XIP Plus R$30 (12 GB + 4 GB redes sociais)
+    price: 30.0
+    mb: 16384
+    days: 30
+    size: large
+    ddd: 21
+    source: https://www.tim.com.br/rj/para-voce/planos/pre-pago
+
+  - carrier: Vivo
+    pack: Pacote adicional 100 MB
+    price: 1.99
+    mb: 100
+    days: 1
+    size: small
+    ddd: 11
+    source: https://vivo.com.br/para-voce/produtos-e-servicos/para-o-celular/pre-pago/pacotes-pre
+  - carrier: Vivo
+    pack: Pacote adicional 200 MB
+    price: 4.99
+    mb: 200
+    days: 7
+    size: small
+    ddd: 11
+    source: https://vivo.com.br/para-voce/produtos-e-servicos/para-o-celular/pre-pago/pacotes-pre
+  - carrier: Vivo
+    pack: Pacote adicional 400 MB
+    price: 7.99
+    mb: 400
+    days: 7
+    size: small
+    ddd: 11
+    source: https://vivo.com.br/para-voce/produtos-e-servicos/para-o-celular/pre-pago/pacotes-pre
+  - carrier: Vivo
+    pack: Vivo Pré 4 GB sem serviço digital
+    price: 14.0
+    mb: 4096
+    days: 10
+    size: large
+    ddd: 11
+    source: https://vivo.com.br/para-voce/produtos-e-servicos/para-o-celular/pre-pago/vivo-pre/pre-outras-ofertas
+  - carrier: Claro
+    pack: Tarifa diária com saldo abaixo de R$15 (250 MB)
+    price: 2.19
+    mb: 250
+    days: 1
+    size: small
+    ddd: 11
+    source: https://www.claro.com.br/celular/planos-pre/prezao
+  - carrier: Claro
+    pack: Pacote adicional 500 MB
+    price: 4.99
+    mb: 500
+    days: 7
+    size: small
+    ddd: 11
+    source: https://www.claro.com.br/celular/planos-pre/pacotes-adicionais-pre
+  - carrier: Claro
+    pack: Pacote adicional 1 GB
+    price: 6.99
+    mb: 1024
+    days: 7
+    size: small
+    ddd: 11
+    source: https://www.claro.com.br/celular/planos-pre/pacotes-adicionais-pre
+  - carrier: TIM
+    pack: Beta semanal 1,5 GB
+    price: 10.0
+    mb: 1536
+    days: 7
+    size: small
+    ddd: 21
+    source: https://www.tim.com.br/planos/pre-pago/informativo/beta-diaria-combo
