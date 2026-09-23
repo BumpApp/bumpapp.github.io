@@ -24,6 +24,9 @@ Play accepts up to 8 per form factor and language; the tablet sets have 6, the p
 
 ## Re-capturing
 
+Needs `adb` (Android platform-tools) on `PATH`, `python3`, and a device or emulator that is signed in
+to the app with its runtime permissions granted (`pm grant`) and `settings put global sysui_demo_allowed 1`.
+
 `cap.sh <serial> <lang> <outdir> <show|hide>` captures 01–06 on a signed-in device (`hide`
 hides the mobile signal, used for tablets). `hot.sh <serial> <lang> <outdir>` starts the hotspot
 and captures 07. Both expect `ACCEPT_RE` and `SETTINGS_RE` in the environment with the
