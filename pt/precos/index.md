@@ -60,6 +60,12 @@ Comprando 5 GB ou mais de uma vez, o preço por GB da operadora é menor que o d
 
 A conta muda quando você olha o que realmente usa. O pacote custa o mesmo se você usar tudo ou quase nada, e o que sobrar some no fim do prazo. No Prezão de R$15 (5 GB por 15 dias), quem usa 500 MB pagou R$30 por GB; no Bump, esses 500 MB custam R$4,00. O ponto de equilíbrio é cerca de 1,8 GB em 15 dias contra a Claro e 2,4 GB em 17 dias contra a Vivo e a TIM. Abaixo disso, o Bump sai mais barato; acima, o pacote vence.
 
+## Os dois cenários num gráfico
+
+{% include precos-dotplot.html lang="pt" %}
+
+{% include precos-scatter.html lang="pt" %}
+
 ## Por que a internet pré-paga vence
 
 As regras da Anatel para o consumidor (Regulamento Geral de Direitos do Consumidor, [Resolução 765/2023](https://informacoes.anatel.gov.br/legislacao/resolucoes/2023/1900-resolucao-765), em vigor desde setembro de 2025) protegem o **saldo em dinheiro** da recarga: ele tem validade mínima de 30 dias, e o saldo vencido e não usado tem de ser revalidado e somado quando você faz uma nova recarga. Se cancelar a linha, o saldo restante deve ser devolvido.

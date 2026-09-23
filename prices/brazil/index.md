@@ -60,6 +60,12 @@ Buying 5 GB or more at once, the carrier's price per GB is lower than Bump's. We
 
 The math changes when you look at what you actually use. The pack costs the same whether you use all of it or almost none, and whatever is left disappears when the days are up. On the R$15 Prezão (5 GB for 15 days), someone who uses 500 MB paid R$30 per GB; on Bump those 500 MB cost R$4.00. The break-even is about 1.8 GB in 15 days against Claro and 2.4 GB in 17 days against Vivo and TIM. Below that, Bump is cheaper; above it, the pack wins.
 
+## Both cases in one picture
+
+{% include precos-dotplot.html lang="en" %}
+
+{% include precos-scatter.html lang="en" %}
+
 ## Why prepaid data expires
 
 Anatel's consumer rules (the General Consumer Rights Regulation, [Resolução 765/2023](https://informacoes.anatel.gov.br/legislacao/resolucoes/2023/1900-resolucao-765), fully in force since September 2025) protect the **money balance** of a top-up: it is valid for at least 30 days, and any expired, unused balance must be revalidated and added back when you top up again. If you cancel the line, the remaining balance must be refunded.
