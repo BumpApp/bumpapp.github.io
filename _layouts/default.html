@@ -4,6 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {% seo %}
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[
+    {"@type":"Organization","@id":"{{ site.url }}/#org","name":"Bump","alternateName":["Bump App","BumpApp","bumpapp"],"url":"{{ site.url }}/","logo":"{{ site.logo | absolute_url }}","sameAs":{{ site.social.links | jsonify }}},
+    {"@type":"MobileApplication","name":"Bump","alternateName":"Bump App","description":{{ site.tagline | jsonify }},"operatingSystem":"Android","applicationCategory":"UtilitiesApplication","installUrl":"https://play.google.com/store/apps/details?id=xyz.bumpapp.prod","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@id":"{{ site.url }}/#org"}}
+  ]}
+  </script>
   {%- include hreflang.html %}
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">

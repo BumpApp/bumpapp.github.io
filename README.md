@@ -18,7 +18,7 @@ Every page declares:
 ```yaml
 ---
 lang: pt-BR                     # sets <html lang>, og:locale and which nav/footer strings to use
-title: "Quanto custa 1 GB"      # rendered as "<title> | Bump"
+title: "Quanto custa 1 GB"      # rendered as "<title> | Bump App"
 description: "One sentence for search results and link previews."
 translations:                   # optional; generates hreflang links and the language switcher
   en: /prices/
@@ -27,7 +27,7 @@ translations:                   # optional; generates hreflang links and the lan
 ---
 ```
 
-`jekyll-seo-tag` writes the title, description, canonical, Open Graph, Twitter card and JSON-LD from that. `jekyll-sitemap` writes `sitemap.xml`. Neither is hand-edited.
+`jekyll-seo-tag` writes the title, description, canonical, Open Graph, Twitter card and JSON-LD from that. `jekyll-sitemap` writes `sitemap.xml`. Neither is hand-edited. The layout adds one hand-written JSON-LD block (Organization + MobileApplication) alongside the plugin's WebSite block; the two describe different types and do not overlap.
 
 ## Adding an article
 
