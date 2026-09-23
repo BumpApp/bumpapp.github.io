@@ -29,6 +29,8 @@ If nobody is sharing near you yet, the map will be empty. That is not a fault. T
 
 **To use:** open the app and check the coverage map for sharers around you, with their signal strength and price. Pick one, tap Connect, and your phone links directly to theirs. You pay with Bump credits only for the data you actually use.
 
+The engineering behind all of this, including what the sharer can and cannot see, is on the [How Bump works](/how-it-works/) page.
+
 ## Is Bump safe? Can the person sharing see what I do online?
 
 Yes, Bump is safe. And no, the person sharing cannot see what you do online. All of your traffic runs inside an encrypted VPN tunnel from your phone to the Internet. The sharer's phone only relays scrambled bytes. They can see how much data you used, not what it was. You cannot see theirs either. Privacy is part of the design, not an option.

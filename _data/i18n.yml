@@ -2,6 +2,8 @@ en:
   name: English
   home: /
   logo_alt: bump Logo
+  how: How it works
+  how_url: /how-it-works/
   faq: FAQ
   faq_url: /faq/
   tos: Terms of Service
@@ -16,6 +18,8 @@ es:
   name: Español
   home: /es/
   logo_alt: Logo Bump
+  how: Cómo funciona
+  how_url: /es/how-it-works/
   faq: Preguntas Frecuentes
   faq_url: /es/faq/
   tos: Términos de Servicio
@@ -30,6 +34,8 @@ pt:
   name: Português
   home: /pt/
   logo_alt: Logo Bump
+  how: Como funciona
+  how_url: /pt/how-it-works/
   faq: Perguntas Frequentes
   faq_url: /pt/faq/
   tos: Termos de Serviço
