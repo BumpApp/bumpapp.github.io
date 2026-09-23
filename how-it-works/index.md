@@ -46,7 +46,7 @@ A phone that is sharing advertises over BLE about once a second. The advertiseme
 
 Phones looking for Internet advertise too, with a flag that says "I need data". That is how a sharer's phone can tell that people nearby want a connection before anyone taps anything.
 
-Your phone scans continuously while the app is open and drops any sharer it has not heard from for five seconds, so the list you see is live. Bluetooth range is line of sight and short: the same room, building, plaza or bus. Bump is not city-wide Wi-Fi.
+Your phone scans continuously while the app is open and drops any sharer it has not heard from for five seconds, so the list you see is live. Bluetooth range is line of sight and short: the same room, building, plaza or bus. Bump is not city-wide Wi-Fi, yet. We aim to get there by growing coverage rather than range. The coverage map tells us where people are looking for a connection and nobody is sharing. Our bounty program offers extra rewards to sharers who show up in a specific cell of a city for a set time window, verified by the same location reports that feed the map, so that high-demand areas get as close to blanket coverage as we can manage.
 
 The coverage map is built from location reports that phones attach, if location is enabled, to their session and scanning records. A Cloud Function aggregates them into one entry per device. The app asks for devices seen in the last 30 minutes within about a kilometre and draws each as a small circle, blue for supply and red for demand, refreshing every ten seconds. Entries older than 24 hours are deleted.
 
