@@ -1,1 +1,6 @@
 firebase-debug.log
+_site/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+.bundle/

@@ -1,0 +1,39 @@
+en:
+  name: English
+  home: /
+  logo_alt: bump Logo
+  faq: FAQ
+  tos: Terms of Service
+  tos_url: /terms-of-service/
+  privacy: Privacy Policy
+  privacy_url: /privacy-policy/
+  status: System Status
+  footer_label: Footer
+  instagram: https://www.instagram.com/bumpapp.xyz/
+  copyright: "&copy; 2022-2026 Bump Inc. All rights reserved. Google Play and the Google Play logo are trademarks of Google LLC."
+es:
+  name: Español
+  home: /es/
+  logo_alt: Logo Bump
+  faq: Preguntas Frecuentes
+  tos: Términos de Servicio
+  tos_url: /es/terms-of-service/
+  privacy: Política de Privacidad
+  privacy_url: /es/privacy-policy/
+  status: Estado del Sistema
+  footer_label: Pie de página
+  instagram: https://www.instagram.com/bumpapp.xyz/
+  copyright: "&copy; 2022-2026 Bump Inc. Todos los derechos reservados. Google Play y el logotipo de Google Play son marcas registradas de Google LLC."
+pt:
+  name: Português
+  home: /pt/
+  logo_alt: Logo Bump
+  faq: Perguntas Frequentes
+  tos: Termos de Serviço
+  tos_url: /pt/terms-of-service/
+  privacy: Política de Privacidade
+  privacy_url: /pt/privacy-policy/
+  status: Status do Sistema
+  footer_label: Rodapé
+  instagram: https://www.instagram.com/bumpapp.brasil/
+  copyright: "&copy; 2022-2026 Bump Inc. Todos os direitos reservados. Google Play e o logotipo do Google Play são marcas registradas da Google LLC."

@@ -1,0 +1,25 @@
+name: Check pages
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+      - name: Build site
+        run: bundle exec jekyll build --strict_front_matter
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Validate HTML
+        run: npx -y html-validate@9 -c .htmlvalidate.json "_site/**/*.html"
+      - name: Check internal links and assets
+        run: npx -y linkinator@6 _site --recurse --skip "^https?://(?!localhost)" --verbosity error

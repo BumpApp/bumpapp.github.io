@@ -1,0 +1,14 @@
+{%- assign l = page.lang | default: site.lang | slice: 0, 2 -%}
+{%- assign t = site.data.i18n[l] -%}
+  <nav class="bg-dark lg:bg-transparent">
+    <div class="relative mx-auto max-w-7xl pt-6 pb-8 sm:py-4 px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      <a href="{{ t.home }}" class="flex items-center">
+        <img src="/bump-logo.svg" class="h-9" alt="{{ t.logo_alt }}">
+      </a>
+      <div class="flex gap-4">
+      {%- for tr in page.translations %}{% assign code = tr[0] | slice: 0, 2 %}{% if code != l %}
+        <a href="{{ tr[1] }}" lang="{{ tr[0] }}" onclick="localStorage.setItem('lang','{{ code }}')" class="text-sm text-gray-400 hover:text-white transition-colors">{{ site.data.i18n[code].name }}</a>
+      {%- endif %}{% endfor %}
+      </div>
+    </div>
+  </nav>
