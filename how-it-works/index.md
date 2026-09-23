@@ -42,7 +42,7 @@ Bump is an Android app that lets one phone share its mobile data or Wi-Fi with a
 
 ## Finding a sharer: Bluetooth and the coverage map
 
-A phone that is sharing advertises over BLE about once a second. The advertisement is not connectable and carries no GATT service. Everything the other phone needs is in the manufacturer data of the advertisement itself: a flags byte (whether the sharer is on mobile data, Wi-Fi or both, and whether it is a hotspot or a relay), the Wi-Fi Direct network name and passphrase, and a channel number for the first data link. Phones that support Bluetooth 5 extended advertising also include the sharer's username, a device identifier, a speed estimate and the price per megabyte.
+A phone that is sharing advertises over BLE. Everything the other phone needs to connect is in the advertisement itself: whether the sharer is on mobile data, Wi-Fi or both, whether it is a hotspot or a relay, and the Wi-Fi Direct network name and passphrase. Phones that support Bluetooth 5 extended advertising also include the sharer's username, a speed estimate and the price per megabyte.
 
 Phones looking for Internet advertise too, with a flag that says "I need data". That is how a sharer's phone can tell that people nearby want a connection before anyone taps anything.
 
