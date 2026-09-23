@@ -35,8 +35,6 @@ defaults:
 
 exclude:
   - brand
-  - careers-old
-  - hotspot.md
   - Gemfile
   - Gemfile.lock
   - vendor
@@ -45,6 +43,5 @@ exclude:
   - package-lock.json
   - README.md
   - firebase-debug.log
-  - x-banner-debug.png
   - .htmlvalidate.json
   - .htmlvalidateignore
