@@ -18,7 +18,7 @@ Every page declares:
 ```yaml
 ---
 lang: pt-BR                     # sets <html lang>, og:locale and which nav/footer strings to use
-title: "Quanto custa 1 GB"      # rendered as "<title> | Bump"
+title: "Quanto custa 1 GB"      # rendered as "<title> | Bump App"
 description: "One sentence for search results and link previews."
 translations:                   # optional; generates hreflang links and the language switcher
   en: /prices/
