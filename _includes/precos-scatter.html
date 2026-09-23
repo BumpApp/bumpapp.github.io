@@ -44,7 +44,7 @@ A pack with `label:` in the data file gets a direct label.
   {%- for p in d.packs -%}{%- if p.mb <= xmax -%}
     {%- assign cx = p.mb | times: plotW | divided_by: xmax | plus: L | round: 1 -%}
     {%- assign cy = p.price | times: plotH | divided_by: ymax -%}{%- assign cy = y0 | minus: cy | round: 1 -%}
-    {%- case p.carrier -%}{%- when "Vivo" -%}{%- assign c = "#2A78D6" -%}{%- when "Claro" -%}{%- assign c = "#EB6834" -%}{%- when "Movistar" -%}{%- assign c = "#4A3AA7" -%}{%- else -%}{%- assign c = "#1BAF7A" -%}{%- endcase %}
+    {%- case p.carrier -%}{%- when "Vivo" -%}{%- assign c = "#2A78D6" -%}{%- when "Claro" -%}{%- assign c = "#EB6834" -%}{%- when "Movistar" -%}{%- assign c = "#4A3AA7" -%}{%- when "WOM" -%}{%- assign c = "#2A78D6" -%}{%- when "Virgin Mobile" -%}{%- assign c = "#E87BA4" -%}{%- else -%}{%- assign c = "#1BAF7A" -%}{%- endcase %}
   <circle cx="{{ cx }}" cy="{{ cy }}" r="6" fill="{{ c }}" stroke="#fff" stroke-width="2"><title>{{ p.carrier }} {{ p.pack }}: {{ sym }}{% include {{ fmt }} v=p.price dec="." %}, {{ p.mb }} MB, {{ p.days }}d</title></circle>
     {%- if p.label -%}{%- assign half = W | divided_by: 2 -%}
   <text x="{% if cx > half %}{{ cx | minus: 12 }}{% else %}{{ cx | plus: 4 }}{% endif %}" y="{% if cx > half %}{{ cy | plus: 4 }}{% else %}{{ cy | minus: 11 }}{% endif %}" text-anchor="{% if cx > half %}end{% else %}start{% endif %}" fill="#334155" font-size="12" paint-order="stroke" stroke="#fff" stroke-width="4">{{ p.label }}</text>

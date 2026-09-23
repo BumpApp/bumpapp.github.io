@@ -28,7 +28,7 @@ Compáralo con los dos tipos de paquete que venden los operadores. Son dos situa
 
 ## Paquetes pequeños: cuando se acabó el plan y necesitas poco
 
-Aquí es donde el prepago se pone caro. Cuando los datos se acaban a mitad de mes, el operador vende paquetes de 150 MB a 2 GB que duran de uno a siete días, y el precio por GB se dispara.
+Aquí es donde el prepago se pone caro. Cuando los datos se acaban a mitad de mes, el operador vende paquetes de 150 MB a 6 GB que duran de uno a siete días, y en los más pequeños el precio por GB se dispara.
 
 <table>
 <thead><tr><th>Operador</th><th>Paquete</th><th>Precio</th><th>Vigencia</th><th>$/GB</th><th>Fuente</th></tr></thead>
@@ -36,12 +36,14 @@ Aquí es donde el prepago se pone caro. Cuando los datos se acaban a mitad de me
 <tr><td><strong>Bump</strong></td><td>precio máximo</td><td>por uso</td><td>nunca vence</td><td><strong>{% include cop.html v=bump_gb %}</strong></td><td>esta página</td></tr>
 {%- for p in d.packs -%}{%- if p.size == "small" %}
 {%- assign gb = p.price | times: 1024.0 | divided_by: p.mb %}
-<tr><td>{{ p.carrier }}</td><td>{{ p.pack }}</td><td>${% include cop.html v=p.price %}</td><td>{{ p.days }} día{% if p.days > 1 %}s{% endif %}</td><td>{% include cop.html v=gb %}</td><td><a href="{{ p.source }}" rel="nofollow">{{ p.source | remove: "https://" | remove: "www." | split: "/" | first }}</a></td></tr>
+<tr><td>{{ p.carrier }}</td><td>{{ p.pack }}{% if p.pending %} †{% endif %}</td><td>${% include cop.html v=p.price %}</td><td>{{ p.days }} día{% if p.days > 1 %}s{% endif %}</td><td>{% include cop.html v=gb %}</td><td><a href="{{ p.source }}" rel="nofollow">{{ p.source | remove: "https://" | remove: "www." | split: "/" | first }}</a></td></tr>
 {%- endif -%}{%- endfor %}
 </tbody>
 </table>
 
-Los paquetes de un día de Claro cuestan entre $18.000 y $20.500 por GB, tres veces el precio máximo de Bump; el de tres días, $14.000 por GB. Solo a partir de 2 GB comprados de una vez el operador vuelve a ser más barato por GB. Y los paquetes pequeños vencen en uno, tres o siete días.
+Los paquetes de uno y tres días de Claro cuestan entre $14.000 y $20.500 por GB, de dos a tres veces el precio máximo de Bump, y el de 500 MB de Virgin, $9.200. Pero no todo paquete pequeño es caro: los de WOM ($3.300 a $5.300 por GB), el de tres días de Movistar y el de siete días de Tigo ya quedan por debajo del tope de Bump. Bump gana frente a las porciones más pequeñas, de hasta unos 500 MB; a partir de 1 GB depende del operador. Y todos vencen en uno, tres o siete días.
+
+† Precio tomado del comparador Selectra el 20/07/2026, pendiente de verificar en la página del operador.
 
 ## Paquetes mensuales: cuando compras el mes entero
 
@@ -53,12 +55,14 @@ Comprando 10 GB o más de una vez, el precio por GB del operador es menor que el
 <tr><td><strong>Bump</strong></td><td>precio máximo</td><td>por uso</td><td>nunca vence</td><td><strong>{% include cop.html v=bump_gb %}</strong></td><td>esta página</td></tr>
 {%- for p in d.packs -%}{%- if p.size == "large" %}
 {%- assign gb = p.price | times: 1024.0 | divided_by: p.mb %}
-<tr><td>{{ p.carrier }}</td><td>{{ p.pack }}</td><td>${% include cop.html v=p.price %}</td><td>{{ p.days }} días</td><td>{% include cop.html v=gb %}</td><td><a href="{{ p.source }}" rel="nofollow">{{ p.source | remove: "https://" | remove: "www." | split: "/" | first }}</a></td></tr>
+<tr><td>{{ p.carrier }}</td><td>{{ p.pack }}{% if p.pending %} †{% endif %}</td><td>${% include cop.html v=p.price %}</td><td>{{ p.days }} días</td><td>{% include cop.html v=gb %}</td><td><a href="{{ p.source }}" rel="nofollow">{{ p.source | remove: "https://" | remove: "www." | split: "/" | first }}</a></td></tr>
 {%- endif -%}{%- endfor %}
 </tbody>
 </table>
 
 La cuenta cambia cuando miras lo que realmente usas. El paquete cuesta lo mismo si lo usas todo o casi nada, y lo que sobra desaparece al vencer. En el Todo incluido WIN de $11.000 (2 GB por 7 días), quien usa 500 MB pagó $22.000 por GB; en Bump, esos 500 MB cuestan ${% assign half = bump_gb | times: 500 | divided_by: 1024 %}{% include cop.html v=half %}. El punto de equilibrio es cerca de 1,8 GB en 7 días contra ese paquete y 5,7 GB en 30 días contra el WIN de $35.000. Por debajo, Bump sale más barato; por encima, gana el paquete.
+
+† Precio tomado del comparador Selectra el 20/07/2026, pendiente de verificar en la página del operador.
 
 ## Los dos escenarios en un gráfico
 
@@ -72,7 +76,7 @@ Los dos gráficos muestran un espacio entre los precios de los propios operadore
 
 Quien tiene un plan grande y no lo gasta puede compartir el sobrante por la app. Cada megabyte que pasa por su celular le da puntos, que se convierten en dinero por Bre-B. Su GB le costó $1.250 o menos, así que compartirlo por hasta ${% include cop.html v=bump_gb %} es ingreso por datos que de otro modo habrían vencido sin usarse.
 
-Quien solo necesita un poco de datos ahora mismo consigue ese mismo GB por máximo ${% include cop.html v=bump_gb %} en vez de los $14.000 a $20.500 de un paquete de uno o tres días, y lo que no use hoy sigue siendo suyo mañana. Quienes comparten fijan el precio, así que la competencia entre ellos puede bajarlo del tope, y quien pasa una red Wi-Fi ya cobra la cuarta parte.
+Quien solo necesita un poco de datos ahora mismo consigue ese mismo GB por máximo ${% include cop.html v=bump_gb %} en vez de los $14.000 a $20.500 de un paquete de uno o tres días de Claro, y lo que no use hoy sigue siendo suyo mañana. Quienes comparten fijan el precio, así que la competencia entre ellos puede bajarlo del tope, y quien pasa una red Wi-Fi ya cobra la cuarta parte.
 
 ## Por qué vencen los datos prepago
 
@@ -83,8 +87,8 @@ Los **datos del paquete** no tienen la misma protección. Los gigas valen por la
 ## Notas sobre los datos
 
 - **Movistar ya es de Tigo.** Millicom, la dueña de Tigo, compró Movistar Colombia en 2026 ([Forbes Colombia](https://forbes.co/2026/04/27/negocios/tigo-completa-compra-de-participacion-estatal-en-movistar-colombia-por-856-000-millones/)), y la página de prepago de Movistar ya redirige a la tienda de Tigo. Los listamos por separado mientras sigan vendiendo paquetes distintos.
-- **WOM no aparece** porque su sitio no respondió desde fuera de Colombia el día de la verificación. Lo agregamos en cuanto podamos leer sus precios.
-- **Tigo y Movistar** solo publican su oferta destacada sin iniciar sesión; el resto de sus paquetes está en la app o en la tienda con número de línea. Las dos ofertas que muestran son promociones 2x1 y 3x1 sobre los datos; usamos el precio y los GB que el cliente recibe.
+- **Filas marcadas con †**: vienen de una hoja de julio de 2026 de nuestro equipo con precios del comparador Selectra, no de la página del operador. Las mostramos porque son los únicos paquetes de WOM y de Virgin que tenemos, y los únicos paquetes pequeños de Tigo y Movistar, que no publican su lista sin iniciar sesión. El sitio de WOM no respondió desde fuera de Colombia. Cada fila se reemplaza por la página del operador en cuanto tengamos la captura; los precios de Claro subieron entre julio y septiembre, así que las filas † pueden haber cambiado.
+- **Tigo y Movistar** solo publican su oferta destacada sin iniciar sesión, y las dos son promociones 2x1 y 3x1 sobre los datos; usamos el precio y los GB que el cliente recibe.
 - **Bonos quedaron por fuera**: los GB adicionales por portabilidad o por pagar con Claro Pay no entran en la cuenta.
 - **1 GB = 1.024 MB** en todas las cuentas. Los paquetes de Claro incluyen minutos y mensajes ilimitados; contamos solo los datos, lo que favorece al operador si también usas los minutos.
 
@@ -94,7 +98,7 @@ Cada fila de las tablas sale de una de estas páginas. La captura muestra lo que
 
 <ol>
 {%- for src in d.sources %}
-<li>{{ src.carrier }}, {{ src.page }}: <a href="{{ src.url }}" rel="nofollow">{{ src.url | remove: "https://" | remove: "www." | truncate: 60 }}</a>. Leída el {{ d.checked | date: "%d/%m/%Y" }}.{% if src.shot %} <a href="/assets/precios-co/{{ src.shot }}">Captura</a>.{% endif %}</li>
+<li>{{ src.carrier }}, {{ src.page }}: <a href="{{ src.url }}" rel="nofollow">{{ src.url | remove: "https://" | remove: "www." | truncate: 60 }}</a>. {% if src.pending %}Consultada el {{ src.checked | date: "%d/%m/%Y" }}; pendiente de verificar en la página del operador.{% else %}Leída el {{ d.checked | date: "%d/%m/%Y" }}.{% endif %}{% if src.shot %} <a href="/assets/precios-co/{{ src.shot }}">Captura</a>.{% endif %}</li>
 {%- endfor %}
 </ol>
 
