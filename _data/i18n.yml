@@ -15,6 +15,7 @@ en:
   status: System Status
   footer_label: Footer
   instagram: https://www.instagram.com/bumpapp.xyz/
+  whatsapp: /whatsapp/
   copyright: "&copy; 2022-2026 Bump Inc. All rights reserved. Google Play and the Google Play logo are trademarks of Google LLC."
 es:
   name: Español
@@ -31,6 +32,7 @@ es:
   status: Estado del Sistema
   footer_label: Pie de página
   instagram: https://www.instagram.com/bumpapp.xyz/
+  whatsapp: /es/whatsapp/
   copyright: "&copy; 2022-2026 Bump Inc. Todos los derechos reservados. Google Play y el logotipo de Google Play son marcas registradas de Google LLC."
 pt:
   name: Português
@@ -49,4 +51,5 @@ pt:
   status: Status do Sistema
   footer_label: Rodapé
   instagram: https://www.instagram.com/bumpapp.brasil/
+  whatsapp: /pt/whatsapp/
   copyright: "&copy; 2022-2026 Bump Inc. Todos os direitos reservados. Google Play e o logotipo do Google Play são marcas registradas da Google LLC."
