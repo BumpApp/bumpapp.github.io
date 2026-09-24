@@ -6,13 +6,7 @@
   <meta name="robots" content="noindex">
   <link rel="canonical" href="{{ page.to | escape }}">
   <meta http-equiv="refresh" content="0; url={{ page.to | escape }}">
-  <script>
-    // by_lang sends readers to their language's target: a language they chose wins, else the browser language
-    var lang = '', byLang = {{ page.by_lang | jsonify }} || {};
-    try { lang = localStorage.getItem('lang') || ''; } catch (e) {}
-    lang = lang || (navigator.language || '').slice(0, 2).toLowerCase();
-    location.replace(byLang[lang] || {{ page.to | jsonify }});
-  </script>
+  <script>location.replace({{ page.to | jsonify }})</script>
 </head>
 <body>
   <a href="{{ page.to | escape }}">{{ page.title | escape }}</a>

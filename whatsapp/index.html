@@ -1,10 +1,21 @@
 ---
-layout: redirect
+layout: article
 lang: en
 sitemap: false
 title: Join the Bump WhatsApp group
-to: https://chat.whatsapp.com/JISzKqRsTsG1gA5Bsn61uq
-by_lang:
-  es: /es/whatsapp/
-  pt: /pt/whatsapp/
+description: "Bump has a WhatsApp community for each country where it is live. Pick yours."
 ---
+<script>
+  // Portuguese/Spanish readers go straight to their group: a language they chose wins, else the browser language
+  var lang = '';
+  try { lang = localStorage.getItem('lang') || ''; } catch (e) {}
+  lang = lang || (navigator.language || '').slice(0, 2).toLowerCase();
+  if (lang === 'pt' || lang === 'es') location.replace('/' + lang + '/whatsapp/');
+</script>
+
+<p>Bump has a WhatsApp community for each country where it is live. Pick yours.</p>
+
+<div class="not-prose mt-8 flex flex-wrap gap-4">
+  <a href="/pt/whatsapp/" class="inline-flex items-center rounded-xl bg-primary px-6 py-3 text-lg font-semibold text-white hover:bg-emerald-600 transition-colors">🇧🇷 Brazil</a>
+  <a href="/es/whatsapp/" class="inline-flex items-center rounded-xl bg-primary px-6 py-3 text-lg font-semibold text-white hover:bg-emerald-600 transition-colors">🇨🇴 Colombia</a>
+</div>
