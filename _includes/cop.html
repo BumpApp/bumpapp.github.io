@@ -1,0 +1,6 @@
+{%- comment -%}Integer with dot thousands separators for COP: 26000 -> 26.000. Usage: {% include cop.html v=price %}{%- endcomment -%}
+{%- assign n = include.v | round -%}
+{%- assign m = n | divided_by: 1000000 -%}
+{%- assign k = n | modulo: 1000000 | divided_by: 1000 -%}
+{%- assign u = n | modulo: 1000 -%}
+{%- if m > 0 -%}{{ m }}.{{ k | prepend: "000" | slice: -3, 3 }}.{{ u | prepend: "000" | slice: -3, 3 }}{%- elsif k > 0 -%}{{ k }}.{{ u | prepend: "000" | slice: -3, 3 }}{%- else -%}{{ u }}{%- endif -%}

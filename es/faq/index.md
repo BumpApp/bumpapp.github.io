@@ -45,7 +45,7 @@ El alcance de Bluetooth y Wi-Fi Direct: el mismo salón, edificio, plaza o bus. 
 
 ## ¿Cuánto cuesta el Internet en Bump?
 
-Pagas por megabyte con créditos Bump, al precio que fijó quien comparte, solo por lo que usas. Los créditos se compran con tarjeta de crédito, con PSE en Colombia o con Pix en Brasil, desde 10.000 COP en Colombia y R$4 en Brasil. A diferencia de la mayoría de los paquetes prepago, que vencen en un mes o menos, los créditos que compras nunca vencen.
+Pagas por megabyte con créditos Bump, al precio que fijó quien comparte, solo por lo que usas. Los créditos se compran con tarjeta de crédito, con PSE en Colombia o con Pix en Brasil, desde 10.000 COP en Colombia y R$4 en Brasil. A diferencia de la mayoría de los paquetes prepago, que vencen en un mes o menos, los créditos que compras nunca vencen. Mira [cuánto cuesta 1 GB en Claro, Tigo y Movistar](/es/precios/) comparado con Bump.
 
 ## ¿Cómo gano dinero con Bump?
 
