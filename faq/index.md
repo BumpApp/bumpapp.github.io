@@ -11,12 +11,6 @@ translations:
 
 Bump is a peer-to-peer Internet sharing app for Android, in public beta in Brazil and Colombia. These are the questions people ask before they install it, answered plainly.
 
-## Is Bump a scam?
-
-No. Bump is an app that lets people with data to spare share their Internet connection with people nearby, and pays them for the data that flows through their phone. The app is free on [Google Play](https://play.google.com/store/apps/details?id=xyz.bumpapp.prod). There is no subscription and nothing is charged until you choose to buy credits.
-
-Referral rewards are a fixed, one-time grant of points when someone you invited creates a profile. Nobody earns anything from anyone else's sharing, so there is no pyramid and nothing to recruit for.
-
 ## Does Bump actually work?
 
 Yes, when someone sharing is within range. Bump uses Bluetooth to find people sharing nearby and a Wi-Fi Direct connection to link your phones, the same technology as an ordinary hotspot. The coverage map in the app shows who is sharing near you before you connect.
@@ -66,6 +60,12 @@ Sharing on Bump is ordinary phone tethering. Check your plan's hotspot allowance
 ## Does Bump drain my battery?
 
 Sharing runs a hotspot, so it uses more battery than an idle phone. Do it when you are plugged in or sitting for a while. Using Bump to get online costs about the same as any Wi-Fi connection.
+
+## Is Bump a scam?
+
+No. Bump is an app that lets people with data to spare share their Internet connection with people nearby, and pays them for the data that flows through their phone. The app is free on [Google Play](https://play.google.com/store/apps/details?id=xyz.bumpapp.prod). There is no subscription and nothing is charged until you choose to buy credits.
+
+Referral rewards are a fixed, one-time grant of points when someone you invited creates a profile. Nobody earns anything from anyone else's sharing, so there is no pyramid and nothing to recruit for.
 
 ## Is Bump legal?
 

@@ -11,12 +11,6 @@ translations:
 
 O Bump é um app Android para compartilhar Internet entre celulares, em beta público no Brasil e na Colômbia. Estas são as perguntas que as pessoas fazem antes de instalar, respondidas sem enrolação.
 
-## O Bump é golpe?
-
-Não. O Bump é um app que permite a quem tem dados sobrando compartilhar a conexão com pessoas por perto, e paga por cada dado que passa pelo celular de quem compartilha. O app é gratuito na [Google Play](https://play.google.com/store/apps/details?id=xyz.bumpapp.prod). Não há assinatura e nada é cobrado até você decidir comprar créditos.
-
-A recompensa por indicação é uma quantidade fixa de pontos, uma única vez, quando alguém que você convidou cria o perfil. Ninguém ganha nada com o que os outros compartilham, então não existe pirâmide nem ninguém para recrutar.
-
 ## O Bump funciona mesmo?
 
 Sim, quando alguém está compartilhando dentro do alcance. O Bump usa Bluetooth para encontrar quem compartilha por perto e uma conexão Wi-Fi Direct para ligar os celulares, a mesma tecnologia de um roteador de celular comum. O mapa de cobertura no app mostra quem está compartilhando perto de você antes de conectar.
@@ -66,6 +60,12 @@ Compartilhar no Bump é o mesmo roteamento (hotspot) de sempre. Confira quanto o
 ## O Bump gasta muita bateria?
 
 Compartilhar mantém um roteador ligado, então gasta mais bateria do que um celular parado. Faça isso quando estiver carregando ou parado por um tempo. Usar o Bump para se conectar gasta mais ou menos o mesmo que qualquer Wi-Fi.
+
+## O Bump é golpe?
+
+Não. O Bump é um app que permite a quem tem dados sobrando compartilhar a conexão com pessoas por perto, e paga por cada dado que passa pelo celular de quem compartilha. O app é gratuito na [Google Play](https://play.google.com/store/apps/details?id=xyz.bumpapp.prod). Não há assinatura e nada é cobrado até você decidir comprar créditos.
+
+A recompensa por indicação é uma quantidade fixa de pontos, uma única vez, quando alguém que você convidou cria o perfil. Ninguém ganha nada com o que os outros compartilham, então não existe pirâmide nem ninguém para recrutar.
 
 ## O Bump é legal?
 
