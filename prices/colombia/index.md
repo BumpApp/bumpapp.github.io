@@ -87,7 +87,7 @@ The **data in a pack** has no such protection. The gigabytes last for the offer'
 ## Notes on the data
 
 - **Movistar now belongs to Tigo.** Millicom, Tigo's owner, bought Movistar Colombia in 2026 ([Forbes Colombia](https://forbes.co/2026/04/27/negocios/tigo-completa-compra-de-participacion-estatal-en-movistar-colombia-por-856-000-millones/)), and Movistar's prepaid sign-up page already redirects to Tigo's store. We list them separately while they still sell different packs.
-- **Rows marked †** come from a July 2026 spreadsheet by our team with prices from the Selectra comparison site, not from the carrier's page. We show them because they are the only WOM and Virgin packs we have, and the only small Tigo and Movistar packs, since those carriers don't publish their lists without a login. WOM's site did not respond from outside Colombia. Each row is replaced by the carrier's page as soon as we have the screenshot; Claro's prices rose between July and September, so † rows may have changed.
+- **Rows marked †** come from a July 2026 spreadsheet by our team with prices from the Selectra comparison site, not from the carrier's page. We show them because they are the only WOM and Virgin packs we have, and the only small Tigo and Movistar packs, since those carriers don't publish their lists without a login. WOM's domain (wom.co) does not resolve in DNS, even from a connection in Bogotá: its name servers do not answer. Each row is replaced by the carrier's page as soon as we have the screenshot; Claro's prices rose between July and September, so † rows may have changed.
 - **Tigo and Movistar** only publish their headline offer without a login, and both are 2x1 / 3x1 data promotions; we use the price and the GB the customer actually receives.
 - **Bonuses are left out**: extra GB for porting a number or paying with Claro Pay are not counted.
 - **1 GB = 1,024 MB** throughout. Claro's packs include unlimited minutes and texts; we count only the data, which favours the carrier if you also use the minutes.
@@ -102,7 +102,7 @@ Every row in the tables comes from one of these pages. The screenshot shows what
 {%- endfor %}
 </ol>
 
-The screenshots were taken from outside Colombia with the browser translating the page to English, so the visible text is English. The raw data, with price, allowance, validity and source for every pack, is in [`_data/precios_co.yml`](https://github.com/BumpApp/bumpapp.github.io/blob/main/_data/precios_co.yml) in this site's public repository.
+The Claro, Movistar and Selectra screenshots are from 2026-10-13, taken with a Spanish-language browser through a VPN exit in Bogotá, not from a phone in Colombia; the prices matched those read on 2026-09-23. The Tigo screenshot is from 2026-09-23, taken from outside Colombia with the page translated to English, because Tigo's site blocks VPN connections. The raw data, with price, allowance, validity and source for every pack, is in [`_data/precios_co.yml`](https://github.com/BumpApp/bumpapp.github.io/blob/main/_data/precios_co.yml) in this site's public repository.
 
 Found an outdated price? Write to [support@bumpapp.xyz](mailto:support@bumpapp.xyz) with the carrier's link and we'll fix it.
 

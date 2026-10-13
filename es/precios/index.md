@@ -87,7 +87,7 @@ Los **datos del paquete** no tienen la misma protección. Los gigas valen por la
 ## Notas sobre los datos
 
 - **Movistar ya es de Tigo.** Millicom, la dueña de Tigo, compró Movistar Colombia en 2026 ([Forbes Colombia](https://forbes.co/2026/04/27/negocios/tigo-completa-compra-de-participacion-estatal-en-movistar-colombia-por-856-000-millones/)), y la página de prepago de Movistar ya redirige a la tienda de Tigo. Los listamos por separado mientras sigan vendiendo paquetes distintos.
-- **Filas marcadas con †**: vienen de una hoja de julio de 2026 de nuestro equipo con precios del comparador Selectra, no de la página del operador. Las mostramos porque son los únicos paquetes de WOM y de Virgin que tenemos, y los únicos paquetes pequeños de Tigo y Movistar, que no publican su lista sin iniciar sesión. El sitio de WOM no respondió desde fuera de Colombia. Cada fila se reemplaza por la página del operador en cuanto tengamos la captura; los precios de Claro subieron entre julio y septiembre, así que las filas † pueden haber cambiado.
+- **Filas marcadas con †**: vienen de una hoja de julio de 2026 de nuestro equipo con precios del comparador Selectra, no de la página del operador. Las mostramos porque son los únicos paquetes de WOM y de Virgin que tenemos, y los únicos paquetes pequeños de Tigo y Movistar, que no publican su lista sin iniciar sesión. El dominio de WOM (wom.co) no resuelve en DNS, ni siquiera desde una conexión en Bogotá: sus servidores de nombres no responden. Cada fila se reemplaza por la página del operador en cuanto tengamos la captura; los precios de Claro subieron entre julio y septiembre, así que las filas † pueden haber cambiado.
 - **Tigo y Movistar** solo publican su oferta destacada sin iniciar sesión, y las dos son promociones 2x1 y 3x1 sobre los datos; usamos el precio y los GB que el cliente recibe.
 - **Bonos quedaron por fuera**: los GB adicionales por portabilidad o por pagar con Claro Pay no entran en la cuenta.
 - **1 GB = 1.024 MB** en todas las cuentas. Los paquetes de Claro incluyen minutos y mensajes ilimitados; contamos solo los datos, lo que favorece al operador si también usas los minutos.
@@ -102,7 +102,7 @@ Cada fila de las tablas sale de una de estas páginas. La captura muestra lo que
 {%- endfor %}
 </ol>
 
-Las capturas se hicieron desde fuera de Colombia, con el navegador traduciendo la página al inglés, así que el texto visible está en inglés. Los datos crudos, con precio, datos, vigencia y fuente de cada paquete, están en [`_data/precios_co.yml`](https://github.com/BumpApp/bumpapp.github.io/blob/main/_data/precios_co.yml) en el repositorio público de este sitio.
+Las capturas de Claro, Movistar y Selectra son del 13/10/2026, tomadas con el navegador en español a través de una salida VPN en Bogotá, no desde un teléfono en Colombia; los precios coincidían con los leídos el 23/09/2026. La captura de Tigo es del 23/09/2026, desde fuera de Colombia y con la página traducida al inglés, porque el sitio de Tigo bloquea las conexiones por VPN. Los datos crudos, con precio, datos, vigencia y fuente de cada paquete, están en [`_data/precios_co.yml`](https://github.com/BumpApp/bumpapp.github.io/blob/main/_data/precios_co.yml) en el repositorio público de este sitio.
 
 ¿Encontraste un precio desactualizado? Escribe a [support@bumpapp.xyz](mailto:support@bumpapp.xyz) con el enlace del operador y lo corregimos.
 
