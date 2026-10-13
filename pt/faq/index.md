@@ -11,12 +11,6 @@ translations:
 
 O Bump é um app Android para compartilhar Internet entre celulares, em beta público no Brasil e na Colômbia. Estas são as perguntas que as pessoas fazem antes de instalar, respondidas sem enrolação.
 
-## O Bump funciona mesmo?
-
-Sim, quando alguém está compartilhando dentro do alcance. O Bump usa Bluetooth para encontrar quem compartilha por perto e uma conexão Wi-Fi Direct para ligar os celulares, a mesma tecnologia de um roteador de celular comum. O mapa de cobertura no app mostra quem está compartilhando perto de você antes de conectar.
-
-Se ainda não há ninguém compartilhando perto de você, o mapa vai estar vazio. Isso não é defeito. A rede cresce conforme as pessoas entram, e funciona melhor em lugares movimentados: campus, terminais, feiras e bairros densos.
-
 ## Como o Bump funciona?
 
 **Para compartilhar:** abra o app, toque em Compartilhar e escolha quantos dados você quer oferecer. O Bump anuncia seu celular por Bluetooth para que as pessoas por perto possam te encontrar. Seu celular repassa seus dados móveis ou Wi-Fi para elas por uma conexão Wi-Fi Direct.
@@ -24,6 +18,12 @@ Se ainda não há ninguém compartilhando perto de você, o mapa vai estar vazio
 **Para usar:** abra o app e veja no mapa de cobertura quem está compartilhando perto, com força do sinal e preço. Escolha um, toque em Conectar e seu celular se liga diretamente ao dele. Você paga com créditos Bump apenas pelos dados que realmente usar.
 
 A engenharia por trás de tudo isso, inclusive o que quem compartilha vê e o que não vê, está na página [Como o Bump funciona](/pt/how-it-works/).
+
+## O Bump funciona mesmo?
+
+Sim, quando alguém está compartilhando dentro do alcance. O Bump usa Bluetooth para encontrar quem compartilha por perto e uma conexão Wi-Fi Direct para ligar os celulares, a mesma tecnologia de um roteador de celular comum. O mapa de cobertura no app mostra quem está compartilhando perto de você antes de conectar.
+
+Se ainda não há ninguém compartilhando perto de você, o mapa vai estar vazio. Isso não é defeito. A rede cresce conforme as pessoas entram, e funciona melhor em lugares movimentados: campus, terminais, feiras e bairros densos.
 
 ## O Bump é seguro? Quem compartilha vê o que eu acesso?
 

@@ -11,12 +11,6 @@ translations:
 
 Bump es una app de Android para compartir Internet entre celulares, en beta pública en Colombia y Brasil. Estas son las preguntas que la gente hace antes de instalarla, respondidas sin rodeos.
 
-## ¿Bump funciona de verdad?
-
-Sí, cuando hay alguien compartiendo dentro del alcance. Bump usa Bluetooth para encontrar a quienes comparten cerca y una conexión Wi-Fi Direct para enlazar los celulares, la misma tecnología de un hotspot normal. El mapa de cobertura de la app muestra quién está compartiendo cerca de ti antes de conectarte.
-
-Si todavía nadie comparte cerca de ti, el mapa estará vacío. No es una falla. La red crece a medida que la gente se une, y funciona mejor en lugares concurridos: universidades, portales, plazas de mercado y barrios densos.
-
 ## ¿Cómo funciona Bump?
 
 **Para compartir:** abre la app, toca Compartir y elige cuántos datos quieres ofrecer. Bump anuncia tu celular por Bluetooth para que las personas cercanas puedan encontrarte. Tu celular les pasa tus datos móviles o tu Wi-Fi por una conexión Wi-Fi Direct.
@@ -24,6 +18,12 @@ Si todavía nadie comparte cerca de ti, el mapa estará vacío. No es una falla.
 **Para usar:** abre la app y mira en el mapa de cobertura quién está compartiendo cerca, con la intensidad de señal y el precio. Elige uno, toca Conectar y tu celular se enlaza directamente con el suyo. Pagas con créditos Bump solo por los datos que realmente usas.
 
 La ingeniería detrás de todo esto, incluido qué puede ver quien comparte y qué no, está en la página [Cómo funciona Bump](/es/how-it-works/).
+
+## ¿Bump funciona de verdad?
+
+Sí, cuando hay alguien compartiendo dentro del alcance. Bump usa Bluetooth para encontrar a quienes comparten cerca y una conexión Wi-Fi Direct para enlazar los celulares, la misma tecnología de un hotspot normal. El mapa de cobertura de la app muestra quién está compartiendo cerca de ti antes de conectarte.
+
+Si todavía nadie comparte cerca de ti, el mapa estará vacío. No es una falla. La red crece a medida que la gente se une, y funciona mejor en lugares concurridos: universidades, portales, plazas de mercado y barrios densos.
 
 ## ¿Bump es seguro? ¿Quien comparte puede ver lo que hago en Internet?
 
