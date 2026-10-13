@@ -6,8 +6,11 @@ en:
   how_url: /how-it-works/
   faq: FAQ
   faq_url: /faq/
-  prices: Data prices in Brazil
-  prices_url: /prices/brazil/
+  prices:
+    - label: Data prices in Brazil
+      url: /prices/brazil/
+    - label: Data prices in Colombia
+      url: /prices/colombia/
   tos: Terms of Service
   tos_url: /terms-of-service/
   privacy: Privacy Policy
@@ -25,8 +28,9 @@ es:
   how_url: /es/how-it-works/
   faq: Preguntas Frecuentes
   faq_url: /es/faq/
-  prices: Precios de datos en Colombia
-  prices_url: /es/precios/
+  prices:
+    - label: Precios de datos en Colombia
+      url: /es/precios/
   tos: Términos de Servicio
   tos_url: /es/terms-of-service/
   privacy: Política de Privacidad
@@ -44,8 +48,9 @@ pt:
   how_url: /pt/how-it-works/
   faq: Perguntas Frequentes
   faq_url: /pt/faq/
-  prices: Preços de internet no Brasil
-  prices_url: /pt/precos/
+  prices:
+    - label: Preços de internet no Brasil
+      url: /pt/precos/
   tos: Termos de Serviço
   tos_url: /pt/terms-of-service/
   privacy: Política de Privacidade
