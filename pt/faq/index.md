@@ -25,6 +25,10 @@ Sim, quando alguém está compartilhando dentro do alcance. O Bump usa Bluetooth
 
 Se ainda não há ninguém compartilhando perto de você, o mapa vai estar vazio. Isso não é defeito. A rede cresce conforme as pessoas entram, e funciona melhor em lugares movimentados: campus, terminais, feiras e bairros densos.
 
+## De quem é a Internet vendida no Bump?
+
+No Bump, algumas pessoas escolhem compartilhar e outras escolhem usar. Quem compartilha oferece a Internet que já paga, sejam os dados móveis ou qualquer rede Wi-Fi em que o celular esteja conectado, e ganha uma recompensa por isso. Quem usa compra essa Internet compartilhada com créditos. O Bump não fornece Internet: tudo o que circula na rede vem da conexão de quem compartilha.
+
 ## O Bump é seguro? Quem compartilha vê o que eu acesso?
 
 Sim, o Bump é seguro. E não, quem compartilha não vê o que você acessa. Todo o seu tráfego passa por um túnel VPN criptografado do seu celular até a Internet. O celular de quem compartilha só repassa bytes embaralhados. Ele vê quantos dados você usou, não o que você fez com eles. Você também não vê o dele. A privacidade faz parte do projeto, não é uma opção.
@@ -45,6 +49,14 @@ Você paga por megabyte com créditos Bump, pelo preço que quem compartilha def
 
 Compartilhando sua conexão. Cada megabyte que passa pelo seu celular rende pontos de recompensa, e você decide quanto e quando compartilhar. Os pontos se acumulam no app enquanto você segue seu dia, e você os converte em dinheiro via Pix no Brasil ou Bre-B na Colômbia.
 
+## Posso compartilhar Wi-Fi ou só dados móveis?
+
+Os dois. Você pode compartilhar sua conexão móvel ou qualquer rede Wi-Fi em que estiver conectado. O Wi-Fi rende menos porque normalmente custa muito menos que os dados móveis, e muitas vezes é de graça. A recompensa por compartilhar Wi-Fi cobre principalmente a bateria gasta para manter a conexão ligada.
+
+## Quanto tempo demora o saque?
+
+Até uma semana. Os saques saem via Pix no Brasil e Bre-B na Colômbia. Às vezes pausamos os saques enquanto trabalhamos em correções no sistema de pagamento, e avisamos no grupo da comunidade do país. O Bump nunca pede seus dados bancários nem senhas pelo Instagram ou por mensagem direta.
+
 ## Por que alguém compartilharia a Internet?
 
 Porque recebe por isso, e porque em um plano grande ou ilimitado não custa quase nada. Em um país novo onde os pagamentos ainda não foram ativados, quem compartilha primeiro é o primeiro da fila quando eles abrem.
@@ -52,6 +64,10 @@ Porque recebe por isso, e porque em um plano grande ou ilimitado não custa quas
 ## Onde o Bump está disponível e quando os pagamentos abrem no meu país?
 
 O Bump está disponível no Android no Brasil, com pagamento via Pix, e na Colômbia, com pagamento via Bre-B. Países novos começam com acesso gratuito enquanto terminamos o meio de pagamento local, e anunciamos cada um no grupo da comunidade do país. Novas regiões estão a caminho.
+
+## Tem versão para iPhone?
+
+Hoje não. O Bump é só para Android. Podemos lançar uma versão para iOS no futuro, e avisaremos nos grupos da comunidade quando isso acontecer.
 
 ## Minha operadora permite?
 

@@ -25,6 +25,10 @@ Yes, when someone sharing is within range. Bump uses Bluetooth to find people sh
 
 If nobody is sharing near you yet, the map will be empty. That is not a fault. The network grows as people join, and it works best in busy places: campuses, terminals, markets and dense neighbourhoods.
 
+## Whose Internet is being sold on Bump?
+
+Some people on Bump choose to share and some choose to use. Sharers give out the Internet they already pay for, either their mobile data or any Wi-Fi network their phone is connected to, and earn a reward for doing it. Users buy that shared Internet with credits. Bump does not provide Internet itself: everything on the network comes from a sharer's own connection.
+
 ## Is Bump safe? Can the person sharing see what I do online?
 
 Yes, Bump is safe. And no, the person sharing cannot see what you do online. All of your traffic runs inside an encrypted VPN tunnel from your phone to the Internet. The sharer's phone only relays scrambled bytes. They can see how much data you used, not what it was. You cannot see theirs either. Privacy is part of the design, not an option.
@@ -45,6 +49,14 @@ You pay per megabyte with Bump credits, at the price the sharer set, only for wh
 
 Share your connection. Every megabyte that flows through your phone earns you reward points, and you decide how much to share and when. Your points build up in the app while you go about your day, and you can convert them into money with Pix in Brazil or Bre-B in Colombia.
 
+## Can I share Wi-Fi, or only mobile data?
+
+Both. You can share your mobile connection or any Wi-Fi network you are connected to. Wi-Fi earns at a lower rate because it usually costs far less than mobile data, and is often free to use. The reward for sharing Wi-Fi mostly covers the battery it takes to keep the connection up.
+
+## How long does a withdrawal take?
+
+Up to a week. Withdrawals go out through Pix in Brazil and Bre-B in Colombia. We sometimes pause withdrawals while we work on fixes to the payment system, and we announce that in the country's community group. Bump never asks for your bank details or passwords over Instagram or direct message.
+
 ## Why would anyone share their Internet?
 
 Because they are paid for it, and because on a large or unlimited plan it costs them almost nothing. In a new country where earning is not switched on yet, the people who share first are first in line when payouts open.
@@ -52,6 +64,10 @@ Because they are paid for it, and because on a large or unlimited plan it costs 
 ## Where is Bump available, and when do payouts open in my country?
 
 Bump is live on Android in Brazil, with payouts through Pix, and in Colombia, with payouts through Bre-B. New countries start with free access while we finish the local payout rail, and we announce each one in the country's community group. More regions are on the way.
+
+## Is there an iPhone version?
+
+Not today. Bump is Android only. We may release an iOS version in the future, and we will announce it in the community groups when we do.
 
 ## Does my carrier allow it?
 
