@@ -1,5 +1,5 @@
 {%- comment -%}
-Dot plot of price per GB for every pack in a prices data file, small and monthly packs as two groups,
+Dot plot of price per GB for every pack in a prices data file, packs up to 7 days and packs of 8 days or more as two groups,
 with Bump's ceiling and Wi-Fi rate as reference lines.
 Params: lang ("pt", "en" or "es"); data (data file name, default "precos_br"); cur ("brl" default, or "cop");
 xmax and step (axis max and tick step in the currency per GB, defaults 28 and 4).
@@ -36,7 +36,7 @@ The key string ends in a comma; Liquid's split (Ruby String#split) drops trailin
 {%- assign xw = wifi_gb | times: plotW | divided_by: xmax | plus: L -%}
 <figure>
 <svg viewBox="0 0 {{ W }} {{ H }}" role="img" aria-labelledby="fig-dot-title" style="width:100%;height:auto;font-family:Inter,system-ui,sans-serif;font-size:13px">
-  <title id="fig-dot-title">{% case lang %}{% when "pt" %}Preço por GB de cada pacote, pequenos e mensais, com o teto do Bump e o preço em Wi-Fi como linhas de referência.{% when "es" %}Precio por GB de cada paquete, pequeños y mensuales, con el tope de Bump y el precio en Wi-Fi como líneas de referencia.{% else %}Price per GB of every pack, small and monthly, with Bump's ceiling and Wi-Fi rate as reference lines.{% endcase %}</title>
+  <title id="fig-dot-title">{% case lang %}{% when "pt" %}Preço por GB de cada pacote, de até 7 dias e de 8 dias ou mais, com o teto do Bump e o preço em Wi-Fi como linhas de referência.{% when "es" %}Precio por GB de cada paquete, de hasta 7 días y de 8 días o más, con el tope de Bump y el precio en Wi-Fi como líneas de referencia.{% else %}Price per GB of every pack, up to 7 days and 8 days or more, with Bump's ceiling and Wi-Fi rate as reference lines.{% endcase %}</title>
   {%- for v in (0..ticks) -%}{%- assign g = v | times: step -%}{%- assign gx = g | times: plotW | divided_by: xmax | plus: L %}
   <line x1="{{ gx }}" x2="{{ gx }}" y1="{{ plotTop }}" y2="{{ plotBot }}" stroke="#E2E8F0"/>
   <text x="{{ gx }}" y="{{ H | minus: 8 }}" text-anchor="middle" fill="#64748B" font-size="12">{% if g == 0 %}{{ sym }}0{% else %}{% if cur == "cop" %}{% include cop.html v=g %}{% else %}{{ g }}{% endif %}{% endif %}</text>

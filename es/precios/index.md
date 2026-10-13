@@ -41,7 +41,7 @@ Aquí es donde el prepago se pone caro. Cuando los datos se acaban a mitad de me
 </tbody>
 </table>
 
-Los paquetes de uno y tres días de Claro cuestan entre $14.000 y $20.500 por GB, de cinco a siete veces el precio máximo de Bump; el de 500 MB de Virgin, $9.200; los de uno a seis días de WOM, $5.000 a $5.300; el WIN de 7 días de Claro, con Win Sports incluido, $5.500. Solo los paquetes de siete días de 2 GB o más sin extras ($1.500 a $2.500 por GB) quedan por debajo del tope de Bump. Y todos vencen en una semana o menos.
+Los paquetes de uno y tres días de Claro cuestan entre $14.000 y $20.500 por GB, de cinco a siete veces el precio máximo de Bump; el de 500 MB de Virgin, $9.200; los de uno a seis días de WOM, $5.000 a $5.300; el WIN de 7 días de Claro, con Win Sports incluido, $5.500. Solo los paquetes de siete días de 4 GB o más, todos filas † ($1.500 a $2.500 por GB), quedan por debajo del tope de Bump, más el paquete de bienvenida de Claro de $5.000 ($2.500 por GB), que es solo para líneas nuevas y portaciones. Y todos vencen en una semana o menos.
 
 † Precio tomado del comparador Selectra el 20/07/2026, pendiente de verificar en la página del operador.
 

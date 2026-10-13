@@ -41,7 +41,7 @@ This is where prepaid gets expensive. When the data runs out mid-month, the carr
 </tbody>
 </table>
 
-Claro's one- and three-day packs cost $14,000 to $20,500 per GB, five to seven times Bump's maximum; Virgin's 500 MB pack $9,200; WOM's one- to six-day packs $5,000 to $5,300; Claro's 7-day WIN pack, with Win Sports bundled, $5,500. Only the plain seven-day packs of 2 GB or more ($1,500 to $2,500 per GB) sit below Bump's ceiling. And all of them expire within a week.
+Claro's one- and three-day packs cost $14,000 to $20,500 per GB, five to seven times Bump's maximum; Virgin's 500 MB pack $9,200; WOM's one- to six-day packs $5,000 to $5,300; Claro's 7-day WIN pack, with Win Sports bundled, $5,500. Only the seven-day packs of 4 GB or more, all of them † rows ($1,500 to $2,500 per GB), sit below Bump's ceiling, plus Claro's $5,000 welcome pack ($2,500 per GB), which is only for new lines and portabilities. And all of them expire within a week.
 
 † Price taken from the Selectra comparison site on 2026-07-20, pending verification on the carrier's page.
 
