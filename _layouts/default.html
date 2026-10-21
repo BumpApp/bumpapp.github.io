@@ -6,7 +6,7 @@
   {% seo %}
   <script type="application/ld+json">
   {"@context":"https://schema.org","@graph":[
-    {"@type":"Organization","@id":"{{ site.url }}/#org","name":"Bump","alternateName":["Bump App","BumpApp","bumpapp"],"url":"{{ site.url }}/","logo":"{{ site.logo | absolute_url }}","sameAs":{{ site.social.links | jsonify }}},
+    {"@type":"Organization","@id":"{{ site.url }}/#org","name":"Bump","legalName":"Bump, Inc.","alternateName":["Bump Inc","Bump, Inc.","Bump App","BumpApp","bumpapp"],"url":"{{ site.url }}/","logo":"{{ site.logo | absolute_url }}","email":"contact@bumpapp.xyz","address":{"@type":"PostalAddress","streetAddress":"500 Boylston St., Suite 900","addressLocality":"Boston","addressRegion":"MA","postalCode":"02116","addressCountry":"US"},"sameAs":{{ site.social.links | jsonify }}},
     {"@type":"MobileApplication","name":"Bump","alternateName":"Bump App","description":{{ site.tagline | jsonify }},"operatingSystem":"Android","applicationCategory":"UtilitiesApplication","installUrl":"https://play.google.com/store/apps/details?id=xyz.bumpapp.prod","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@id":"{{ site.url }}/#org"}}
   ]}
   </script>
