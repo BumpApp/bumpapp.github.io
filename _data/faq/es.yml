@@ -1,0 +1,100 @@
+# The FAQ in es. One entry per question; `id` is shared across languages and the app deep-links to it.
+# `answer` is markdown limited to paragraphs (blank line), **bold** and [text](url) links; site-relative links are fine.
+
+- id: how-it-works
+  question: "¿Cómo funciona Bump?"
+  answer: |
+    **Para compartir:** abre la app, toca Compartir y elige cuántos datos quieres ofrecer. Bump anuncia tu celular por Bluetooth para que las personas cercanas puedan encontrarte. Tu celular les pasa tus datos móviles o tu Wi-Fi por una conexión Wi-Fi Direct.
+
+    **Para usar:** abre la app y mira en el mapa de cobertura quién está compartiendo cerca, con la intensidad de señal y el precio. Elige uno, toca Conectar y tu celular se enlaza directamente con el suyo. Pagas con créditos Bump solo por los datos que realmente usas.
+
+    La ingeniería detrás de todo esto, incluido qué puede ver quien comparte y qué no, está en la página [Cómo funciona Bump](/es/how-it-works/).
+
+- id: does-it-work
+  question: "¿Bump funciona de verdad?"
+  answer: |
+    Sí, cuando hay alguien compartiendo dentro del alcance. Bump usa Bluetooth para encontrar a quienes comparten cerca y una conexión Wi-Fi Direct para enlazar los celulares, la misma tecnología de un hotspot normal. El mapa de cobertura de la app muestra quién está compartiendo cerca de ti antes de conectarte.
+
+    Si todavía nadie comparte cerca de ti, el mapa estará vacío. No es una falla. La red crece a medida que la gente se une, y funciona mejor en lugares concurridos: universidades, portales, plazas de mercado y barrios densos.
+
+- id: whose-internet
+  question: "¿De quién es el Internet que se vende en Bump?"
+  answer: |
+    En Bump, algunas personas eligen compartir y otras eligen usar. Quien comparte ofrece el Internet que ya paga, ya sean sus datos móviles o cualquier red Wi-Fi a la que esté conectado su celular, y gana una recompensa por hacerlo. Quien usa compra ese Internet compartido con créditos. Bump no provee Internet: todo lo que circula en la red viene de la conexión de quien comparte.
+
+- id: safety
+  question: "¿Bump es seguro? ¿Quien comparte puede ver lo que hago en Internet?"
+  answer: |
+    Sí, Bump es seguro. Y no, quien comparte no puede ver lo que haces en Internet. Todo tu tráfico va dentro de un túnel VPN cifrado desde tu celular hasta Internet. El celular de quien comparte solo retransmite bytes cifrados. Puede ver cuántos datos usaste, no qué hiciste con ellos. Tú tampoco puedes ver lo suyo. La privacidad es parte del diseño, no una opción.
+
+- id: data-limit
+  question: "¿No me van a acabar el plan de datos si comparto?"
+  answer: |
+    Tú apruebas a cada persona que quiere conectarse y le pones un límite de datos. Puedes dejar de compartir en cualquier momento. Nadie puede usar más de lo que autorizaste.
+
+- id: range
+  question: "¿Hasta dónde llega Bump?"
+  answer: |
+    El alcance de Bluetooth y Wi-Fi Direct: el mismo salón, edificio, plaza o bus. Bump no es Wi-Fi para toda la ciudad. Si puedes ver a la persona que comparte, casi seguro estás en el alcance.
+
+- id: cost
+  question: "¿Cuánto cuesta el Internet en Bump?"
+  answer: |
+    Pagas por megabyte con créditos Bump, al precio que fijó quien comparte, solo por lo que usas. Los créditos se compran con tarjeta de crédito, con PSE en Colombia o con Pix en Brasil, desde 10.000 COP en Colombia y R$4 en Brasil. A diferencia de la mayoría de los paquetes prepago, que vencen en un mes o menos, los créditos que compras nunca vencen. Mira [cuánto cuesta 1 GB en Claro, Tigo y Movistar](/es/precios/) comparado con Bump.
+
+- id: earning
+  question: "¿Cómo gano dinero con Bump?"
+  answer: |
+    Compartiendo tu conexión. Cada megabyte que pasa por tu celular te da puntos de recompensa, y tú decides cuánto y cuándo compartir. Los puntos se acumulan en la app mientras sigues con tu día, y los conviertes en dinero por Bre-B en Colombia o Pix en Brasil.
+
+- id: share-wifi
+  question: "¿Puedo compartir Wi-Fi o solo datos móviles?"
+  answer: |
+    Ambos. Puedes compartir tu conexión móvil o cualquier red Wi-Fi a la que estés conectado. El Wi-Fi paga menos porque normalmente cuesta mucho menos que los datos móviles, y muchas veces es gratis. La recompensa por compartir Wi-Fi cubre sobre todo la batería que gasta mantener la conexión encendida.
+
+- id: withdrawals
+  question: "¿Cuánto tarda un retiro?"
+  answer: |
+    Hasta una semana. Los retiros salen por Bre-B en Colombia y Pix en Brasil. A veces pausamos los retiros mientras trabajamos en correcciones del sistema de pagos, y lo avisamos en el grupo de la comunidad del país. Bump nunca pide tus datos bancarios ni contraseñas por Instagram ni por mensaje directo.
+
+- id: why-share
+  question: "¿Por qué alguien compartiría su Internet?"
+  answer: |
+    Porque le pagan por hacerlo, y porque con un plan grande o ilimitado no le cuesta casi nada. En un país nuevo donde los pagos aún no están activos, quienes comparten primero son los primeros en la fila cuando se activan.
+
+- id: availability
+  question: "¿Dónde está disponible Bump y cuándo se activan los pagos en mi país?"
+  answer: |
+    Bump está disponible en Android en Colombia, con pagos por Bre-B, y en Brasil, con pagos por Pix. Los países nuevos empiezan con acceso gratuito mientras terminamos el medio de pago local, y anunciamos cada uno en el grupo de la comunidad del país. Vienen más regiones en camino.
+
+- id: iphone
+  question: "¿Hay versión para iPhone?"
+  answer: |
+    Hoy no. Bump es solo para Android. Puede que lancemos una versión para iOS en el futuro, y lo anunciaremos en los grupos de la comunidad cuando pase.
+
+- id: carrier
+  question: "¿Mi operador lo permite?"
+  answer: |
+    Compartir en Bump es el mismo anclaje (hotspot) de siempre. Revisa cuántos datos permite tu plan para compartir: algunos planes vendidos como "ilimitados" tienen un tope aparte para el hotspot. Preferimos decirlo antes y no después de tu factura.
+
+- id: battery
+  question: "¿Bump gasta mucha batería?"
+  answer: |
+    Compartir mantiene un hotspot encendido, así que gasta más batería que un celular en reposo. Hazlo cuando estés cargando o quieto un rato. Usar Bump para conectarte gasta más o menos lo mismo que cualquier Wi-Fi.
+
+- id: scam
+  question: "¿Bump es una estafa?"
+  answer: |
+    No. Bump es una app que permite a quienes tienen datos de sobra compartir su conexión con personas cercanas, y les paga por los datos que pasan por su celular. La app es gratis en [Google Play](https://play.google.com/store/apps/details?id=xyz.bumpapp.prod). No hay suscripción y no se cobra nada hasta que decidas comprar créditos.
+
+    Las recompensas por referidos son una cantidad fija de puntos, una sola vez, cuando alguien que invitaste crea su perfil. Nadie gana nada por lo que comparten los demás, así que no hay pirámide ni nada que reclutar.
+
+- id: legal
+  question: "¿Bump es legal?"
+  answer: |
+    Sí, donde está disponible. Compartir tu conexión es el anclaje de siempre, y revisamos las normas de telecomunicaciones de cada país antes de lanzar allí.
+
+- id: report-problem
+  question: "¿Cómo reporto un problema?"
+  answer: |
+    Agita el celular con la app abierta. Eso nos envía un reporte con los detalles que necesitamos para arreglarlo.

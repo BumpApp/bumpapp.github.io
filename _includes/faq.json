@@ -1,0 +1,1 @@
+{"generated": "{{ site.time | date_to_xmlschema }}", "entries": {{ site.data.faq[include.lang] | jsonify }}}
