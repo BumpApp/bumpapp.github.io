@@ -1,6 +1,6 @@
 /** Source for /assets/tailwind.css. Rebuild with `npm run build` after editing markup. */
 module.exports = {
-  content: ['./_layouts/**/*.html', './_includes/**/*.html', './_articles/**/*.md', './*.html',
+  content: ['./_layouts/**/*.html', './_includes/**/*.html', './_articles/**/*.md', './_data/**/*.yml', './*.html',
             './!(_site|vendor|node_modules|careers-old|brand)/**/*.{html,md}'],
   theme: {
     fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
