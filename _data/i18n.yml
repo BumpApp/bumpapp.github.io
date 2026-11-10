@@ -24,7 +24,7 @@ en:
   privacy_url: /privacy-policy/
   status: Status
   footer_label: Footer
-  instagram: https://www.instagram.com/bumpapp.xyz/
+  instagram: https://www.instagram.com/bumpapp.brasil/  # the active account; bumpapp.xyz is quiet
   whatsapp: /whatsapp/
   copyright: "&copy; 2022-2026 <a href=\"/about/\" class=\"underline hover:text-gray-200\">Bump Inc.</a> All rights reserved. Google Play and the Google Play logo are trademarks of Google LLC."
 es:
@@ -51,7 +51,8 @@ es:
   privacy_url: /es/privacy-policy/
   status: Estado
   footer_label: Pie de página
-  instagram: https://www.instagram.com/bumpapp.colombia/
+  # Hidden from the footer until the Colombia community team makes the account active; uncomment to show it again.
+  # instagram: https://www.instagram.com/bumpapp.colombia/
   whatsapp: /es/whatsapp/
   copyright: "&copy; 2022-2026 <a href=\"/about/\" class=\"underline hover:text-gray-200\">Bump Inc.</a> Todos los derechos reservados. Google Play y el logotipo de Google Play son marcas registradas de Google LLC."
 pt:
