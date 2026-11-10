@@ -1,7 +1,7 @@
 ---
 layout: article
 lang: en
-title: "Is Bump a scam? How the app works, what it costs and what you earn"
+title: "Bump FAQ: how the app works, what it costs and what you earn"
 description: "Straight answers: what Bump is, whether the person sharing can see your traffic, what a user pays, what a sharer earns, and where it is live."
 translations:
   en: /faq/

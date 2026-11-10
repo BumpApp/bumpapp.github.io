@@ -1,7 +1,7 @@
 ---
 layout: article
 lang: es-CO
-title: "¿Bump es una estafa? Cómo funciona la app, cuánto cuesta y cuánto ganas"
+title: "Preguntas frecuentes sobre Bump: cómo funciona la app, cuánto cuesta y cuánto ganas"
 description: "Respuestas directas: qué es Bump, si quien comparte puede ver tu tráfico, cuánto paga quien usa, cuánto gana quien comparte y dónde está disponible."
 translations:
   en: /faq/
