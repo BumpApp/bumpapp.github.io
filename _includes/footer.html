@@ -1,7 +1,12 @@
 {%- assign l = page.lang | default: site.lang | slice: 0, 2 -%}
 {%- assign t = site.data.i18n[l] -%}
   <footer class="bg-dark">
-    <div class="mx-auto max-w-7xl overflow-hidden py-12 px-4 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-7xl overflow-hidden py-16 px-4 sm:px-6 lg:px-8">
+      <p class="font-heading text-center text-3xl sm:text-5xl font-bold tracking-tight text-white">{{ t.cta_title }}</p>
+      <div class="mt-8 mb-14 flex flex-wrap justify-center gap-3">
+        <a href="https://play.google.com/store/apps/details?id=xyz.bumpapp.prod" class="rounded-full bg-primary px-6 py-3 font-semibold text-white hover:bg-emerald-600">{{ t.cta_play }}</a>
+        <a href="{{ t.whatsapp }}" class="rounded-full bg-white px-6 py-3 font-semibold text-dark hover:bg-surface">{{ t.cta_whatsapp }}</a>
+      </div>
       <nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="{{ t.footer_label }}">
         <div class="px-5 py-2">
           <a href="{{ t.how_url }}" class="text-base text-gray-200 hover:text-gray-100">{{ t.how }}</a>
@@ -14,6 +19,12 @@
           <a href="{{ p.url }}" class="text-base text-gray-200 hover:text-gray-100">{{ p.label }}</a>
         </div>
         {%- endfor %}
+        <div class="px-5 py-2">
+          <a href="/mission/" class="text-base text-gray-200 hover:text-gray-100">{{ t.mission }}</a>
+        </div>
+        <div class="px-5 py-2">
+          <a href="/investors/" class="text-base text-gray-200 hover:text-gray-100">{{ t.investors }}</a>
+        </div>
         <div class="px-5 py-2">
           <a href="{{ t.tos_url }}" class="text-base text-gray-200 hover:text-gray-100">{{ t.tos }}</a>
         </div>

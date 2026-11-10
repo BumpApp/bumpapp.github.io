@@ -1,5 +1,12 @@
 en:
   name: English
+  prices_nav: Prices
+  get_app: Get the app
+  cta_title: "Start earning — or get online — today."
+  cta_play: Get it on Google Play
+  cta_whatsapp: Ask us on WhatsApp
+  mission: About &amp; mission
+  investors: For investors &amp; press
   home: /
   logo_alt: bump Logo
   how: How it works
@@ -23,6 +30,13 @@ en:
   copyright: "&copy; 2022-2026 <a href=\"/about/\" class=\"underline hover:text-gray-200\">Bump Inc.</a> All rights reserved. Google Play and the Google Play logo are trademarks of Google LLC."
 es:
   name: Español
+  prices_nav: Precios
+  get_app: Descarga la app
+  cta_title: "Empieza a ganar — o conéctate — hoy."
+  cta_play: Descárgala en Google Play
+  cta_whatsapp: Escríbenos por WhatsApp
+  mission: Sobre nosotros y misión
+  investors: Para inversionistas y prensa
   home: /es/
   logo_alt: Logo Bump
   how: Cómo funciona
@@ -44,6 +58,13 @@ es:
   copyright: "&copy; 2022-2026 <a href=\"/about/\" class=\"underline hover:text-gray-200\">Bump Inc.</a> Todos los derechos reservados. Google Play y el logotipo de Google Play son marcas registradas de Google LLC."
 pt:
   name: Português
+  prices_nav: Preços
+  get_app: Baixe o app
+  cta_title: "Comece a ganhar — ou fique online — hoje."
+  cta_play: Baixe na Google Play
+  cta_whatsapp: Fale com a gente no WhatsApp
+  mission: Sobre e missão
+  investors: Para investidores e imprensa
   home: /pt/
   logo_alt: Logo Bump
   how: Como funciona

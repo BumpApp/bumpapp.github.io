@@ -88,6 +88,15 @@ A **franquia de dados** não tem a mesma proteção. Os gigabytes do pacote vale
 - **TIM:** as perguntas frequentes da TIM citam pacotes adicionais pré de 500 MB, 1 GB, 2 GB e 4 GB, mas o preço não aparece no site, só no app Meu TIM. A tabela traz a oferta semanal que a TIM publica.
 - **1 GB = 1.024 MB** em todas as contas. A TIM e a Claro contam parte do pacote como "exclusivo para redes sociais" ou "para YouTube"; incluímos esses GB no total, o que favorece a operadora.
 
+## Por que o Brasil?
+
+O Brasil é a quinta maior economia digital, com uma enorme divisão digital e 86% de participação do Android no mercado.
+
+- **94%** dos brasileiros acessam a internet pelo celular.
+- **36M** de brasileiros não têm acesso à internet.
+- **92M** dependem exclusivamente do celular, com dados pré-pagos caros.
+- **89%** dos moradores de favelas acreditam que a internet os ajuda a ganhar dinheiro.
+
 ## Fontes e evidências
 
 Cada linha das tabelas vem de uma destas páginas. A captura de tela mostra o que a página exibia na data; clique para ver.

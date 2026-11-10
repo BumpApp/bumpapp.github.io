@@ -92,6 +92,15 @@ The **data in a pack** has no such protection. The gigabytes last for the offer'
 - **Bonuses are left out**: extra GB for porting a number or paying with Claro Pay are not counted.
 - **1 GB = 1,024 MB** throughout. Claro's packs include unlimited minutes and texts; we count only the data, which favours the carrier if you also use the minutes.
 
+## Why Colombia?
+
+Colombia has over 100 million mobile lines but fewer than 20 million are postpaid. Most people are prepaid, and cost is the top reason households stay offline.
+
+- **97%** of Colombian internet users get online through their phone.
+- **12M** Colombians are still offline.
+- **75%** Android market share on mobile.
+- **45%** of unconnected households say cost is the main reason.
+
 ## Sources and evidence
 
 Every row in the tables comes from one of these pages. The screenshot shows what the page displayed on the date; click to view.

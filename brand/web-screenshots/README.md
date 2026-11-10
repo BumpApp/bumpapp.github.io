@@ -18,6 +18,13 @@ Raw 1080x2400 captures are in `raw/<lang>/`. Devices: sharer Pixel 7a (`39111JEH
 office Wi-Fi; client Pixel 7 (`ONROHI45DFM5FY`), same account as the sharer (sibling phone), with
 no saved Wi-Fi networks. The conversation is with a third phone signed in as another test user.
 
+## Simple mode
+
+`simple-share` is the Simple mode Share screen with sharing on, used in the homepage hero. Captured
+2026-11-10 on a Galaxy A17 (`RXCYA033GAM`, 1080x2340, app 0.9.85) with nobody connected. Re-capture
+with `./simple.sh <serial> <lang>`, which captures and frames in one step. Samsung ignores demo mode,
+so the script crops the status and navigation bars instead of faking a 9:41 bar.
+
 ## Re-capturing
 
 Needs `adb`, `python3`, ImageMagick (`convert`), and two signed-in phones with runtime

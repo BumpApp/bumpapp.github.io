@@ -1,0 +1,68 @@
+badge: "Free on Android · Brazil &amp; Colombia"
+h1: ["Sell your spare data.", "Or buy it cheap."]
+lead: "Bump lets phones share internet with people nearby. Hosts get paid by Pix or Bre-B. Everyone else gets online from R$4 — no plan, and it never expires."
+host_cta: ["I have data to spare", "Start earning"]
+guest_cta: ["I need internet", "Get connected"]
+shot_alt: "Bump's Share internet screen with the hotspot on, showing people connected and money earned this session"
+steps_title: "Three steps. That's it."
+steps:
+  - title: Turn on sharing
+    text: "Pick how much data to share. Your phone works like a normal hotspot."
+  - title: People nearby connect
+    text: "They find you in the app and tap Connect. You approve each one."
+  - title: Get paid
+    text: "You earn for every bit of data they use. Cash out with Pix or Bre-B."
+steps_more: See how it works
+host:
+  eyebrow: Become a Bump host
+  title: "Got data left at the end of the month? Sell it."
+  text: "Most postpaid plans come with more data than you use. Bump turns the leftover into money, while your phone sits in your pocket or on the counter."
+  for_title: Great for
+  for: ["Shops &amp; kiosks", "Barbershops &amp; salons", "Bars &amp; lanchonetes", "Students", "Delivery riders", "Anyone with a postpaid plan"]
+  bump_title: Bump handles
+  bump: ["Payments and payouts", "Finding people who need internet", "Keeping everyone's browsing private"]
+  you_title: You just
+  you: ["Keep your phone on", "Choose how much to share", "Cash out when you want"]
+internet:
+  eyebrow: Need internet?
+  title: "Pay for what you use. Nothing more."
+  text: "No plan, no contract, no SIM swap. Pay with Pix, PSE or card."
+  cards:
+    - label: You pay
+      value: per megabyte
+      text: "Check messages or work all day: only the data you use is charged"
+    - label: Credits
+      value: from R$4
+      text: "10,000 COP in Colombia. Top up any amount, use it any time"
+    - label: Credits expire
+      value: never
+      text: "Use them today or next year"
+safe_title: "Private and safe, on both sides."
+safe:
+  - icon: lock
+    title: Nobody sees your stuff
+    text: "The host can't see what you do online. You can't see theirs."
+  - icon: how_to_reg
+    title: You say who connects
+    text: "Hosts approve every person who joins their phone."
+  - icon: tune
+    title: You set the limit
+    text: "Share 500 MB or 5 GB. Stop any time."
+band: ["No dish. No contract.", "Just your phone."]
+band_text: "Nothing to install on the roof, no router to buy. If your phone can make a hotspot, it can run Bump."
+chat:
+  eyebrow: Also in the app
+  title: Chat even with no internet
+  text: "Messages hop from phone to phone over Bluetooth until they arrive."
+  link: See how it works
+faq_title: Questions
+faq:
+  - q: Will it use up my own data?
+    a: "Only the amount you choose to share. Set a limit and Bump stops there."
+  - q: How do I get my money?
+    a: "Cash out to Pix in Brazil or Bre-B in Colombia, straight from the app."
+  - q: Do my credits expire?
+    a: "Never. Use them today or next year."
+  - q: Where does it work?
+    a: "Android phones in Brazil and Colombia. More countries soon."
+faq_more: See all questions and answers

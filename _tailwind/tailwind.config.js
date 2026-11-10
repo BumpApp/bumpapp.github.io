@@ -3,12 +3,12 @@ module.exports = {
   content: ['./_layouts/**/*.html', './_includes/**/*.html', './_articles/**/*.md', './_data/**/*.yml', './*.html',
             './!(_site|vendor|node_modules|careers-old|brand)/**/*.{html,md}'],
   theme: {
-    fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+    fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'], heading: ['"Space Grotesk"', 'Inter', 'system-ui', 'sans-serif'] },
     extend: {
       colors: {
         dark: '#0F172A',
         accent: '#0EA5E9',
-        primary: '#10B981',
+        primary: '#047857',
         surface: '#F8FAFC',
         'surface-hover': '#ECFDF5',
         'dark-hover': '#1E293B',

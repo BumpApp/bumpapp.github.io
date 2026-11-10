@@ -92,6 +92,15 @@ Los **datos del paquete** no tienen la misma protección. Los gigas valen por la
 - **Bonos quedaron por fuera**: los GB adicionales por portabilidad o por pagar con Claro Pay no entran en la cuenta.
 - **1 GB = 1.024 MB** en todas las cuentas. Los paquetes de Claro incluyen minutos y mensajes ilimitados; contamos solo los datos, lo que favorece al operador si también usas los minutos.
 
+## ¿Por qué Colombia?
+
+Colombia tiene más de 100 millones de líneas móviles, pero menos de 20 millones son pospago. La mayoría de la gente es prepago, y el costo es la principal razón por la que los hogares siguen desconectados.
+
+- **97%** de los usuarios de internet en Colombia se conectan desde el celular.
+- **12M** de colombianos siguen sin conexión.
+- **75%** de cuota de mercado de Android en móviles.
+- **45%** de los hogares sin conexión dicen que el costo es la razón principal.
+
 ## Fuentes y evidencia
 
 Cada fila de las tablas sale de una de estas páginas. La captura muestra lo que la página mostraba ese día; haz clic para verla.
