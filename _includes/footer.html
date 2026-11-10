@@ -9,17 +9,6 @@
       </div>
       <nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="{{ t.footer_label }}">
         <div class="px-5 py-2">
-          <a href="{{ t.how_url }}" class="text-base text-gray-200 hover:text-gray-100">{{ t.how }}</a>
-        </div>
-        <div class="px-5 py-2">
-          <a href="{{ t.faq_url }}" class="text-base text-gray-200 hover:text-gray-100">{{ t.faq }}</a>
-        </div>
-        {%- for p in t.prices %}
-        <div class="px-5 py-2">
-          <a href="{{ p.url }}" class="text-base text-gray-200 hover:text-gray-100">{{ p.label }}</a>
-        </div>
-        {%- endfor %}
-        <div class="px-5 py-2">
           <a href="/mission/" class="text-base text-gray-200 hover:text-gray-100">{{ t.mission }}</a>
         </div>
         <div class="px-5 py-2">
@@ -58,6 +47,6 @@
           </svg>
         </a>
       </div>
-      <p class="mt-8 text-center text-base text-gray-400">{{ t.copyright }}</p>
+      <p class="mt-8 text-center text-xs text-gray-400">{{ t.copyright }}</p>
     </div>
   </footer>
