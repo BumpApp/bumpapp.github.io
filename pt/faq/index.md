@@ -1,7 +1,7 @@
 ---
 layout: article
 lang: pt-BR
-title: "O Bump é golpe? Como o app funciona, quanto custa e quanto você ganha"
+title: "Perguntas frequentes sobre o Bump: como o app funciona, quanto custa e quanto você ganha"
 description: "Respostas diretas: o que é o Bump, se quem compartilha vê o que você acessa, quanto paga quem usa, quanto ganha quem compartilha e onde está disponível."
 translations:
   en: /faq/
