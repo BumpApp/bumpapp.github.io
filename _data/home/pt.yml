@@ -1,0 +1,68 @@
+badge: "Grátis no Android · Brasil e Colômbia"
+h1: ["Venda os dados que sobram.", "Ou compre barato."]
+lead: "O Bump deixa celulares compartilharem internet com quem está por perto. Quem compartilha recebe por Pix. Quem precisa fica online a partir de R$4 — sem plano, e o saldo nunca expira."
+host_cta: ["Tenho dados sobrando", "Comece a ganhar"]
+guest_cta: ["Preciso de internet", "Conecte-se"]
+shot_alt: "Tela Compartilhar internet do Bump com o ponto de acesso ligado, mostrando pessoas conectadas e o ganho da sessão"
+steps_title: "Três passos. Só isso."
+steps:
+  - title: Ligue o compartilhamento
+    text: "Escolha quantos dados compartilhar. Seu celular funciona como um roteador comum."
+  - title: Quem está perto se conecta
+    text: "A pessoa encontra você no app e toca em Conectar. Você aprova cada uma."
+  - title: Receba
+    text: "Você ganha por cada dado que usarem. Saque por Pix."
+steps_more: Veja como funciona
+host:
+  eyebrow: Compartilhe pelo Bump
+  title: "Sobrou internet no fim do mês? Venda."
+  text: "A maioria dos planos pós-pagos vem com mais dados do que você usa. O Bump transforma a sobra em dinheiro, com o celular no bolso ou em cima do balcão."
+  for_title: Ótimo para
+  for: ["Lojas e bancas", "Barbearias e salões", "Bares e lanchonetes", "Estudantes", "Entregadores", "Quem tem plano pós-pago"]
+  bump_title: O Bump cuida de
+  bump: ["Pagamentos e saques", "Encontrar quem precisa de internet", "Manter a navegação de todos privada"]
+  you_title: Você só
+  you: ["Deixa o celular ligado", "Escolhe quanto compartilhar", "Saca quando quiser"]
+internet:
+  eyebrow: Precisa de internet?
+  title: "Pague só o que usar. Nada mais."
+  text: "Sem plano, sem contrato, sem trocar de chip. Pague com Pix ou cartão."
+  cards:
+    - label: Você paga
+      value: por megabyte
+      text: "Ver mensagens ou trabalhar o dia todo: só os dados que você usa são cobrados"
+    - label: Créditos
+      value: a partir de R$4
+      text: "Recarregue qualquer valor, use quando quiser"
+    - label: Os créditos expiram
+      value: nunca
+      text: "Use hoje ou no ano que vem"
+safe_title: "Privado e seguro, dos dois lados."
+safe:
+  - icon: lock
+    title: Ninguém vê o que é seu
+    text: "Quem compartilha não vê o que você faz online. Você não vê o que a pessoa faz."
+  - icon: how_to_reg
+    title: Você decide quem conecta
+    text: "Quem compartilha aprova cada pessoa que entra no seu celular."
+  - icon: tune
+    title: Você define o limite
+    text: "Compartilhe 500 MB ou 5 GB. Pare quando quiser."
+band: ["Sem antena. Sem contrato.", "Só o seu celular."]
+band_text: "Nada para instalar no telhado, nenhum roteador para comprar. Se o seu celular faz roteador, ele roda o Bump."
+chat:
+  eyebrow: Também no app
+  title: Converse mesmo sem internet
+  text: "As mensagens pulam de celular em celular por Bluetooth até chegar."
+  link: Veja como funciona
+faq_title: Perguntas
+faq:
+  - q: Vai gastar os meus dados?
+    a: "Só a quantidade que você escolher compartilhar. Defina um limite e o Bump para ali."
+  - q: Como recebo meu dinheiro?
+    a: "Saque por Pix, direto no app."
+  - q: Meus créditos expiram?
+    a: "Nunca. Use hoje ou no ano que vem."
+  - q: Onde funciona?
+    a: "Celulares Android no Brasil e na Colômbia. Mais países em breve."
+faq_more: Veja todas as perguntas e respostas

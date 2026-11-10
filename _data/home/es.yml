@@ -1,0 +1,68 @@
+badge: "Gratis en Android · Colombia y Brasil"
+h1: ["Vende los datos que te sobran.", "O cómpralos barato."]
+lead: "Bump permite que los celulares compartan internet con quienes están cerca. Quien comparte cobra por Bre-B. Los demás se conectan desde 10.000 COP — sin plan, y el saldo nunca vence."
+host_cta: ["Me sobran datos", "Empieza a ganar"]
+guest_cta: ["Necesito internet", "Conéctate"]
+shot_alt: "Pantalla Compartir internet de Bump con el hotspot encendido, con las personas conectadas y lo ganado en la sesión"
+steps_title: "Tres pasos. Nada más."
+steps:
+  - title: Enciende el compartir
+    text: "Elige cuántos datos compartir. Tu celular funciona como un hotspot normal."
+  - title: La gente cerca se conecta
+    text: "Te encuentran en la app y tocan Conectar. Tú apruebas a cada persona."
+  - title: Cobra
+    text: "Ganas por cada dato que usen. Retira por Bre-B."
+steps_more: Mira cómo funciona
+host:
+  eyebrow: Comparte con Bump
+  title: "¿Te sobran datos a fin de mes? Véndelos."
+  text: "La mayoría de los planes pospago traen más datos de los que usas. Bump convierte lo que sobra en plata, con el celular en el bolsillo o sobre el mostrador."
+  for_title: Ideal para
+  for: ["Tiendas y kioscos", "Barberías y peluquerías", "Bares y cafeterías", "Estudiantes", "Domiciliarios", "Cualquiera con plan pospago"]
+  bump_title: Bump se encarga de
+  bump: ["Pagos y retiros", "Encontrar a quien necesita internet", "Mantener privada la navegación de todos"]
+  you_title: Tú solo
+  you: ["Dejas el celular encendido", "Eliges cuánto compartir", "Retiras cuando quieras"]
+internet:
+  eyebrow: ¿Necesitas internet?
+  title: "Paga lo que usas. Nada más."
+  text: "Sin plan, sin contrato, sin cambiar de SIM. Paga con PSE o tarjeta."
+  cards:
+    - label: Pagas
+      value: por megabyte
+      text: "Revisar mensajes o trabajar todo el día: solo se cobran los datos que usas"
+    - label: Créditos
+      value: desde 10.000 COP
+      text: "Recarga cualquier monto, úsalo cuando quieras"
+    - label: Los créditos vencen
+      value: nunca
+      text: "Úsalos hoy o el año que viene"
+safe_title: "Privado y seguro, de los dos lados."
+safe:
+  - icon: lock
+    title: Nadie ve lo tuyo
+    text: "Quien comparte no ve lo que haces en línea. Tú no ves lo suyo."
+  - icon: how_to_reg
+    title: Tú decides quién se conecta
+    text: "Quien comparte aprueba a cada persona que entra a su celular."
+  - icon: tune
+    title: Tú pones el límite
+    text: "Comparte 500 MB o 5 GB. Detente cuando quieras."
+band: ["Sin antena. Sin contrato.", "Solo tu celular."]
+band_text: "Nada que instalar en el techo, ningún router que comprar. Si tu celular hace hotspot, puede usar Bump."
+chat:
+  eyebrow: También en la app
+  title: Chatea incluso sin internet
+  text: "Los mensajes saltan de celular en celular por Bluetooth hasta llegar."
+  link: Mira cómo funciona
+faq_title: Preguntas
+faq:
+  - q: ¿Va a gastar mis propios datos?
+    a: "Solo la cantidad que elijas compartir. Pon un límite y Bump se detiene ahí."
+  - q: ¿Cómo recibo mi plata?
+    a: "Retira por Bre-B, directo desde la app."
+  - q: ¿Mis créditos vencen?
+    a: "Nunca. Úsalos hoy o el año que viene."
+  - q: ¿Dónde funciona?
+    a: "Celulares Android en Colombia y Brasil. Pronto en más países."
+faq_more: Mira todas las preguntas y respuestas

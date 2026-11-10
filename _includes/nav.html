@@ -1,14 +1,18 @@
 {%- assign l = page.lang | default: site.lang | slice: 0, 2 -%}
 {%- assign t = site.data.i18n[l] -%}
-  <nav class="bg-dark lg:bg-transparent">
-    <div class="relative mx-auto max-w-7xl pt-6 pb-8 sm:py-4 px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-      <a href="{{ t.home }}" class="flex items-center">
-        <img src="/bump-logo.svg" class="h-9" alt="{{ t.logo_alt }}">
-      </a>
-      <div class="flex gap-4">
-      {%- for tr in page.translations %}{% assign code = tr[0] | slice: 0, 2 %}{% if code != l %}
-        <a href="{{ tr[1] }}" lang="{{ tr[0] }}" onclick="localStorage.setItem('lang','{{ code }}')" class="text-sm text-gray-400 hover:text-white transition-colors">{{ site.data.i18n[code].name }}</a>
-      {%- endif %}{% endfor %}
+  <nav class="bg-white">
+    <div class="mx-auto max-w-6xl py-4 px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-4">
+      <a href="{{ t.home }}" aria-label="{{ t.logo_alt }}" class="font-heading text-2xl font-bold tracking-tight text-primary">bump</a>
+      <div class="flex items-center gap-5 text-sm font-medium text-slate-700">
+        <a href="{{ t.how_url }}" class="hidden md:inline hover:text-primary">{{ t.how }}</a>
+        <a href="{{ t.home }}#internet" class="hidden md:inline hover:text-primary">{{ t.prices_nav }}</a>
+        <a href="{{ t.faq_url }}" class="hidden md:inline hover:text-primary">{{ t.faq }}</a>
+        <span class="flex gap-2">
+        {%- for tr in page.translations %}{% assign code = tr[0] | slice: 0, 2 %}{% if code != l %}
+          <a href="{{ tr[1] }}" lang="{{ tr[0] }}" title="{{ site.data.i18n[code].name }}" onclick="localStorage.setItem('lang','{{ code }}')" class="uppercase hover:text-primary">{{ code }}</a>
+        {%- endif %}{% endfor %}
+        </span>
+        <a href="https://play.google.com/store/apps/details?id=xyz.bumpapp.prod" class="rounded-full bg-dark px-4 py-2 font-semibold text-white hover:bg-dark-hover">{{ t.get_app }}</a>
       </div>
     </div>
   </nav>

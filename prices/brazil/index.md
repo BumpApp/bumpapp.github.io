@@ -88,6 +88,15 @@ The **data allowance** has no such protection. The gigabytes in a pack last for 
 - **TIM:** TIM's FAQ mentions prepaid add-on packs of 500 MB, 1 GB, 2 GB and 4 GB, but the price isn't on the website, only in the Meu TIM app. The table shows the weekly offer TIM does publish.
 - **1 GB = 1,024 MB** throughout. TIM and Claro count part of the pack as "social networks only" or "YouTube only"; we include those GB in the total, which favours the carrier.
 
+## Why Brazil?
+
+Brazil is the fifth-largest internet economy, with a massive digital divide and 86% Android market share.
+
+- **94%** of Brazilians access the internet via mobile.
+- **36M** Brazilians have no internet access at all.
+- **92M** are mobile-only, relying on expensive prepaid data.
+- **89%** of favela users believe the internet helps them earn money.
+
 ## Sources and evidence
 
 Every row in the tables comes from one of these pages. The screenshot shows what the page displayed on the date; click to view.

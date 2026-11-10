@@ -1,9 +1,9 @@
 #!/bin/bash
-# frame.sh <raw.png> <out.png>: put a 1080x2400 screenshot in a dark rounded phone frame at the site's
+# frame.sh <raw.png> <out.png> [screen-height]: put a 1080x2400 screenshot in a dark rounded phone frame at the site's
 # 388x768 @2x size (screen 331x736 with a 28px bezel), matching the existing phone-*@2x.png images.
 set -euo pipefail
-[ $# -eq 2 ] || { echo "usage: frame.sh <raw.png> <out.png>" >&2; exit 2; }
-in=$1; out=$2; W=388; H=768; sw=331; shh=736; bx=$(( (W-sw)/2 )); by=$(( (H-shh)/2 ))
+[ $# -ge 2 ] || { echo "usage: frame.sh <raw.png> <out.png> [screen-height]" >&2; exit 2; }
+in=$1; out=$2; W=388; sw=331; shh=${3:-736}; H=$((shh+32)); bx=$(( (W-sw)/2 )); by=$(( (H-shh)/2 ))
 convert "$in" -resize ${sw}x${shh}! \
   \( +clone -alpha extract -draw "fill black polygon 0,0 0,24 24,0 fill white circle 24,24 24,0" \
      \( +clone -flip \) -compose Multiply -composite \( +clone -flop \) -compose Multiply -composite \) \
