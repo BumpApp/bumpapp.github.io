@@ -57,6 +57,34 @@
   answer: |
     Up to a week. Withdrawals go out through Pix in Brazil and Bre-B in Colombia. We sometimes pause withdrawals while we work on fixes to the payment system, and we announce that in the country's community group. Bump never asks for your bank details or passwords over Instagram or direct message.
 
+- id: rules
+  question: "What are the rules for accounts, bonuses and cash-outs?"
+  answer: |
+    Bump pays real money, so there are limits to keep it fair. We publish them so nobody breaks one by accident.
+
+    **One account per person.** The welcome bonus, where it is offered, is paid once per person: once per Google account, once per phone number and once per phone.
+
+    **Invites.** Each person can be invited once. A phone number, a phone or a Google account that has already been invited cannot be invited again, and you cannot use your own code. Virtual (VoIP) phone numbers do not count for bonuses or invites, so sign up with an ordinary mobile number.
+
+    **Cash-outs.** Use your own CPF in Brazil or cédula in Colombia. One CPF or cédula can be used by at most 2 Bump accounts, and that link is permanent: it does not free up if an account is deleted. A third account that tries the same document is refused and no points are taken. You can cash out up to 3 times in 24 hours, up to R$100 in Brazil or 100,000 COP in Colombia in total.
+
+    **Phones.** A family can share one phone: up to 3 accounts on the same phone is fine. Use the normal app on a normal phone. Bump inside a cloned app, a second space or a work profile, on an emulator or on a rooted phone is not allowed.
+
+    **Payments.** Buy credits with your own card or Pix. The same card or Pix payer on more than 3 accounts, or paying for the purchase of someone you invited, puts those accounts under review. Disputing a purchase with your bank pauses cash-out while we look into it. If a purchase went wrong, write to us first and we will fix it.
+
+    Breaking a rule usually means the bonus or the cash-out simply does not happen. Some cases put the account under review, which is explained in the next question. The full legal text is in the [Terms of Service](/terms-of-service/).
+
+- id: under-review
+  question: "My account says it is under review. What does that mean?"
+  answer: |
+    Something on the account matched one of the patterns we check for, such as many accounts on one phone, a CPF or cédula tried on more accounts than allowed, a cloned app, a shared card or a disputed payment. It is not a ban, and it is often a false alarm.
+
+    While an account is under review, cash-out and converting points into credits are paused, and rewards for people you invited are held. Everything else keeps working and you keep earning. A person on our team looks at the account. If it is cleared, everything that was paused is released.
+
+    You can tell us your side: shake your phone with the app open and send a message, or write to [support@bumpapp.xyz](mailto:support@bumpapp.xyz). It helps to say who else uses your phone and whose CPF or cédula you used.
+
+    If the review finds that the account was made to collect bonuses or cash-outs more than once, the account is blocked: it can no longer cash out or earn, and its phone number, phone, CPF or cédula and payment details cannot be used on another account. If you think we got it wrong, write to [support@bumpapp.xyz](mailto:support@bumpapp.xyz) and a person will look at it again.
+
 - id: why-share
   question: "Why would anyone share their Internet?"
   answer: |
