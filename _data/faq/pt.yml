@@ -57,6 +57,34 @@
   answer: |
     Até uma semana. Os saques saem via Pix no Brasil e Bre-B na Colômbia. Às vezes pausamos os saques enquanto trabalhamos em correções no sistema de pagamento, e avisamos no grupo da comunidade do país. O Bump nunca pede seus dados bancários nem senhas pelo Instagram ou por mensagem direta.
 
+- id: rules
+  question: "Quais são as regras para contas, bônus e saques?"
+  answer: |
+    O Bump paga dinheiro de verdade, então existem limites para manter tudo justo. Publicamos esses limites para que ninguém quebre uma regra sem querer.
+
+    **Uma conta por pessoa.** O bônus de boas-vindas, onde é oferecido, é pago uma vez por pessoa: uma vez por conta Google, uma vez por número de telefone e uma vez por celular.
+
+    **Convites.** Cada pessoa pode ser convidada uma vez. Um número de telefone, um celular ou uma conta Google que já foi convidado não pode ser convidado de novo, e você não pode usar o seu próprio código. Números virtuais (VoIP) não valem para bônus nem convites, então cadastre-se com um número de celular comum.
+
+    **Saques.** Use o seu próprio CPF no Brasil ou a sua cédula na Colômbia. Um CPF ou cédula pode ser usado por no máximo 2 contas do Bump, e esse vínculo é permanente: ele não é liberado se uma conta for excluída. Uma terceira conta que tentar o mesmo documento é recusada, nenhum ponto é descontado, e todas as contas desse documento entram em análise. O app avisa antes de você confirmar se o documento já está cheio. Você pode sacar até 3 vezes em 24 horas, até R$100 no Brasil ou 100.000 COP na Colômbia no total.
+
+    **Celulares.** Uma família pode dividir um celular: até 3 contas no mesmo celular, tudo bem. Use o app normal em um celular normal. Não é permitido usar o Bump em app clonado, segundo espaço ou perfil de trabalho, em emulador ou em celular com root.
+
+    **Pagamentos.** Compre créditos com o seu próprio cartão ou Pix. O mesmo cartão ou pagador Pix em mais de 3 contas, ou pagar a compra de alguém que você convidou, coloca essas contas em análise. Contestar uma compra no banco pausa o saque enquanto verificamos. Se uma compra deu errado, fale com a gente primeiro e resolvemos.
+
+    Quebrar uma regra normalmente significa que o bônus ou o saque simplesmente não acontece. Alguns casos colocam a conta em análise, o que explicamos na próxima pergunta. O texto legal completo está nos [Termos de Serviço](/pt/terms-of-service/).
+
+- id: under-review
+  question: "Minha conta está em análise. O que isso significa?"
+  answer: |
+    Algo na conta bateu com um dos padrões que verificamos, como muitas contas em um celular, um CPF ou cédula usado em mais contas do que o permitido, um app clonado, um cartão compartilhado ou um pagamento contestado. Não é um banimento, e muitas vezes é um alarme falso.
+
+    Enquanto a conta está em análise, o saque e a conversão de pontos em créditos ficam pausados, e as recompensas por pessoas que você convidou ficam retidas. Todo o resto continua funcionando e você continua ganhando. Uma pessoa da nossa equipe analisa a conta. Se ela for liberada, tudo o que estava pausado é liberado.
+
+    Você pode contar o seu lado: sacuda o celular com o app aberto e envie uma mensagem, ou escreva para [support@bumpapp.xyz](mailto:support@bumpapp.xyz). Ajuda dizer quem mais usa o seu celular e de quem é o CPF ou a cédula que você usou.
+
+    Se a análise concluir que a conta foi criada para receber bônus ou saques mais de uma vez, a conta é bloqueada: ela não pode mais sacar nem ganhar, e o número de telefone, o celular, o CPF ou cédula e os dados de pagamento dela não podem ser usados em outra conta. Se você acha que erramos, escreva para [support@bumpapp.xyz](mailto:support@bumpapp.xyz) e uma pessoa vai analisar de novo.
+
 - id: why-share
   question: "Por que alguém compartilharia a Internet?"
   answer: |

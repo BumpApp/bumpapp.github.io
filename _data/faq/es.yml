@@ -57,6 +57,34 @@
   answer: |
     Hasta una semana. Los retiros salen por Bre-B en Colombia y Pix en Brasil. A veces pausamos los retiros mientras trabajamos en correcciones del sistema de pagos, y lo avisamos en el grupo de la comunidad del país. Bump nunca pide tus datos bancarios ni contraseñas por Instagram ni por mensaje directo.
 
+- id: rules
+  question: "¿Cuáles son las reglas para cuentas, bonos y retiros?"
+  answer: |
+    Bump paga dinero de verdad, así que hay límites para que sea justo. Los publicamos para que nadie rompa una regla sin querer.
+
+    **Una cuenta por persona.** El bono de bienvenida, donde se ofrece, se paga una vez por persona: una vez por cuenta de Google, una vez por número de teléfono y una vez por celular.
+
+    **Invitaciones.** Cada persona puede ser invitada una vez. Un número de teléfono, un celular o una cuenta de Google que ya fue invitado no puede ser invitado de nuevo, y no puedes usar tu propio código. Los números virtuales (VoIP) no cuentan para bonos ni invitaciones, así que regístrate con un número de celular común.
+
+    **Retiros.** Usa tu propia cédula en Colombia o tu CPF en Brasil. Una cédula o CPF puede usarse en máximo 2 cuentas de Bump, y ese vínculo es permanente: no se libera si se elimina una cuenta. Una tercera cuenta que intente el mismo documento es rechazada, no se descuentan puntos, y todas las cuentas de ese documento quedan en revisión. La app te avisa antes de confirmar si el documento ya está lleno. Puedes retirar hasta 3 veces en 24 horas, hasta 100.000 COP en Colombia o R$100 en Brasil en total.
+
+    **Celulares.** Una familia puede compartir un celular: hasta 3 cuentas en el mismo celular está bien. Usa la app normal en un celular normal. No se permite usar Bump en una app clonada, un segundo espacio o un perfil de trabajo, en un emulador o en un celular con root.
+
+    **Pagos.** Compra créditos con tu propia tarjeta, PSE o Pix. La misma tarjeta o el mismo pagador en más de 3 cuentas, o pagar la compra de alguien que invitaste, pone esas cuentas en revisión. Disputar una compra con tu banco pausa los retiros mientras lo revisamos. Si una compra salió mal, escríbenos primero y lo arreglamos.
+
+    Romper una regla normalmente significa que el bono o el retiro simplemente no ocurre. Algunos casos ponen la cuenta en revisión, que explicamos en la siguiente pregunta. El texto legal completo está en los [Términos de Servicio](/es/terms-of-service/).
+
+- id: under-review
+  question: "Mi cuenta dice que está en revisión. ¿Qué significa?"
+  answer: |
+    Algo en la cuenta coincidió con uno de los patrones que revisamos, como muchas cuentas en un celular, una cédula o CPF usado en más cuentas de las permitidas, una app clonada, una tarjeta compartida o un pago disputado. No es un bloqueo, y muchas veces es una falsa alarma.
+
+    Mientras la cuenta está en revisión, los retiros y la conversión de puntos en créditos quedan en pausa, y las recompensas por personas que invitaste quedan retenidas. Todo lo demás sigue funcionando y sigues ganando. Una persona de nuestro equipo revisa la cuenta. Si se aprueba, todo lo que estaba en pausa se libera.
+
+    Puedes contarnos tu versión: agita el celular con la app abierta y envía un mensaje, o escribe a [support@bumpapp.xyz](mailto:support@bumpapp.xyz). Ayuda decir quién más usa tu celular y de quién es la cédula o el CPF que usaste.
+
+    Si la revisión concluye que la cuenta se creó para cobrar bonos o retiros más de una vez, la cuenta se bloquea: ya no puede retirar ni ganar, y su número de teléfono, celular, cédula o CPF y datos de pago no pueden usarse en otra cuenta. Si crees que nos equivocamos, escribe a [support@bumpapp.xyz](mailto:support@bumpapp.xyz) y una persona lo revisará de nuevo.
+
 - id: why-share
   question: "¿Por qué alguien compartiría su Internet?"
   answer: |
